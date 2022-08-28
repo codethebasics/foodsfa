@@ -1,8 +1,9 @@
 import { Flex, Box, Text } from '@chakra-ui/react'
 import { Swiper, SwiperSlide } from 'swiper/react'
-import { Pagination } from 'swiper'
+import { Pagination, FreeMode } from 'swiper'
 
 import 'swiper/css'
+import 'swiper/css/free-mode'
 import 'swiper/css/pagination'
 
 export default function Home() {
@@ -12,7 +13,12 @@ export default function Home() {
         <Text>La Vie est Belle</Text>
       </Flex>
       <Flex>
-        <Swiper slidesPerView={2} spaceBetween={30} modules={[Pagination]}>
+        <Swiper
+          freeMode={true}
+          slidesPerView={2}
+          spaceBetween={30}
+          modules={[FreeMode, Pagination]}
+        >
           <SwiperSlide>Produto 1</SwiperSlide>
           <SwiperSlide>Produto 2</SwiperSlide>
           <SwiperSlide>Produto 3</SwiperSlide>
