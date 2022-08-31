@@ -111,6 +111,7 @@ export default function Home() {
             <Swiper
               freeMode={true}
               slidesPerView={3}
+              spaceBetween={30}
               modules={[FreeMode, Pagination]}
             >
               <SwiperSlide>
