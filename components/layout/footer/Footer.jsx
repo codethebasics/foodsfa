@@ -1,9 +1,20 @@
-import { Flex, Text } from '@chakra-ui/react'
+import { Flex } from '@chakra-ui/react'
 
-export default function Footer() {
+export default function Footer({
+  backgroundColor,
+  borderRadius,
+  p,
+  justifyContent,
+  children
+}) {
   return (
-    <Flex p={3} backgroundColor={'#222'} color={'#fff'} borderRadius={'4px'}>
-      <Text>Footer Component</Text>
+    <Flex
+      p={p}
+      backgroundColor={backgroundColor}
+      borderRadius={borderRadius}
+      justifyContent={justifyContent}
+    >
+      {children}
     </Flex>
   )
 }

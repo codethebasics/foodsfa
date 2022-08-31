@@ -4,7 +4,7 @@ export default function TransitionScreen() {
   return (
     <>
       <Flex
-        backgroundColor={'#313131'}
+        backgroundColor={'#1A1A1A'}
         alignItems={'center'}
         justifyContent={'center'}
         height={'100%'}

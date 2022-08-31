@@ -21,10 +21,9 @@ body {
 }
 
 .wrapper {
-  background: $black-1;
+  background: $black-2;
   color: $white;
   transition: all .3s ease-in-out;
-  padding: 15px;
   height: 100%;
   display: grid;
   grid-template-rows: auto 1fr auto;
@@ -77,3 +76,26 @@ body {
   align-items: center;
   border-radius: 4px;
 }
+
+// ---------------------------------------------
+// TODO: refatorar para componente de calendário
+// ---------------------------------------------
+.calendar {
+  font-size: 0.8rem;
+  color: #ddd;
+
+  .badgeOn {
+    height: 7px;
+    width: 30px;
+    background: #00FF00;
+    border-radius: 10px;
+  }
+  
+  .badgeOff {
+    height:7px;
+    width: 30px;
+    background: #D61C4E;
+    border-radius: 10px;
+  }
+}
+
