@@ -1,27 +1,28 @@
 import { Button, Flex, Text } from '@chakra-ui/react'
+import styles from './Header.module.scss'
 
-export default function Header({ openSidebar }) {
+export default function Header({
+  openSidebar,
+  backgroundColor,
+  color,
+  children
+}) {
   return (
     <Flex
       p={3}
-      backgroundColor={'#222'}
-      color={'#fff'}
       borderRadius={'4px'}
       justifyContent={'space-between'}
       alignItems={'center'}
+      backgroundColor={backgroundColor}
+      color={color}
     >
       <Flex>
         <Text>Header component</Text>
       </Flex>
       <Flex>
-        <Button
-          size={'sm'}
-          onClick={openSidebar}
-          colorScheme={'purple'}
-          borderRadius={'4px'}
-        >
+        <button className={styles.cHeader__cta} onClick={openSidebar}>
           Open
-        </Button>
+        </button>
       </Flex>
     </Flex>
   )
