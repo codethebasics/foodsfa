@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "name": "Pizzas grandes",
+    "description": "Salgadas",
+    "image": "/img/pizza.png",
+    "imageAlt": "Pizza"
+  },
+  {
+    "id": 2,
+    "name": "Lanches",
+    "description": "X-burguers",
+    "image": "/img/hamburger.png",
+    "imageAlt": "Hamburger"
+  },
+  {
+    "id": 3,
+    "name": "Salgados",
+    "description": "Coxinhas, esfirras...",
+    "image": "/img/salgados.png",
+    "imageAlt": "Salgados"
+  }
+]

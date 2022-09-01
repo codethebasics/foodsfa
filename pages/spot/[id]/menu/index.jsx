@@ -1,6 +1,4 @@
 import { Flex, Box, Text, Image } from '@chakra-ui/react'
-import { Swiper, SwiperSlide } from 'swiper/react'
-import { Pagination, FreeMode } from 'swiper'
 import { useState } from 'react'
 
 import Header from '../../../../components/layout/header/Header'
@@ -10,6 +8,8 @@ import Sidebar from '../../../../components/layout/sidebar/Sidebar'
 import 'swiper/css'
 import 'swiper/css/free-mode'
 import 'swiper/css/pagination'
+import CategoryCarousel from '../../../../components/category/CategoryCarousel'
+import Products from '../../../../components/product/Products'
 
 export default function Home() {
   const [showSidebarMenu, setShowSidebarMenu] = useState(false)
@@ -108,99 +108,7 @@ export default function Home() {
             </Flex>
           </Flex>
           <Flex mx={5}>
-            <Swiper
-              freeMode={true}
-              slidesPerView={3}
-              spaceBetween={30}
-              modules={[FreeMode, Pagination]}
-            >
-              <SwiperSlide>
-                <Box className={'floatingItem'}>
-                  <Image
-                    src={'/img/pizza.png'}
-                    alt={'pizza'}
-                    className={'image'}
-                  />
-                  <Flex direction={'column'} className={'description'}>
-                    <Text fontSize={'0.9rem'} fontWeight={'bold'}>
-                      PIZZAS GRANDES
-                    </Text>
-                    <Text fontSize={'0.8rem'} mt={2}>
-                      Salgadas
-                    </Text>
-                  </Flex>
-                </Box>
-              </SwiperSlide>
-              <SwiperSlide>
-                <Box className={'floatingItem'}>
-                  <Image src={'/img/hamburger.png'} alt={'hamburger'} />
-                  <Flex direction={'column'} className={'description'}>
-                    <Text fontSize={'0.9rem'} fontWeight={'bold'}>
-                      LANCHES
-                    </Text>
-                    <Text fontSize={'0.8rem'} mt={2}>
-                      X-burguers
-                    </Text>
-                  </Flex>
-                </Box>
-              </SwiperSlide>
-              <SwiperSlide>
-                <Box className={'floatingItem'}>
-                  <Image src={'/img/salgados.png'} alt={'salgados'} />
-                  <Flex direction={'column'} className={'description'}>
-                    <Text fontSize={'0.9rem'} fontWeight={'bold'}>
-                      SALGADOS
-                    </Text>
-                    <Text fontSize={'0.8rem'} mt={2}>
-                      Coxinhas, esfirras...
-                    </Text>
-                  </Flex>
-                </Box>
-              </SwiperSlide>
-              <SwiperSlide>
-                <Box className={'floatingItem'}>
-                  <Image
-                    src={'/img/pizza.png'}
-                    alt={'pizza'}
-                    className={'image'}
-                  />
-                  <Flex direction={'column'} className={'description'}>
-                    <Text fontSize={'0.9rem'} fontWeight={'bold'}>
-                      PIZZAS GRANDES
-                    </Text>
-                    <Text fontSize={'0.8rem'} mt={2}>
-                      Salgadas
-                    </Text>
-                  </Flex>
-                </Box>
-              </SwiperSlide>
-              <SwiperSlide>
-                <Box className={'floatingItem'}>
-                  <Image src={'/img/hamburger.png'} alt={'hamburger'} />
-                  <Flex direction={'column'} className={'description'}>
-                    <Text fontSize={'0.9rem'} fontWeight={'bold'}>
-                      LANCHES
-                    </Text>
-                    <Text fontSize={'0.8rem'} mt={2}>
-                      X-burguers
-                    </Text>
-                  </Flex>
-                </Box>
-              </SwiperSlide>
-              <SwiperSlide>
-                <Box className={'floatingItem'}>
-                  <Image src={'/img/salgados.png'} alt={'salgados'} />
-                  <Flex direction={'column'} className={'description'}>
-                    <Text fontSize={'0.9rem'} fontWeight={'bold'}>
-                      SALGADOS
-                    </Text>
-                    <Text fontSize={'0.8rem'} mt={2}>
-                      Coxinhas, esfirras...
-                    </Text>
-                  </Flex>
-                </Box>
-              </SwiperSlide>
-            </Swiper>
+            <CategoryCarousel />
           </Flex>
           <Flex p={5} alignItems={'center'} justifyContent={'space-between'}>
             <Flex>
@@ -226,85 +134,7 @@ export default function Home() {
               />
             </Flex>
           </Flex>
-          <Flex
-            height={'100%'}
-            direction={'column'}
-            overflow={'auto'}
-            p={3}
-            mb={3}
-            borderRadius={'4px'}
-          >
-            <Flex
-              lineHeight={'1rem'}
-              color={'#222'}
-              backgroundColor={'#fff'}
-              borderRadius={'20px'}
-              mb={5}
-            >
-              <Image
-                src={'/img/pizza-marguerita.png'}
-                alt={'pizza marguerita'}
-                width={150}
-                borderRadius={'20px 0 0 20px'}
-              />
-              <Flex direction={'column'}>
-                <Box p={2}>
-                  <Text
-                    textTransform={'uppercase'}
-                    fontWeight={'bold'}
-                    fontSize={'1.2rem'}
-                  >
-                    Pizza Grande
-                  </Text>
-                </Box>
-                <Box p={2}>
-                  <Text>
-                    Marguerita com brócolis, bacon, tomate, ervilhas, milho e
-                    azeitonas.
-                  </Text>
-                </Box>
-                <Flex p={2} justifyContent={'space-between'}>
-                  <Text textDecoration={'line-through'}>R$120,00</Text>
-                  <Text fontSize={'1.2rem'}>R$89,00</Text>
-                </Flex>
-              </Flex>
-            </Flex>
-            <Flex
-              lineHeight={'1rem'}
-              color={'#222'}
-              backgroundColor={'#fff'}
-              borderRadius={'20px'}
-              mb={5}
-            >
-              <Image
-                src={'/img/pizza-marguerita.png'}
-                alt={'pizza marguerita'}
-                width={150}
-                borderRadius={'20px 0 0 20px'}
-              />
-              <Flex direction={'column'}>
-                <Box p={2}>
-                  <Text
-                    textTransform={'uppercase'}
-                    fontWeight={'bold'}
-                    fontSize={'1.2rem'}
-                  >
-                    Pizza Grande
-                  </Text>
-                </Box>
-                <Box p={2}>
-                  <Text>
-                    Marguerita com brócolis, bacon, tomate, ervilhas, milho e
-                    azeitonas.
-                  </Text>
-                </Box>
-                <Flex p={2} justifyContent={'space-between'}>
-                  <Text textDecoration={'line-through'}>R$120,00</Text>
-                  <Text fontSize={'1.2rem'}>R$89,00</Text>
-                </Flex>
-              </Flex>
-            </Flex>
-          </Flex>
+          <Products />
         </Flex>
       </div>
       <Footer
@@ -316,7 +146,7 @@ export default function Home() {
         <Text fontWeight={'bold'} fontSize={'2rem'}>
           R$ 180,00
         </Text>
-        <Image src={'/img/bag.svg'} />
+        <Image src={'/img/bag.svg'} alt={'Pedidos'} />
       </Footer>
     </>
   )

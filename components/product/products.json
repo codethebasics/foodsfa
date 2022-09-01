@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "name": "Pizza Marguerita",
+    "description": "Marguerita com brócolis, bacon, tomate, ervilhas, milho e azeitona",
+    "image": "/img/pizza-marguerita.png",
+    "imageAlt": "Pizza Marguerita",
+    "price": 20,
+    "pricePromo": 19
+  },
+  {
+    "id": 2,
+    "name": "Pizza Peperonni",
+    "description": "Queijo & Peperonni",
+    "image": "/img/pizza-peperonni.png",
+    "imageAlt": "Pizza Peperonni",
+    "price": 22,
+    "pricePromo": 20
+  }
+]

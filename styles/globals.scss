@@ -41,17 +41,18 @@ body {
   }
 
   .sidebar {
-    background-color: rebeccapurple;
+    background-color: $yellow;
+    color: $black-1;
     position: absolute;
     height: 100%;
-    width: 90%;
+    width: 100%;
     left: 0;
     top: 0;
     z-index: 9;
     transition: all .3s ease-in-out;
   
     &.hide {
-      left: -90%;
+      left: -100%;
     }
   }
 
