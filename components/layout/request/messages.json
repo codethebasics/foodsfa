@@ -1,0 +1,68 @@
+{
+  "chatId": 1,
+  "messages": [
+    {
+      "id": 0,
+      "type": "info",
+      "isStatus": false,
+      "header": null,
+      "body": {
+        "text": "Hoje tem Show ao vivo na casa, aproveite, será cobrado uma taxa inicial de consulmo de R$20,00 que será abatido no final"
+      },
+      "footer": null
+    },
+    {
+      "id": 1,
+      "type": "success",
+      "isStatus": false,
+      "header": {
+        "quantity": 1,
+        "product": "Pizza Média",
+        "price": 89.00
+      },
+      "body": {
+        "text": "Marguerita com brócolis, bacon, tomate, ervilhas, milho e azeitonas..."
+      },
+      "footer": {
+        "idRequest": 134,
+        "spotName": "La Vie Est Belle"
+      }
+    },
+    {
+      "id": 2,
+      "type": "success",
+      "isStatus": true,
+      "header": null,
+      "body": {
+        "text": "Entregue"
+      },
+      "footer": null
+    },
+    {
+      "id": 3,
+      "type": "warning",
+      "header": {
+        "quantity": 1,
+        "product": "Pizza Média",
+        "price": 89.00
+      },
+      "body": {
+        "text": "Marguerita com brócolis, bacon, tomate, ervilhas, milho e azeitonas..."
+      },
+      "footer": {
+        "idRequest": 134,
+        "spotName": "La Vie Est Belle"
+      }
+    },
+    {
+      "id": 4,
+      "type": "warning",
+      "isStatus": true,
+      "header": null,
+      "body": {
+        "text": "Em Análise"
+      },
+      "footer": null
+    }
+  ]
+}

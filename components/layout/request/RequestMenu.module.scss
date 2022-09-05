@@ -1,0 +1,22 @@
+.wrapper {
+  position: absolute;
+  width: 100%;
+
+  header {
+    
+  }
+
+  main {    
+    height: 100%;
+    overflow: auto;
+  }
+
+  footer {
+    
+  }
+}
+
+.selected {
+  background: #373435;
+  color: #FFCC00;
+}

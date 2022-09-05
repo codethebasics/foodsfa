@@ -1,5 +1,6 @@
 import { Flex, Box, Text, Image } from '@chakra-ui/react'
 import { useState } from 'react'
+import { useRouter } from 'next/router'
 
 import Header from '../../../../components/layout/header/Header'
 import Footer from '../../../../components/layout/footer/Footer'
@@ -13,6 +14,7 @@ import Products from '../../../../components/product/Products'
 
 export default function Home() {
   const [showSidebarMenu, setShowSidebarMenu] = useState(false)
+  const router = useRouter()
 
   return (
     <>
@@ -58,7 +60,14 @@ export default function Home() {
         color={'#000'}
         position={'relative'}
       >
-        <Box lineHeight={'1.8rem'} width={'100%'}>
+        <Box
+          cursor={'pointer'}
+          lineHeight={'1.8rem'}
+          width={'100%'}
+          onClick={() =>
+            router.push(`${process.env.NEXT_PUBLIC_APP_URL}/spot/1`)
+          }
+        >
           <Text fontSize={'1.5rem'}>Seja Bem vindo!</Text>
           <Text fontSize={'2rem'}>La Vie est Belle</Text>
         </Box>

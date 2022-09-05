@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "storeName": "La Vie Est Belle",
+    "requestTotal": 89.00,
+    "requestUser": [1],
+    "selected": true
+  },
+  {
+    "id": 2,
+    "storeName": "La Vie Est Belle",
+    "requestTotal": 100.00,
+    "requestUser": [2, 3],
+    "selected": false
+  },
+  {
+    "id": 3,
+    "storeName": "Pizza Mais",
+    "requestTotal": 120.00,
+    "requestUser": [4, 5, 6],
+    "selected": false
+  }
+]

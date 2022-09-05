@@ -80,28 +80,6 @@ body {
   background: $white;
 }
 
-// ---------------------------------------------
-// TODO: refatorar para componente de calendário
-// ---------------------------------------------
-.calendar {
-  font-size: 0.8rem;
-  color: #ddd;
-
-  .badgeOn {
-    height: 7px;
-    width: 30px;
-    background: #00FF00;
-    border-radius: 10px;
-  }
-  
-  .badgeOff {
-    height:7px;
-    width: 30px;
-    background: #D61C4E;
-    border-radius: 10px;
-  }
-}
-
 .floatingItem {
   
   color: $black-1;

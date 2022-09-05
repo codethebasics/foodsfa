@@ -148,8 +148,8 @@ export default function Sidebar({ close }) {
           </ListItem>
         </List>
       </Flex>
-      <Flex alignItems={'center'} justifyContent={'space-between'}>
-        <Button onClick={close} colorScheme={'light'} size={'sm'}>
+      <Flex alignItems={'center'} justifyContent={'flex-end'} p={5}>
+        <Button onClick={close} colorScheme={'blackAlpha'} size={'sm'}>
           close
         </Button>
       </Flex>

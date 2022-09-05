@@ -2,11 +2,12 @@ import Header from '../../../components/layout/header/Header'
 import Footer from '../../../components/layout/footer/Footer'
 
 // import { useState } from 'react'
-// import { useRouter } from 'next/router'
+import { Router, useRouter } from 'next/router'
 import { Flex, Image, Text } from '@chakra-ui/react'
+import Calendar from '../../../components/calendar/Calendar'
 
 export default function Spot() {
-  // const router = useRouter()
+  const router = useRouter()
   // const { id } = router.query
 
   return (
@@ -30,61 +31,10 @@ export default function Spot() {
           <Text fontSize={'0.8rem'}>Vila Paulista, Curitiba.</Text>
         </Flex>
         <Flex direction={'column'} px={5}>
-          <Text color={'#FFCC00'}>Horários de Funcionamento:</Text>
-          <table className={'calendar'}>
-            <tbody>
-              <tr>
-                <td>
-                  <div className={'badgeOn'} />
-                </td>
-                <td>
-                  <div className={'badgeOff'} />
-                </td>
-                <td>
-                  <div className={'badgeOff'} />
-                </td>
-                <td>
-                  <div className={'badgeOn'} />
-                </td>
-                <td>
-                  <div className={'badgeOn'} />
-                </td>
-                <td>
-                  <div className={'badgeOn'} />
-                </td>
-                <td>
-                  <div className={'badgeOn'} />
-                </td>
-              </tr>
-              <tr>
-                <td>DOM</td>
-                <td>SEG</td>
-                <td>TER</td>
-                <td>QUA</td>
-                <td>QUI</td>
-                <td>SEX</td>
-                <td>SAB</td>
-              </tr>
-              <tr>
-                <td>19h</td>
-                <td></td>
-                <td></td>
-                <td>19h</td>
-                <td>19h</td>
-                <td>19h</td>
-                <td>19h</td>
-              </tr>
-              <tr>
-                <td>00</td>
-                <td></td>
-                <td></td>
-                <td>22h</td>
-                <td>22h</td>
-                <td>22h</td>
-                <td>00h</td>
-              </tr>
-            </tbody>
-          </table>
+          <Text mb={4} color={'#FFCC00'}>
+            Horários de Funcionamento:
+          </Text>
+          <Calendar />
         </Flex>
       </Flex>
       <Footer
@@ -97,11 +47,15 @@ export default function Spot() {
             Iniciar Pedido...
           </Text>
           <Image
+            cursor={'pointer'}
             src={'/img/bag.svg'}
             alt={'bag'}
             width={10}
             pr={2}
             justifySelf={'flex-end'}
+            onClick={() =>
+              router.push(`${process.env.NEXT_PUBLIC_APP_URL}/spot/1/menu`)
+            }
           />
         </Flex>
       </Footer>
