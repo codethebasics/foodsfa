@@ -2,13 +2,18 @@ import Header from '../../../components/layout/header/Header'
 import Footer from '../../../components/layout/footer/Footer'
 
 // import { useState } from 'react'
-import { Router, useRouter } from 'next/router'
+import { useRouter } from 'next/router'
 import { Flex, Image, Text } from '@chakra-ui/react'
 import Calendar from '../../../components/calendar/Calendar'
+import { useEffect } from 'react'
 
 export default function Spot() {
   const router = useRouter()
-  // const { id } = router.query
+  const { id } = router.query
+
+  useEffect(() => {
+    console.log(id)
+  })
 
   return (
     <>

@@ -51,28 +51,28 @@ export default function Calendar() {
       <tbody>
         <tr>
           {data.map(day => (
-            <td>
+            <td key={day}>
               <div className={day.closed ? styles.badgeOff : styles.badgeOn} />
             </td>
           ))}
         </tr>
         <tr>
           {data.map(day => (
-            <td>
+            <td key={day}>
               <span>{day.dayOfWeek}</span>
             </td>
           ))}
         </tr>
         <tr>
           {data.map(day => (
-            <td>
+            <td key={day}>
               <span>{!day.closed && day.openAt}</span>
             </td>
           ))}
         </tr>
         <tr>
           {data.map(day => (
-            <td>
+            <td key={day}>
               <span>{!day.closed && day.closeAt}</span>
             </td>
           ))}

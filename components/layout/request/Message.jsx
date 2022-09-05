@@ -7,7 +7,6 @@ export default function Message({
   total,
   idPedido,
   estabelecimento,
-  type,
   borderRadius,
   backgroundColor,
   color,

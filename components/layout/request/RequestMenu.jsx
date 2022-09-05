@@ -36,6 +36,7 @@ export default function RequestMenu() {
           <List width={'100%'}>
             {requests.map(request => (
               <ListItem
+                key={request}
                 width={'100%'}
                 borderRadius={'30px 0 0 30px'}
                 mt={1}
