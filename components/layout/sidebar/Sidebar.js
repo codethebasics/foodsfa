@@ -1,7 +1,6 @@
 import {
   Flex,
   Box,
-  Button,
   Image,
   Text,
   Circle,
