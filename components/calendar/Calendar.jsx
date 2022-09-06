@@ -47,37 +47,41 @@ const data = [
 
 export default function Calendar() {
   return (
-    <table className={styles.calendar}>
-      <tbody>
-        <tr>
-          {data.map(day => (
-            <td key={day}>
-              <div className={day.closed ? styles.badgeOff : styles.badgeOn} />
-            </td>
-          ))}
-        </tr>
-        <tr>
-          {data.map(day => (
-            <td key={day}>
-              <span>{day.dayOfWeek}</span>
-            </td>
-          ))}
-        </tr>
-        <tr>
-          {data.map(day => (
-            <td key={day}>
-              <span>{!day.closed && day.openAt}</span>
-            </td>
-          ))}
-        </tr>
-        <tr>
-          {data.map(day => (
-            <td key={day}>
-              <span>{!day.closed && day.closeAt}</span>
-            </td>
-          ))}
-        </tr>
-      </tbody>
-    </table>
+    <div className={styles.calendarContainer}>
+      <table className={styles.calendar}>
+        <tbody>
+          <tr>
+            {data.map(day => (
+              <td key={day.dayOfWeek}>
+                <div
+                  className={day.closed ? styles.badgeOff : styles.badgeOn}
+                />
+              </td>
+            ))}
+          </tr>
+          <tr>
+            {data.map(day => (
+              <td key={day.dayOfWeek}>
+                <span>{day.dayOfWeek}</span>
+              </td>
+            ))}
+          </tr>
+          <tr>
+            {data.map(day => (
+              <td key={day.dayOfWeek}>
+                <span>{!day.closed && day.openAt}</span>
+              </td>
+            ))}
+          </tr>
+          <tr>
+            {data.map(day => (
+              <td key={day.dayOfWeek}>
+                <span>{!day.closed && day.closeAt}</span>
+              </td>
+            ))}
+          </tr>
+        </tbody>
+      </table>
+    </div>
   )
 }

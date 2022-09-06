@@ -40,7 +40,9 @@ export default function RequestMenu() {
                 width={'100%'}
                 borderRadius={'30px 0 0 30px'}
                 mt={1}
-                className={request.selected && styles.selected}
+                className={`${request.selected && styles.selected} ${
+                  styles.menuItem
+                }`}
               >
                 <Flex alignItems={'center'}>
                   <Box color={'#373435'} p={2} borderRadius={'0 15px 15px 0'}>
@@ -75,7 +77,13 @@ export default function RequestMenu() {
       </main>
       <footer>
         <Flex justifyContent={'space-between'} alignItems={'center'} p={5}>
-          <Text>Total R$:</Text>
+          <Text
+            fontWeight={'bold'}
+            fontSize={'0.8rem'}
+            textTransform={'uppercase'}
+          >
+            Total R$:
+          </Text>
           <Text fontSize={'1.5rem'} fontWeight={'bold'}>
             {requests
               .map(request => request.requestTotal)

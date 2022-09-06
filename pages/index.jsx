@@ -1,10 +1,5 @@
-import { Flex } from '@chakra-ui/react'
-import RequestData from '../components/layout/request/RequestData'
+import RequestMenu from '../components/layout/request/RequestMenu'
 
 export default function Home() {
-  return (
-    <Flex direction={'column'}>
-      <RequestData />
-    </Flex>
-  )
+  return <RequestMenu />
 }

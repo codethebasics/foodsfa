@@ -1,21 +1,8 @@
 @import '/styles/colors';
 
-// .cHeader {
-//   background-color: $yellow;
-//   color: $black-0;
-
-//   &__cta {
-//     color: $white;
-//     background: $black-1;
-//     padding: 0.25rem 0.5rem;
-//     border-radius: 0.2rem;
-//     font-size: 0.8rem;
-//   }
-// }
-
 .cHeader {
   z-index: 9;
   background: $black-2;
   width: 100%;
-  max-width: 360px;
+  max-width: 400px;
 }

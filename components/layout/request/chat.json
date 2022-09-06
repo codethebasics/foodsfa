@@ -63,6 +63,15 @@
         "text": "Em Análise"
       },
       "footer": null
+    },
+    {
+      "id": 5,
+      "type": "success",
+      "header": null,
+      "body": {
+        "text": "mensagem de teste"
+      },
+      "footer": null
     }
   ]
 }

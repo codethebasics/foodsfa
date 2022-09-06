@@ -1,8 +1,8 @@
 import { Flex, Box, Image, Text } from '@chakra-ui/react'
-import styles from './Message.module.scss'
+import styles from './Chat.module.scss'
 
 import Message from './Message'
-import chat from './messages.json'
+import chat from './chat.json'
 
 export default function RequestData() {
   const backgroundColor = type => {
@@ -17,12 +17,12 @@ export default function RequestData() {
   }
 
   return (
-    <Flex
+    <div
       className={styles.wrapper}
-      direction={'column'}
-      backgroundColor={'#FFCC00'}
-      color={'#222'}
-      height={'100%'}
+      // direction={'column'}
+      // backgroundColor={'#FFCC00'}
+      // color={'#222'}
+      // height={'100%'}
     >
       <header>
         <Flex
@@ -109,6 +109,6 @@ export default function RequestData() {
           </Flex>
         </Flex>
       </footer>
-    </Flex>
+    </div>
   )
 }

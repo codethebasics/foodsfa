@@ -1,0 +1,28 @@
+.wrapper {
+  height: 100%;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  grid-template-columns: 1fr;
+  grid-template-areas: 
+    "header"
+    "main"
+    "footer";
+
+  header {
+    grid-area: header;
+    background-color: #FFCC00;
+    color: #222;
+  }
+
+  main {
+    grid-area: main;
+    overflow: auto;
+    height: 100%;
+  }
+
+  footer {
+    grid-area: footer;
+    background-color: #FFCC00;
+    color: #222;
+  }
+}

@@ -1,5 +1,5 @@
 import { Flex, Box, Text } from '@chakra-ui/react'
-import styles from './Message.module.scss'
+import styles from './Chat.module.scss'
 
 export default function Message({
   children,

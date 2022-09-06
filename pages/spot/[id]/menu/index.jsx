@@ -12,12 +12,14 @@ import 'swiper/css/pagination'
 import CategoryCarousel from '../../../../components/category/CategoryCarousel'
 import Products from '../../../../components/product/Products'
 
+import styles from '../Spot.module.scss'
+
 export default function Home() {
   const [showSidebarMenu, setShowSidebarMenu] = useState(false)
   const router = useRouter()
 
   return (
-    <>
+    <div className={styles.wrapper}>
       <Header borderRadius={'30px'} p={'0 15px'} position={'fixed'}>
         <Flex
           justifyContent={'space-between'}
@@ -50,102 +52,116 @@ export default function Home() {
       <Box className={showSidebarMenu ? 'sidebar show' : 'sidebar hide'}>
         <Sidebar close={() => setShowSidebarMenu(false)} />
       </Box>
-      <Flex
-        alignItems={'flex-end'}
-        justifyContent={'space-between'}
-        backgroundImage={'url(/img/restaurant.png)'}
-        borderRadius={'30px'}
-        height={'200px'}
-        p={5}
-        color={'#000'}
-        position={'relative'}
-      >
-        <Box
-          cursor={'pointer'}
-          lineHeight={'1.8rem'}
-          width={'100%'}
-          onClick={() =>
-            router.push(`${process.env.NEXT_PUBLIC_APP_URL}/spot/1`)
-          }
+      <main>
+        <Flex
+          alignItems={'flex-end'}
+          justifyContent={'space-between'}
+          backgroundImage={'url(/img/restaurant.png)'}
+          borderRadius={'30px'}
+          height={'200px'}
+          p={5}
+          color={'#000'}
+          overflowY={'auto'}
         >
-          <Text fontSize={'1.5rem'}>Seja Bem vindo!</Text>
-          <Text fontSize={'2rem'}>La Vie est Belle</Text>
-        </Box>
-        <Flex alignSelf={'flex-end'} justifyContent={'flex-end'}>
-          <Flex justifySelf={'flex-end'}>
-            <Box
-              margin={'0 3px'}
-              width={'10px'}
-              height={'10px'}
-              backgroundColor={'#000'}
-              borderRadius={'1000%'}
-            />
-            <Box
-              margin={'0 3px'}
-              width={'10px'}
-              height={'10px'}
-              backgroundColor={'#000'}
-              borderRadius={'1000%'}
-            />
+          <Box
+            cursor={'pointer'}
+            lineHeight={'1.8rem'}
+            width={'100%'}
+            onClick={() =>
+              router.push(`${process.env.NEXT_PUBLIC_APP_URL}/spot/1`)
+            }
+          >
+            <Text
+              color={'#FFF'}
+              textShadow={'0 3px 3px #000'}
+              fontSize={'1.5rem'}
+            >
+              Seja Bem vindo!
+            </Text>
+            <Text
+              color={'#FFF'}
+              textShadow={'0 3px 3px #000'}
+              fontSize={'2rem'}
+            >
+              La Vie est Belle
+            </Text>
+          </Box>
+          <Flex alignSelf={'flex-end'} justifyContent={'flex-end'}>
+            <Flex justifySelf={'flex-end'}>
+              <Box
+                margin={'0 3px'}
+                width={'10px'}
+                height={'10px'}
+                backgroundColor={'#000'}
+                borderRadius={'100%'}
+              />
+              <Box
+                margin={'0 3px'}
+                width={'10px'}
+                height={'10px'}
+                backgroundColor={'#000'}
+                borderRadius={'100%'}
+              />
+            </Flex>
           </Flex>
         </Flex>
-      </Flex>
-      <div className="main">
-        <Flex direction={'column'} height={'100%'}>
-          <Flex p={5} alignItems={'center'} justifyContent={'space-between'}>
-            <Flex>
-              <Text>Explore nossas&nbsp;</Text>
-              <Text color={'#FFCC00'} fontWeight={'bold'}>
-                Categorias
-              </Text>
+        <div className="main">
+          <Flex direction={'column'} height={'100%'}>
+            <Flex p={5} alignItems={'center'} justifyContent={'space-between'}>
+              <Flex>
+                <Text>Explore nossas&nbsp;</Text>
+                <Text color={'#FFCC00'} fontWeight={'bold'}>
+                  Categorias
+                </Text>
+              </Flex>
+              <Flex>
+                <Box
+                  margin={'0 3px'}
+                  width={'10px'}
+                  height={'10px'}
+                  backgroundColor={'#FFCC00'}
+                  borderRadius={'1000%'}
+                />
+                <Box
+                  margin={'0 3px'}
+                  width={'10px'}
+                  height={'10px'}
+                  backgroundColor={'#FFCC00'}
+                  borderRadius={'1000%'}
+                />
+              </Flex>
             </Flex>
-            <Flex>
-              <Box
-                margin={'0 3px'}
-                width={'10px'}
-                height={'10px'}
-                backgroundColor={'#FFCC00'}
-                borderRadius={'1000%'}
-              />
-              <Box
-                margin={'0 3px'}
-                width={'10px'}
-                height={'10px'}
-                backgroundColor={'#FFCC00'}
-                borderRadius={'1000%'}
-              />
+            <Flex mx={5}>
+              <CategoryCarousel />
             </Flex>
+            <Flex p={5} alignItems={'center'} justifyContent={'space-between'}>
+              <Flex>
+                <Text>Mais&nbsp;</Text>
+                <Text color={'#FFCC00'} fontWeight={'bold'}>
+                  Populares
+                </Text>
+              </Flex>
+              <Flex>
+                <Box
+                  margin={'0 3px'}
+                  width={'10px'}
+                  height={'10px'}
+                  backgroundColor={'#FFCC00'}
+                  borderRadius={'1000%'}
+                />
+                <Box
+                  margin={'0 3px'}
+                  width={'10px'}
+                  height={'10px'}
+                  backgroundColor={'#FFCC00'}
+                  borderRadius={'1000%'}
+                />
+              </Flex>
+            </Flex>
+            <Products />
           </Flex>
-          <Flex mx={5}>
-            <CategoryCarousel />
-          </Flex>
-          <Flex p={5} alignItems={'center'} justifyContent={'space-between'}>
-            <Flex>
-              <Text>Mais&nbsp;</Text>
-              <Text color={'#FFCC00'} fontWeight={'bold'}>
-                Populares
-              </Text>
-            </Flex>
-            <Flex>
-              <Box
-                margin={'0 3px'}
-                width={'10px'}
-                height={'10px'}
-                backgroundColor={'#FFCC00'}
-                borderRadius={'1000%'}
-              />
-              <Box
-                margin={'0 3px'}
-                width={'10px'}
-                height={'10px'}
-                backgroundColor={'#FFCC00'}
-                borderRadius={'1000%'}
-              />
-            </Flex>
-          </Flex>
-          <Products />
-        </Flex>
-      </div>
+        </div>
+      </main>
       <Footer
         backgroundColor={'#FFCC00'}
         color={'#000'}
@@ -157,6 +173,6 @@ export default function Home() {
         </Text>
         <Image src={'/img/bag.svg'} alt={'Pedidos'} />
       </Footer>
-    </>
+    </div>
   )
 }
