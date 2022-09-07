@@ -10,6 +10,49 @@ import {
 
 import styles from './Sidebar.module.scss'
 
+const menuItems = [
+  {
+    id: 1,
+    icon: '/img/bell.svg',
+    label: 'Notificações'
+  },
+  {
+    id: 2,
+    icon: '/img/bag-icon.svg',
+    label: 'Meu Carrinho'
+  },
+  {
+    id: 3,
+    icon: '/img/clockback-icon.svg',
+    label: 'Histórico de Ordens'
+  },
+  {
+    id: 4,
+    icon: '/img/page-icon.svg',
+    label: 'Ativar Código Promocional'
+  },
+  {
+    id: 5,
+    icon: '/img/wallet-icon.svg',
+    label: 'Wallet'
+  },
+  {
+    id: 6,
+    icon: '/img/star-icon.svg',
+    label: 'Favoritos'
+  },
+  {
+    id: 7,
+    icon: '/img/cog-icon.svg',
+    label: 'Configurações'
+  },
+  {
+    id: 8,
+    icon: '/img/signout-icon.svg',
+    label: 'Sair'
+  }
+]
+
 export default function Sidebar({ close }) {
   return (
     <div className={styles.wrapper}>
@@ -32,123 +75,21 @@ export default function Sidebar({ close }) {
           borderRadius={'15px 0 0 15px'}
         >
           <List>
-            <ListItem py={3}>
-              <Flex alignItems={'center'}>
-                <Box
-                  color={'#373435'}
-                  backgroundColor={'#FFCC00'}
-                  p={2}
-                  borderRadius={'0 15px 15px 0'}
-                >
-                  icone
-                </Box>
-                <Text ml={2}>Notificações</Text>
-              </Flex>
-            </ListItem>
-            <ListItem py={3}>
-              <Flex alignItems={'center'}>
-                <Box
-                  color={'#373435'}
-                  backgroundColor={'#FFCC00'}
-                  py={2}
-                  px={4}
-                  borderRadius={'0 15px 15px 0'}
-                >
-                  <Image src={'/img/bag-icon.svg'} alt={'Meu Carrinho'} />
-                </Box>
-                <Text ml={2}>Meu Carrinho</Text>
-              </Flex>
-            </ListItem>
-            <ListItem py={3}>
-              <Flex alignItems={'center'}>
-                <Box
-                  color={'#373435'}
-                  backgroundColor={'#FFCC00'}
-                  py={2}
-                  px={4}
-                  borderRadius={'0 15px 15px 0'}
-                >
-                  <Image
-                    src={'/img/historico-icon.svg'}
-                    alt={'Histórico de Ordens'}
-                  />
-                </Box>
-                <Text ml={2}>Histórico de Ordens</Text>
-              </Flex>
-            </ListItem>
-            <ListItem py={3}>
-              <Flex alignItems={'center'}>
-                <Box
-                  color={'#373435'}
-                  backgroundColor={'#FFCC00'}
-                  py={2}
-                  px={4}
-                  borderRadius={'0 15px 15px 0'}
-                >
-                  <Image
-                    src={'/img/page-icon.svg'}
-                    alt={'Ativar Código Promocional'}
-                  />
-                </Box>
-                <Text ml={2}>Ativar Código Promocional</Text>
-              </Flex>
-            </ListItem>
-            <ListItem py={3}>
-              <Flex alignItems={'center'}>
-                <Box
-                  color={'#373435'}
-                  backgroundColor={'#FFCC00'}
-                  py={2}
-                  px={4}
-                  borderRadius={'0 15px 15px 0'}
-                >
-                  <Image src={'/img/wallet-icon.svg'} alt={'Wallet'} />
-                </Box>
-                <Text ml={2}>Wallet</Text>
-              </Flex>
-            </ListItem>
-            <ListItem py={3}>
-              <Flex alignItems={'center'}>
-                <Box
-                  color={'#373435'}
-                  backgroundColor={'#FFCC00'}
-                  py={2}
-                  px={4}
-                  borderRadius={'0 15px 15px 0'}
-                >
-                  <Image src={'/img/star-icon.svg'} alt={'Favoritos'} />
-                </Box>
-                <Text ml={2}>Favoritos</Text>
-              </Flex>
-            </ListItem>
-            <ListItem py={3}>
-              <Flex alignItems={'center'}>
-                <Box
-                  color={'#373435'}
-                  backgroundColor={'#FFCC00'}
-                  py={2}
-                  px={4}
-                  borderRadius={'0 15px 15px 0'}
-                >
-                  <Image src={'/img/cog-icon.svg'} alt={'Configurações'} />
-                </Box>
-                <Text ml={2}>Configurações</Text>
-              </Flex>
-            </ListItem>
-            <ListItem py={3}>
-              <Flex alignItems={'center'}>
-                <Box
-                  color={'#373435'}
-                  backgroundColor={'#FFCC00'}
-                  py={2}
-                  px={4}
-                  borderRadius={'0 15px 15px 0'}
-                >
-                  <Image src={'/img/signout-icon.svg'} alt={'Sair'} />
-                </Box>
-                <Text ml={2}>Sair</Text>
-              </Flex>
-            </ListItem>
+            {menuItems.map(item => (
+              <ListItem py={2}>
+                <Flex alignItems={'center'}>
+                  <Box
+                    color={'#373435'}
+                    backgroundColor={'#FFCC00'}
+                    p={2}
+                    borderRadius={'0 15px 15px 0'}
+                  >
+                    <Image src={item.icon} alt={item.label} width={25} />
+                  </Box>
+                  <Text ml={2}>{item.label}</Text>
+                </Flex>
+              </ListItem>
+            ))}
           </List>
         </Flex>
       </main>
