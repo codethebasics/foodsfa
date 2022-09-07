@@ -1,20 +1,27 @@
 [
   {
     "id": 1,
+    "name": "Mais Populares",
+    "description": "Pedidos frequentes",
+    "image": "/img/fire.png",
+    "imageAlt": "Pizza"
+  },
+  {
+    "id": 2,
     "name": "Pizzas grandes",
     "description": "Salgadas",
     "image": "/img/pizza.png",
     "imageAlt": "Pizza"
   },
   {
-    "id": 2,
+    "id": 3,
     "name": "Lanches",
     "description": "X-burguers",
     "image": "/img/hamburger.png",
     "imageAlt": "Hamburger"
   },
   {
-    "id": 3,
+    "id": 4,
     "name": "Salgados",
     "description": "Coxinhas, esfirras...",
     "image": "/img/salgados.png",
