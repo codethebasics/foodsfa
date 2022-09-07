@@ -76,7 +76,7 @@ export default function Sidebar({ close }) {
         >
           <List>
             {menuItems.map(item => (
-              <ListItem py={2}>
+              <ListItem py={2} key={item.label}>
                 <Flex alignItems={'center'}>
                   <Box
                     color={'#373435'}
