@@ -3,8 +3,13 @@
   flex-direction: column;
   height: 100%;
 
+  
   main {
     height: 100%;
     overflow: auto;
+
+    .spotBanner {
+      border-radius: 20px;
+    }
   }
 }

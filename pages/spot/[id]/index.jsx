@@ -55,9 +55,10 @@ export default function Spot() {
         <Flex direction={'column'} p={5}>
           <Image
             src={'/img/restaurant.png'}
-            height={400}
+            height={200}
             width={400}
             alt={'restaurante'}
+            className={styles.spotBanner}
           />
           <Flex direction={'column'} py={5}>
             <Text color={'#FFCC00'}>Rua Otto Rosenberg, 381.</Text>

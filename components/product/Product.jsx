@@ -23,7 +23,7 @@ export default function Product({
         borderRadius={'20px 0 0 20px'}
       />
       <Flex direction={'column'} width={'100%'}>
-        <Box p={2}>
+        <Box py={2} px={4}>
           <Text
             textTransform={'uppercase'}
             fontWeight={'bold'}
@@ -32,11 +32,12 @@ export default function Product({
             {name}
           </Text>
         </Box>
-        <Box p={2}>
+        <Box py={2} px={4}>
           <Text fontSize={'0.9rem'}>{description}</Text>
         </Box>
         <Flex
-          p={2}
+          py={2}
+          px={4}
           justifyContent={'space-between'}
           alignItems={'center'}
           width={'100%'}

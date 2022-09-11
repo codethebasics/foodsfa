@@ -3,7 +3,7 @@ import products from './products.json'
 import { Flex } from '@chakra-ui/react'
 import Product from './Product'
 
-export default function Products() {
+export default function Products({ categoryId }) {
   return (
     <Flex
       height={'100%'}
@@ -14,7 +14,9 @@ export default function Products() {
       borderRadius={'4px'}
     >
       {products
-        .filter(product => product.category.includes(0))
+        .filter(product =>
+          categoryId ? product.category.includes(categoryId) : product.category
+        )
         .map(product => (
           <Product
             key={product.id}

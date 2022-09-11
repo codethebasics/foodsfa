@@ -158,7 +158,7 @@ export default function Home() {
                 />
               </Flex>
             </Flex>
-            <Products />
+            <Products categoryId={1} />
           </Flex>
         </div>
       </main>
