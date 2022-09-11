@@ -16,6 +16,7 @@ import styles from '../Spot.module.scss'
 
 export default function Home() {
   const [showSidebarMenu, setShowSidebarMenu] = useState(false)
+  const [categoryId, setCategoryId] = useState(0)
   const router = useRouter()
 
   return (
@@ -132,7 +133,7 @@ export default function Home() {
               </Flex>
             </Flex>
             <Flex mx={5}>
-              <CategoryCarousel />
+              <CategoryCarousel setCategoryId={setCategoryId} />
             </Flex>
             <Flex p={5} alignItems={'center'} justifyContent={'space-between'}>
               <Flex>
@@ -158,7 +159,7 @@ export default function Home() {
                 />
               </Flex>
             </Flex>
-            <Products categoryId={1} />
+            <Products categoryId={categoryId} />
           </Flex>
         </div>
       </main>
@@ -168,9 +169,12 @@ export default function Home() {
         borderRadius={'30px'}
         justifyContent={'space-between'}
       >
-        <Text fontWeight={'bold'} fontSize={'2rem'}>
-          R$ 180,00
-        </Text>
+        <Flex alignItems={'center'}>
+          <Text fontWeight={'bold'}>R$</Text>
+          <Text fontWeight={'bold'} fontSize={'2rem'}>
+            180,00
+          </Text>
+        </Flex>
         <Image src={'/img/bag.svg'} alt={'Pedidos'} />
       </Footer>
     </div>

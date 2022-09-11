@@ -52,25 +52,34 @@ export default function Spot() {
         <Sidebar close={() => setShowSidebarMenu(false)} />
       </Box>
       <main>
-        <Flex direction={'column'} p={5}>
-          <Image
-            src={'/img/restaurant.png'}
-            height={200}
-            width={400}
-            alt={'restaurante'}
-            className={styles.spotBanner}
-          />
+        <Flex
+          direction={'column'}
+          p={5}
+          justifyContent={'space-between'}
+          height={'100%'}
+        >
           <Flex direction={'column'} py={5}>
-            <Text color={'#FFCC00'}>Rua Otto Rosenberg, 381.</Text>
+            <Image
+              src={'/img/restaurant.png'}
+              height={200}
+              width={400}
+              alt={'restaurante'}
+              className={styles.spotBanner}
+            />
+            <Text color={'#FFCC00'} mt={5}>
+              Rua Otto Rosenberg, 381.
+            </Text>
             <Text fontSize={'0.8rem'}>Vila Paulista, Curitiba.</Text>
           </Flex>
           <Flex direction={'column'}>
-            <Text mb={4} color={'#FFCC00'}>
-              Horários de Funcionamento:
-            </Text>
-          </Flex>
-          <Flex mb={5}>
-            <Calendar />
+            <Flex>
+              <Text mb={4} color={'#FFCC00'}>
+                Horários de Funcionamento:
+              </Text>
+            </Flex>
+            <Flex mb={5}>
+              <Calendar />
+            </Flex>
           </Flex>
         </Flex>
       </main>

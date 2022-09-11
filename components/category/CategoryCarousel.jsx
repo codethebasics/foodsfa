@@ -5,7 +5,7 @@ import { Image } from '@chakra-ui/react'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import { FreeMode, Pagination } from 'swiper'
 
-export default function CategoryCarousel() {
+export default function CategoryCarousel({ setCategoryId }) {
   return (
     <Swiper
       freeMode={true}
@@ -14,7 +14,11 @@ export default function CategoryCarousel() {
       modules={[FreeMode, Pagination]}
     >
       {categories.map(category => (
-        <SwiperSlide key={category.id} className={styles.slider}>
+        <SwiperSlide
+          key={category.id}
+          className={styles.slider}
+          onClick={() => setCategoryId(category.id)}
+        >
           <div className={styles.product}>
             <div className={styles.top} />
             <Image
