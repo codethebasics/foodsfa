@@ -1,7 +1,13 @@
+.slider {
+  display: flex;
+  align-items: stretch;
+}
+
 .product {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-between;
   position: relative;
   z-index: 2;  
   margin: 15px;
@@ -12,33 +18,41 @@
     width: 85%;
     height: 100px;
     position: absolute;
-    top: -5px;
     z-index: -2;
     border-radius: 15px 15px 0 0;
   }
   
+  .categoryIcon {
+    position: relative;
+    top: 25px;
+  }
+
   .bottom {
     color: #222;
     background: #FFF;
-    padding: 50px 5px 15px 5px;
+    padding-top: 40px;
     border-radius: 30px 30px 15px 15px;
     position: relative;      
     z-index: -1;
     width: 100%;
-    min-width: 120px;
+    width: 150px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     
-    bottom: 40px;
     line-height: 1rem;
 
-    span.name {
+    div.name {
       text-transform: uppercase;
       display: block;
       font-weight: bold;
-      padding: 5px 0;
+      padding: 0 15px;
     }
 
-    span.description {    
+    div.description {    
       font-size: 0.9rem;
+      padding: 10px 15px;
     }
   }
    

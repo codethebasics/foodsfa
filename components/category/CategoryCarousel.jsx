@@ -14,13 +14,18 @@ export default function CategoryCarousel() {
       modules={[FreeMode, Pagination]}
     >
       {categories.map(category => (
-        <SwiperSlide key={category.id}>
+        <SwiperSlide key={category.id} className={styles.slider}>
           <div className={styles.product}>
             <div className={styles.top} />
-            <Image src={category.image} alt={category.imageAlt} />
+            <Image
+              src={category.image}
+              alt={category.imageAlt}
+              className={styles.categoryIcon}
+              height={75}
+            />
             <div className={styles.bottom}>
-              <span className={styles.name}>{category.name}</span>
-              <span className={styles.description}>{category.description}</span>
+              <div className={styles.name}>{category.name}</div>
+              <div className={styles.description}>{category.description}</div>
             </div>
           </div>
         </SwiperSlide>

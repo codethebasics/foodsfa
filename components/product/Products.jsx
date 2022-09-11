@@ -13,17 +13,19 @@ export default function Products() {
       mb={3}
       borderRadius={'4px'}
     >
-      {products.map(product => (
-        <Product
-          key={product.id}
-          imageSrc={product.image}
-          imageAlt={product.imageAlt}
-          name={product.name}
-          description={product.description}
-          price={product.price}
-          pricePromo={product.pricePromo}
-        />
-      ))}
+      {products
+        .filter(product => product.category.includes(0))
+        .map(product => (
+          <Product
+            key={product.id}
+            imageSrc={product.image}
+            imageAlt={product.imageAlt}
+            name={product.name}
+            description={product.description}
+            price={product.price}
+            pricePromo={product.pricePromo}
+          />
+        ))}
     </Flex>
   )
 }
