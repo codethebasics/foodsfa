@@ -80,12 +80,13 @@
   background: #222;
   border-radius: 20px;
   padding: 2.5px;
-  width: 90px;
 
   div:nth-child(2) {
     color: #fff;
     padding: 0 5px;
     font-size: 0.8rem;
+    width: 40px;
+    text-align: center;
   }
 
   div:first-child , div:last-child {

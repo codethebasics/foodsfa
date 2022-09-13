@@ -5,7 +5,7 @@ import { useRouter } from 'next/router'
 
 export default function Pedido() {
   const [quantity, setQuantity] = useState(0)
-  const [, setProduct] = useState(undefined)
+  const [product, setProduct] = useState(undefined)
   const router = useRouter()
   const { itemId } = router.query
 
@@ -26,7 +26,7 @@ export default function Pedido() {
         }
       ).then(response => response.json())
 
-      setProduct(products.filter(product => product.id == itemId))
+      setProduct(products.find(product => product.id == itemId))
     }
 
     fetchProduct()
@@ -37,8 +37,8 @@ export default function Pedido() {
       <div className={styles.item}>
         <div className={styles.image}>
           <Image
-            src={'/img/item_pizza_italiana.png'}
-            alt={'Pizza Italiana'}
+            src={product?.image}
+            alt={product?.imageAlt}
             borderRadius={'0 0 25% 25%'}
             boxShadow={'0 10px 0 #FFCC00'}
           />
@@ -46,8 +46,7 @@ export default function Pedido() {
         <div className={styles.resume}>
           <div className={styles.header}>
             <div className={styles.itemLabel}>
-              <div className={styles.itemName}>Quatro queijos</div>
-              <div className={styles.itemDescription}>Moda da Casa</div>
+              <div className={styles.itemName}>{product?.name}</div>
             </div>
             <div className={styles.counter}>
               <div
@@ -64,11 +63,15 @@ export default function Pedido() {
             </div>
           </div>
           <div className={styles.description}>
-            <span>Mussarela, tomate, gorgonzola, parmesão e orégano</span>
+            <span>{product?.description}</span>
           </div>
           <div className={styles.price}>
-            <div className={styles.originalPrice}>R$100,00</div>
-            <div className={styles.promoPrice}>R$70,00</div>
+            <div className={styles.originalPrice}>
+              R${product?.price.toFixed(2)}
+            </div>
+            <div className={styles.promoPrice}>
+              R${product?.pricePromo.toFixed(2)}
+            </div>
           </div>
         </div>
       </div>
