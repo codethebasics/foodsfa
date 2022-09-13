@@ -5,7 +5,7 @@ import { useRouter } from 'next/router'
 
 export default function Pedido() {
   const [quantity, setQuantity] = useState(0)
-  const [product, setProduct] = useState(undefined)
+  const [, setProduct] = useState(undefined)
   const router = useRouter()
   const { itemId } = router.query
 
