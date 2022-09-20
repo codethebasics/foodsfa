@@ -1,7 +1,7 @@
 import styles from './Item.module.scss'
 
 import { useState } from 'react'
-import { Flex, Box, Image, Text, Checkbox } from '@chakra-ui/react'
+import { Flex, Box, Image, Text } from '@chakra-ui/react'
 
 import { Size, Toggle } from '../controls'
 
@@ -12,10 +12,30 @@ export default function Item({
   imageAlt,
   price,
   promoPrice,
-  toggleOption,
-  checkOption
+  toggleOption
 }) {
   const [quantity, setQuantity] = useState(1)
+  const [, setSelectedSize] = useState('P')
+  const [selectedOptions, setSelectedOptions] = useState([
+    {
+      id: 1,
+      label: 'Picles',
+      description: 'Picles com parmesão',
+      status: true
+    },
+    {
+      id: 2,
+      label: 'Alface',
+      description: '2 folhas de alface',
+      status: true
+    },
+    {
+      id: 3,
+      label: 'Tomate',
+      description: '2 fatias de tomate',
+      status: true
+    }
+  ])
 
   const increment = () => {
     setQuantity(quantity + 1)
@@ -23,6 +43,16 @@ export default function Item({
 
   const decrement = () => {
     quantity > 1 ? setQuantity(quantity - 1) : setQuantity(1)
+  }
+
+  const updateOptions = selectedOption => {
+    const options = selectedOptions.slice(0)
+    options.forEach(option => {
+      if (option.id == selectedOption.id) {
+        option.status = selectedOption.status
+      }
+    })
+    setSelectedOptions(options)
   }
 
   return (
@@ -72,26 +102,20 @@ export default function Item({
         </Flex>
       </Flex>
       <Text p={5}>Personalize seu pedido</Text>
-      <Size />
+      <Size onSelect={setSelectedSize} />
       <div className={styles.separator} />
-      {toggleOption && <Toggle />}
-      <div className={styles.separator} />
-      {checkOption && (
-        <>
-          <Flex p={5} justifyContent={'space-between'}>
-            <Text>{'Cebola'}</Text>
-            <Checkbox colorScheme={'dark'} size={'lg'} />
-          </Flex>
-          <Flex p={5} justifyContent={'space-between'}>
-            <Text>{'Alface'}</Text>
-            <Checkbox colorScheme={'dark'} size={'lg'} />
-          </Flex>
-          <Flex p={5} justifyContent={'space-between'}>
-            <Text>{'Tomate'}</Text>
-            <Checkbox colorScheme={'dark'} size={'lg'} />
-          </Flex>
-        </>
-      )}
+      {toggleOption &&
+        selectedOptions.map(option => (
+          <Toggle
+            key={option.id}
+            id={option.id}
+            status={option.status}
+            label={option.label}
+            description={option.description}
+            storeOption={updateOptions}
+          />
+        ))}
+      <div>SelectedOptions: {JSON.stringify(selectedOptions)}</div>
     </Flex>
   )
 }

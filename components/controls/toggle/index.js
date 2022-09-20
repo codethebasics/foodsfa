@@ -1,21 +1,32 @@
 import { useState } from 'react'
 import { ToggleButton, ToggleContainer } from './styles'
 
-export default function Toggle({ status }) {
+export default function Toggle({
+  id,
+  label,
+  description,
+  status,
+  storeOption
+}) {
   const [active, setActive] = useState(status)
+
+  const changeActive = () => {
+    setActive(!active)
+    storeOption({
+      id: id,
+      label: label,
+      description: description,
+      status: !active
+    })
+  }
 
   return (
     <ToggleContainer>
       <div>
-        <div className={'label'}>Opcional</div>
-        <div className={'description'}>Picles com parmesão</div>
+        <div className={'label'}>{label}</div>
+        <div className={'description'}>{description}</div>
       </div>
-      <ToggleButton
-        onClick={() => {
-          setActive(!active)
-        }}
-        className={active ? 'active' : ''}
-      >
+      <ToggleButton onClick={changeActive} className={active ? 'active' : ''}>
         <div />
       </ToggleButton>
     </ToggleContainer>

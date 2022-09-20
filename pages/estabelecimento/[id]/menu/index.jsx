@@ -69,7 +69,9 @@ export default function Home() {
             lineHeight={'1.8rem'}
             width={'100%'}
             onClick={() =>
-              router.push(`${process.env.NEXT_PUBLIC_APP_URL}/spot/1`)
+              router.push(
+                `${process.env.NEXT_PUBLIC_APP_URL}/estabelecimento/1`
+              )
             }
           >
             <Text

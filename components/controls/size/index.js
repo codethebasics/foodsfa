@@ -3,7 +3,7 @@ import SizeOption from './option'
 import { useState } from 'react'
 import { Flex } from '@chakra-ui/react'
 
-export default function Size() {
+export default function Size({ onSelect }) {
   const [, setSelectedOption] = useState('')
   const [options, setOptions] = useState([
     {
@@ -44,6 +44,7 @@ export default function Size() {
     )
     setOptions(resetArray)
     setSelectedOption(selectedOption)
+    onSelect(selectedOption.size)
   }
 
   return (

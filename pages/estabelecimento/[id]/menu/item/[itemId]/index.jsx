@@ -87,7 +87,6 @@ export default function Pedido() {
           price={product?.price}
           promoPrice={product?.pricePromo}
           toggleOption={true}
-          checkOption={true}
         />
       </main>
       <footer className={styles.itemFooter}>

@@ -98,7 +98,9 @@ export default function Spot() {
             pr={2}
             justifySelf={'flex-end'}
             onClick={() =>
-              router.push(`${process.env.NEXT_PUBLIC_APP_URL}/spot/1/menu`)
+              router.push(
+                `${process.env.NEXT_PUBLIC_APP_URL}/estabelecimento/1/menu`
+              )
             }
           />
         </Flex>
