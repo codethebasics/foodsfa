@@ -1,6 +1,8 @@
 import { Flex, Box, Image, Text } from '@chakra-ui/react'
+import { useRouter } from 'next/router'
 
 export default function Product({
+  productId,
   imageSrc,
   imageAlt,
   name,
@@ -8,6 +10,12 @@ export default function Product({
   price,
   pricePromo
 }) {
+  const router = useRouter()
+
+  const productDetail = () => {
+    router.push(`${router.asPath}/item/${productId}`)
+  }
+
   return (
     <Flex
       lineHeight={'1rem'}
@@ -15,6 +23,7 @@ export default function Product({
       backgroundColor={'#fff'}
       borderRadius={'15px'}
       my={2}
+      onClick={productDetail}
     >
       <Image
         src={imageSrc}

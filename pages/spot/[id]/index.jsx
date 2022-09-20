@@ -11,11 +11,9 @@ import { useState, useEffect } from 'react'
 export default function Spot() {
   const [showSidebarMenu, setShowSidebarMenu] = useState(false)
   const router = useRouter()
-  const { id } = router.query
+  // const { id } = router.query
 
-  useEffect(() => {
-    console.log(id)
-  })
+  useEffect(() => {})
 
   return (
     <div className={styles.wrapper}>

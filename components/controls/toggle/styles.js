@@ -5,6 +5,10 @@ export const ToggleContainer = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  .description {
+    font-size: 0.8rem;
+  }
 `
 
 export const ToggleButton = styled.div`

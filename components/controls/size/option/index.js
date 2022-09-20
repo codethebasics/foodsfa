@@ -1,5 +1,4 @@
-import { useState } from 'react'
-import { Option } from './style'
+import { StyledSizeOption } from './style'
 
 export default function SizeOption({
   label,
@@ -7,24 +6,24 @@ export default function SizeOption({
   symbol,
   price,
   size,
-  selected
+  selected,
+  onSelect
 }) {
-  const [optionSelected, setOptionSelected] = useState(selected)
   const select = () => {
-    setOptionSelected(!optionSelected)
+    onSelect()
   }
 
   return (
-    <Option onClick={select} selected={optionSelected}>
+    <StyledSizeOption onClick={select} selected={selected}>
       <div>
         <span>{label}</span>
         <span>{description}</span>
       </div>
       <div>
         <span>{symbol}</span>
-        <span>{price.toFixed(2)}</span>
+        <span>{price?.toFixed(2)}</span>
         <span>{size}</span>
       </div>
-    </Option>
+    </StyledSizeOption>
   )
 }

@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-export const Option = styled.div`
+export const StyledSizeOption = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;

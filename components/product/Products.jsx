@@ -12,6 +12,7 @@ export default function Products({ categoryId }) {
       p={3}
       mb={3}
       borderRadius={'4px'}
+      cursor={'pointer'}
     >
       {products
         .filter(product =>
@@ -20,6 +21,7 @@ export default function Products({ categoryId }) {
         .map(product => (
           <Product
             key={product.id}
+            productId={product.id}
             imageSrc={product.image}
             imageAlt={product.imageAlt}
             name={product.name}

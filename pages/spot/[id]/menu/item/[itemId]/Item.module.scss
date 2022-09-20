@@ -207,3 +207,33 @@
     cursor: pointer;  
   }
 }
+
+.itemFooter {
+  background: rebeccapurple;
+  display: flex;
+  width: 100%;
+  border-radius: 40px;
+
+  > div {
+    cursor: pointer;
+  }
+  
+  > div:first-child {
+    display: flex;
+    background: #4a4a4a;
+    border-radius: 40px 0 0 40px;
+    padding: 15px;
+    width: 100%;
+    justify-content: center;
+  }
+  
+  > div:last-child {
+    display: flex;
+    background: #58A926;
+    border-radius: 0 40px 40px 0;
+    padding: 15px;
+    width: 100%;
+    justify-content: center;
+  }
+
+}
