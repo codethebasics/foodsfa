@@ -9,7 +9,7 @@ export default function CategoryCarousel({ setCategoryId }) {
   return (
     <Swiper
       freeMode={true}
-      slidesPerView={2}
+      slidesPerView={3}
       spaceBetween={10}
       modules={[FreeMode, Pagination]}
     >
@@ -28,8 +28,10 @@ export default function CategoryCarousel({ setCategoryId }) {
               height={75}
             />
             <div className={styles.bottom}>
-              <div className={styles.name}>{category.name}</div>
-              <div className={styles.description}>{category.description}</div>
+              <div>
+                <div className={styles.name}>{category.name}</div>
+                <div className={styles.description}>{category.description}</div>
+              </div>
             </div>
           </div>
         </SwiperSlide>

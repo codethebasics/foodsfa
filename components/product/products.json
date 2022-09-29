@@ -3,7 +3,7 @@
     "id": 1,
     "name": "Pizza Marguerita",
     "description": "Marguerita com brócolis, bacon, tomate, ervilhas, milho e azeitona",
-    "image": "/img/item_pizza_italiana.png",
+    "image": "/img/item_pizza_marguerita.png",
     "imageAlt": "Pizza Marguerita",
     "price": 20,
     "pricePromo": 19,

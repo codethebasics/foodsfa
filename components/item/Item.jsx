@@ -15,7 +15,7 @@ export default function Item({
   toggleOption
 }) {
   const [quantity, setQuantity] = useState(1)
-  const [, setSelectedSize] = useState('P')
+  const [selectedSize, setSelectedSize] = useState('P')
   const [selectedOptions, setSelectedOptions] = useState([
     {
       id: 1,
@@ -67,7 +67,7 @@ export default function Item({
           src={imagePath}
           alt={imageAlt}
           width={'100%'}
-          borderRadius={'0 0 25% 25%'}
+          borderRadius={'0 0 15% 15%'}
           boxShadow={'0 10px 0 #FFCC00'}
         />
         <Flex
@@ -115,6 +115,8 @@ export default function Item({
             storeOption={updateOptions}
           />
         ))}
+      <div>price: R${(promoPrice * quantity).toFixed(2)}</div>
+      <div>SelectedSize: {selectedSize}</div>
       <div>SelectedOptions: {JSON.stringify(selectedOptions)}</div>
     </Flex>
   )

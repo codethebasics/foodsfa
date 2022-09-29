@@ -52,7 +52,6 @@ export default function Spot() {
       <main>
         <Flex
           direction={'column'}
-          p={5}
           justifyContent={'space-between'}
           height={'100%'}
         >
@@ -64,18 +63,14 @@ export default function Spot() {
               alt={'restaurante'}
               className={styles.spotBanner}
             />
-            <Text color={'#FFCC00'} mt={5}>
-              Rua Otto Rosenberg, 381.
-            </Text>
-            <Text fontSize={'0.8rem'}>Vila Paulista, Curitiba.</Text>
-          </Flex>
-          <Flex direction={'column'}>
-            <Flex>
-              <Text mb={4} color={'#FFCC00'}>
+            <Flex direction={'column'} p={5}>
+              <Text color={'#FFCC00'} mt={5}>
+                Rua Otto Rosenberg, 381.
+              </Text>
+              <Text fontSize={'0.8rem'}>Vila Paulista, Curitiba.</Text>
+              <Text my={5} color={'#FFCC00'}>
                 Horários de Funcionamento:
               </Text>
-            </Flex>
-            <Flex mb={5}>
               <Calendar />
             </Flex>
           </Flex>
@@ -84,10 +79,15 @@ export default function Spot() {
       <Footer
         backgroundColor={'#FFCC00'}
         justifyContent={'space-between'}
-        borderRadius={'20px 20px 0 0'}
+        borderRadius={'50px'}
       >
-        <Flex justifyContent={'space-between'} width={'100%'} p={2}>
-          <Text color={'#000'} fontSize={'1.5rem'} fontWeight={'bold'}>
+        <Flex justifyContent={'space-between'} width={'100%'} p={1}>
+          <Text
+            color={'#000'}
+            fontSize={'1.5rem'}
+            fontWeight={'bold'}
+            margin={'auto'}
+          >
             Iniciar Pedido...
           </Text>
           <Image

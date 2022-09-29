@@ -60,10 +60,15 @@ export default function Sidebar({ close }) {
         <Circle width={50} height={50} backgroundColor={'#222'} color={'#fff'}>
           C
         </Circle>
-        <Box px={5}>
-          <Text>Seja bem vindo,</Text>
+        <Flex
+          px={5}
+          lineHeight={'1rem'}
+          direction={'column'}
+          justifyContent={'center'}
+        >
+          <Text fontSize={'0.8rem'}>Seja bem vindo,</Text>
           <Text fontWeight={'bold'}>CassioMarquinhos101 </Text>
-        </Box>
+        </Flex>
       </Flex>
       <main>
         <Flex
@@ -93,7 +98,7 @@ export default function Sidebar({ close }) {
           </List>
         </Flex>
       </main>
-      <Flex alignItems={'center'} justifyContent={'flex-end'} p={2}>
+      <Flex alignItems={'center'} justifyContent={'flex-end'} pt={2}>
         <button onClick={close}>close</button>
       </Flex>
     </div>
