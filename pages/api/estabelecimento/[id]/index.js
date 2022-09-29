@@ -7,6 +7,8 @@
  * @returns response da API alvo
  *
  */
+const estabelecimentos = require('../estabelecimentos.json')
+
 export default function handler(req, res) {
   switch (req.method) {
     case 'GET':
@@ -30,10 +32,13 @@ export default function handler(req, res) {
  *
  */
 const processGET = (req, res) => {
+  const estabelecimento = estabelecimentos.find(
+    estabelecimento => estabelecimento.id == req.query.id
+  )
   res.status(200).json({
     status: 200,
     message: 'Processing GET request',
-    estabelecimento: req.query.id
+    estabelecimento: estabelecimento
   })
 }
 
@@ -43,10 +48,13 @@ const processGET = (req, res) => {
  *
  */
 const processPOST = (req, res) => {
+  const estabelecimento = estabelecimentos.find(
+    estabelecimento => estabelecimento.id == req.query.id
+  )
   res.status(200).json({
     status: 200,
     message: 'Processing POST request',
-    estabelecimento: req.query.id
+    estabelecimento: estabelecimento
   })
 }
 

@@ -1,0 +1,104 @@
+[
+  {
+    "id": 1,
+    "nome": "La Vie est Belle",
+    "bairroCidade": "Vila Paulista, Curitiba",
+    "logradouro": "Rua Otto Rosenberg, 381",
+    "imagem": "",
+    "horariosFuncionamento": [
+      {
+        "dayOfWeek": "DOM",
+        "closed": false,
+        "openAt": "19h",
+        "closeAt": "00h"
+      },
+      {
+        "dayOfWeek": "SEG",
+        "closed": true,
+        "openAt": "19h",
+        "closeAt": "00h"
+      },
+      {
+        "dayOfWeek": "TER",
+        "closed": true,
+        "openAt": "19h",
+        "closeAt": "00h"
+      },
+      {
+        "dayOfWeek": "QUA",
+        "closed": false,
+        "openAt": "19h",
+        "closeAt": "00h"
+      },
+      {
+        "dayOfWeek": "QUI",
+        "closed": false,
+        "openAt": "19h",
+        "closeAt": "00h"
+      },
+      {
+        "dayOfWeek": "SEX",
+        "closed": false,
+        "openAt": "19h",
+        "closeAt": "00h"
+      },
+      {
+        "dayOfWeek": "SAB",
+        "closed": false,
+        "openAt": "19h",
+        "closeAt": "00h"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "nome": "Rei do Pão de Queijo",
+    "bairroCidade": "Brasília, DF",
+    "logradouro": "CLN 313 Bloco C loja 23",
+    "imagem": "",
+    "horariosFuncionamento": [
+      {
+        "dayOfWeek": "DOM",
+        "closed": false,
+        "openAt": "19h",
+        "closeAt": "00h"
+      },
+      {
+        "dayOfWeek": "SEG",
+        "closed": true,
+        "openAt": "19h",
+        "closeAt": "00h"
+      },
+      {
+        "dayOfWeek": "TER",
+        "closed": true,
+        "openAt": "19h",
+        "closeAt": "00h"
+      },
+      {
+        "dayOfWeek": "QUA",
+        "closed": false,
+        "openAt": "19h",
+        "closeAt": "00h"
+      },
+      {
+        "dayOfWeek": "QUI",
+        "closed": false,
+        "openAt": "19h",
+        "closeAt": "00h"
+      },
+      {
+        "dayOfWeek": "SEX",
+        "closed": false,
+        "openAt": "19h",
+        "closeAt": "00h"
+      },
+      {
+        "dayOfWeek": "SAB",
+        "closed": false,
+        "openAt": "19h",
+        "closeAt": "00h"
+      }
+    ]
+  }
+]
