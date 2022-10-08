@@ -3,17 +3,12 @@
  * Lista estabelecimentos
  *
  */
-const list = async filter => {
+export const list = async filter => {
   try {
-    let estabelecimentos = await fetch('/api/estabelecimentos')
-    filter.id &&
-      (estabelecimentos = estabelecimentos.filter(
-        estabelecimento => estabelecimento.id == filter.id
-      ))
-    filter.nome &&
-      (estabelecimentos = estabelecimentos.filter(
-        estabelecimento => estabelecimento.nome == filter.nome
-      ))
+    let estabelecimentos = await fetch('/api/estabelecimentos').then(response =>
+      response.json()
+    )
+    return estabelecimentos.body
   } catch (e) {
     console.log('Erro ao buscar o estabelecimento', e)
   }
@@ -24,18 +19,19 @@ const list = async filter => {
  * Busca estabelecimento pelo ID
  *
  * @param {*} idEstabelecimento
+ *
  */
-const findById = async idEstabelecimento => {
+export const findById = async idEstabelecimento => {
   const isValid = idEstabelecimento > 0
 
   try {
     if (!isValid) {
       throw 'O id deve ser informado'
     }
-
-    return await list().find(
-      estabelecimento => estabelecimento.id == idEstabelecimento
-    )
+    let estabelecimento = await fetch(
+      `/api/estabelecimentos/${idEstabelecimento}`
+    ).then(response => response.json())
+    console.log('estabelecimento =>', estabelecimento)
   } catch (e) {
     console.log(
       `Erro ao buscar estabelecimento pelo ID (${idEstabelecimento})`,
@@ -51,7 +47,7 @@ const findById = async idEstabelecimento => {
  * @param {*} nomeEstabelecimento
  *
  */
-const findByName = async nomeEstabelecimento => {
+export const findByName = async nomeEstabelecimento => {
   try {
     return await list().find(estabelecimento =>
       estabelecimento.nome.includes(nomeEstabelecimento)
@@ -71,7 +67,7 @@ const findByName = async nomeEstabelecimento => {
  * @param {*} estabelecimento
  *
  */
-const save = async estabelecimento => {
+export const save = async estabelecimento => {
   const isValid = estabelecimento && estabelecimento.id && estabelecimento.nome
 
   try {
@@ -102,7 +98,7 @@ const save = async estabelecimento => {
  * @param {*} estabelecimento
  *
  */
-const update = async estabelecimento => {
+export const update = async estabelecimento => {
   const isValid = estabelecimento && estabelecimento.id
 
   try {
@@ -133,7 +129,7 @@ const update = async estabelecimento => {
  * @param {*} idEstabelecimento
  *
  */
-const deleteById = async idEstabelecimento => {
+export const deleteById = async idEstabelecimento => {
   const isValid = idEstabelecimento > 0
 
   try {
@@ -150,13 +146,4 @@ const deleteById = async idEstabelecimento => {
   } catch (e) {
     console.log(`Erro ao remover estabelecimento (${idEstabelecimento})`, e)
   }
-}
-
-export default {
-  findById,
-  findByName,
-  list,
-  save,
-  update,
-  deleteById
 }

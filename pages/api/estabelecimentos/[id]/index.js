@@ -12,7 +12,7 @@ const estabelecimentos = require('../estabelecimentos.json')
 export default function handler(req, res) {
   switch (req.method) {
     case 'GET':
-      return processGET(req, res)
+      return findById(req, res)
     case 'POST':
       return processPOST(req, res)
     case 'PUT':
@@ -28,18 +28,26 @@ export default function handler(req, res) {
 
 /**
  *
- * Processa requisição GET
+ * Busca estabelecimento pelo id
  *
  */
-const processGET = (req, res) => {
+const findById = (req, res) => {
   const estabelecimento = estabelecimentos.find(
     estabelecimento => estabelecimento.id == req.query.id
   )
-  res.status(200).json({
-    status: 200,
-    message: 'Processing GET request',
-    estabelecimento: estabelecimento
-  })
+  if (!estabelecimento) {
+    res.status(404).json({
+      status: 404,
+      message: '[API proxy] Estabelecimento não encontrado',
+      estabelecimento: undefined
+    })
+  } else {
+    res.status(200).json({
+      status: 200,
+      message: '[API proxy] Estabelecimento encontrado',
+      estabelecimento: estabelecimento
+    })
+  }
 }
 
 /**
