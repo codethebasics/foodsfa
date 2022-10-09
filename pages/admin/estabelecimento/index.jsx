@@ -1,11 +1,23 @@
-import { Image } from '@chakra-ui/react'
+import {
+  Box,
+  Button,
+  Divider,
+  Flex,
+  FormControl,
+  FormLabel,
+  Image,
+  Input,
+  Stack,
+  Text
+} from '@chakra-ui/react'
 import { useEffect, useState } from 'react'
+import Card from '../../../components/admin/account/Card'
 import styles from '../../../styles/admin/estabelecimento/minhaConta.module.scss'
 
 export default function Gerenciador() {
   const [message, setMessage] = useState('')
   const [messageType, setMessageType] = useState('')
-  const [user, setUser] = useState({})
+  const [user, setUser] = useState(null)
 
   useEffect(() => {
     setUser({
@@ -18,12 +30,22 @@ export default function Gerenciador() {
     })
   }, [])
 
+  /**
+   * ----------------------
+   * Salva as configurações
+   * ----------------------
+   */
   const saveConfiguration = () => {
     setMessage('Cadastro atualizado')
     setMessageType('success')
     console.log('salvando usuário', user)
   }
 
+  /**
+   * ------------------
+   * Renderiza mensagem
+   * ------------------
+   */
   const renderMessage = () => {
     return (
       message && (
@@ -65,69 +87,133 @@ export default function Gerenciador() {
         <div className={styles.cta}>Gerenciar usuários</div>
       </header>
       <main>
-        <div className={styles.card}>
-          <header>
-            <div className={styles.avatar}>
-              <Image src={'/img/fullmetal.png'} height={75} width={75} />
-            </div>
-            <label>Meus dados</label>
-          </header>
-          <section className={styles.info}>
-            <div className={styles.card}>
-              <label>Nome do usuário</label>
-              <label>{user?.usuario}</label>
-            </div>
-            <div className={styles.cta}>Alterar senha</div>
-            <div className={styles.card}>
-              <label>URL DA LOJA</label>
-              <label>{user?.url}</label>
-            </div>
-            <div className={styles.cta}>Configurações avançadas</div>
-          </section>
-          <div className={styles.divider} />
-          <section className={styles.form}>
-            <div>
-              <label>Nome</label>
-              <input
-                name={'nome'}
-                value={user?.nome || ''}
-                onChange={event =>
-                  setUser({ ...user, nome: event.target.value })
-                }
-              />
-            </div>
-            <div>
-              <label>E-mail</label>
-              <input
-                name={'email'}
-                value={user?.email || ''}
-                onChange={event =>
-                  setUser({ ...user, email: event.target.value })
-                }
-              />
-            </div>
-            <div>
-              <label>Celular</label>
-              <input
-                name={'celular'}
-                value={user?.celular || ''}
-                onChange={event =>
-                  setUser({ ...user, celular: event.target.value })
-                }
-              />
-            </div>
-            <div>
-              <label>Aniversário</label>
-              <input
-                name={'aniversario'}
-                value={user?.aniversario || ''}
-                onChange={event =>
-                  setUser({ ...user, aniversario: event.target.value })
-                }
-              />
-            </div>
-          </section>
-        </div>
+        <Card>
+          <Flex alignItems={'center'} direction={'column'}>
+            <Image
+              src={'/img/fullmetal.png'}
+              height={75}
+              width={75}
+              borderRadius={'100%'}
+              objectFit={'cover'}
+            />
+            <Text
+              color={'#9C9787'}
+              fontWeight={'bold'}
+              fontSize={'0.8rem'}
+              margin={'15px 0'}
+            >
+              Meus dados
+            </Text>
+            <Card secondary="true">
+              <Flex alignItems={'center'} direction={'column'}>
+                <Text
+                  textTransform={'uppercase'}
+                  fontWeight={'bold'}
+                  fontSize={'0.8rem'}
+                  color={'#747578'}
+                >
+                  Nome do Usuário
+                </Text>
+                <Text marginTop={'15px'} fontSize={'0.8rem'}>
+                  {user?.usuario}
+                </Text>
+              </Flex>
+            </Card>
+            <Card secondary="true">
+              <Flex alignItems={'center'} direction={'column'}>
+                <Text
+                  textTransform={'uppercase'}
+                  fontWeight={'bold'}
+                  fontSize={'0.8rem'}
+                  color={'#747578'}
+                >
+                  URL da loja
+                </Text>
+                <Text marginTop={'15px'} fontSize={'0.8rem'}>
+                  {user?.url}
+                </Text>
+              </Flex>
+            </Card>
+            <Button colorScheme={'orange'} size={'sm'} mt={1} width={'100%'}>
+              Alterar senha
+            </Button>
+            <div className={styles.divider} />
+            <Stack>
+              <FormControl>
+                <FormLabel color={'#747578'} fontSize={'0.8rem'}>
+                  Nome
+                </FormLabel>
+                <Input
+                  size={'sm'}
+                  type="text"
+                  borderRadius={'4px'}
+                  borderColor={'#525457 !important'}
+                  focusBorderColor={'#da5220'}
+                  placeholder={'Nome Completo'}
+                  name={'nome'}
+                  value={user?.nome || ''}
+                  onChange={event =>
+                    setUser({ ...user, nome: event.target.value })
+                  }
+                />
+              </FormControl>
+              <FormControl>
+                <FormLabel color={'#747578'} fontSize={'0.8rem'}>
+                  Email
+                </FormLabel>
+                <Input
+                  size={'sm'}
+                  type="email"
+                  borderRadius={'4px'}
+                  borderColor={'#525457 !important'}
+                  focusBorderColor={'#da5220'}
+                  placeholder={'seu@email.com'}
+                  name={'email'}
+                  value={user?.email || ''}
+                  onChange={event =>
+                    setUser({ ...user, email: event.target.value })
+                  }
+                />
+              </FormControl>
+              <FormControl>
+                <FormLabel color={'#747578'} fontSize={'0.8rem'}>
+                  Celular
+                </FormLabel>
+                <Input
+                  size={'sm'}
+                  type="text"
+                  borderRadius={'4px'}
+                  borderColor={'#525457 !important'}
+                  focusBorderColor={'#da5220'}
+                  placeholder={'(00) 00000 0000'}
+                  name={'celular'}
+                  value={user?.celular || ''}
+                  onChange={event =>
+                    setUser({ ...user, celular: event.target.value })
+                  }
+                />
+              </FormControl>
+              <FormControl>
+                <FormLabel color={'#747578'} fontSize={'0.8rem'}>
+                  Aniversário
+                </FormLabel>
+                <Input
+                  size={'sm'}
+                  type="text"
+                  borderRadius={'4px'}
+                  borderColor={'#525457 !important'}
+                  focusBorderColor={'#da5220'}
+                  placeholder={'00/00/0000'}
+                  name={'aniversario'}
+                  value={user?.aniversario || ''}
+                  onChange={event =>
+                    setUser({ ...user, aniversario: event.target.value })
+                  }
+                />
+              </FormControl>
+            </Stack>
+          </Flex>
+        </Card>
       </main>
       <div className={styles.floatingCta} onClick={saveConfiguration}>
         <Image src={'/img/floppy.svg'} width={6} height={6} />

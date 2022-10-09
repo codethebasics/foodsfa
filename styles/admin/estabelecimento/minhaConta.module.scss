@@ -13,7 +13,7 @@
   font-size: 0.8rem;
   display: flex;
   align-items: center;
-  margin: 5px;
+  margin: 15px 15px 0 15px;
   border-radius: 4px;
 
   &.success {
@@ -25,7 +25,7 @@
   }
   
   .icon {
-    padding: 5px;
+    padding: 10px;
     border-radius: 4px 0 0 4px;
 
     &.success {
@@ -39,7 +39,7 @@
 
   .text {
     width: 100%;
-    padding: 5px;
+    padding: 10px;
     margin-left: 5px;
     display: flex;
     justify-content: space-between;
@@ -126,6 +126,11 @@
   .info {    
     display: flex;
     flex-direction: column;
+
+    > div {
+      display: flex;
+      flex-direction: column;
+    }
 
     .card {
       display: flex;
@@ -223,4 +228,17 @@
   &:hover {
     opacity: .8;
   }
+}
+
+@media (min-width: 700px) {
+  .info {
+    flex-direction: row !important;
+
+    >div {
+      flex-direction: row;    
+      width: 100%;
+      padding: 5px;
+    }
+  }
+  
 }
