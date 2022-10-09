@@ -1,8 +1,7 @@
 import {
-  Box,
   Button,
-  Divider,
   Flex,
+  Box,
   FormControl,
   FormLabel,
   Image,
@@ -81,60 +80,66 @@ export default function Gerenciador() {
 
   return (
     <div className={styles.wrapper}>
-      {renderMessage()}
-      <header className={styles.header}>
-        <div className={styles.pageTitle}>Minha conta</div>
-        <div className={styles.cta}>Gerenciar usuários</div>
-      </header>
+      <Box px={5} pt={5}>
+        {renderMessage()}
+        <header className={styles.header}>
+          <div className={styles.pageTitle}>Minha conta</div>
+          <div className={styles.cta}>Gerenciar usuários</div>
+        </header>
+      </Box>
       <main>
-        <Card>
-          <Flex alignItems={'center'} direction={'column'}>
-            <Image
-              src={'/img/fullmetal.png'}
-              height={75}
-              width={75}
-              borderRadius={'100%'}
-              objectFit={'cover'}
-            />
-            <Text
-              color={'#9C9787'}
-              fontWeight={'bold'}
-              fontSize={'0.8rem'}
-              margin={'15px 0'}
-            >
-              Meus dados
-            </Text>
-            <Card secondary="true">
-              <Flex alignItems={'center'} direction={'column'}>
-                <Text
-                  textTransform={'uppercase'}
-                  fontWeight={'bold'}
-                  fontSize={'0.8rem'}
-                  color={'#747578'}
-                >
-                  Nome do Usuário
-                </Text>
-                <Text marginTop={'15px'} fontSize={'0.8rem'}>
-                  {user?.usuario}
-                </Text>
-              </Flex>
-            </Card>
-            <Card secondary="true">
-              <Flex alignItems={'center'} direction={'column'}>
-                <Text
-                  textTransform={'uppercase'}
-                  fontWeight={'bold'}
-                  fontSize={'0.8rem'}
-                  color={'#747578'}
-                >
-                  URL da loja
-                </Text>
-                <Text marginTop={'15px'} fontSize={'0.8rem'}>
-                  {user?.url}
-                </Text>
-              </Flex>
-            </Card>
-            <Button colorScheme={'orange'} size={'sm'} mt={1} width={'100%'}>
+        <Box p={5}>
+          <Card>
+            <Flex direction={'column'} alignItems={'center'}>
+              <Image
+                src={'/img/fullmetal.png'}
+                height={75}
+                width={75}
+                borderRadius={'100%'}
+                objectFit={'cover'}
+              />
+              <Text
+                color={'#9C9787'}
+                fontWeight={'bold'}
+                fontSize={'0.8rem'}
+                margin={'15px 0'}
+              >
+                Meus dados
+              </Text>
+            </Flex>
+            <Flex direction={'column'}>
+              <Card secondary="true">
+                <Flex alignItems={'center'} direction={'column'} py={2}>
+                  <Text
+                    textTransform={'uppercase'}
+                    fontWeight={'bold'}
+                    fontSize={'0.8rem'}
+                    color={'#747578'}
+                  >
+                    Nome do Usuário
+                  </Text>
+                  <Text marginTop={'15px'} fontSize={'0.8rem'}>
+                    {user?.usuario}
+                  </Text>
+                </Flex>
+              </Card>
+              <Card secondary="true">
+                <Flex alignItems={'center'} direction={'column'} my={2}>
+                  <Text
+                    textTransform={'uppercase'}
+                    fontWeight={'bold'}
+                    fontSize={'0.8rem'}
+                    color={'#747578'}
+                  >
+                    URL da loja
+                  </Text>
+                  <Text marginTop={'15px'} fontSize={'0.8rem'}>
+                    {user?.url}
+                  </Text>
+                </Flex>
+              </Card>
+            </Flex>
+            <Button colorScheme={'orange'} size={'sm'} mt={2} width={'100%'}>
               Alterar senha
             </Button>
             <div className={styles.divider} />
@@ -212,8 +217,8 @@ export default function Gerenciador() {
                 />
               </FormControl>
             </Stack>
-          </Flex>
-        </Card>
+          </Card>
+        </Box>
       </main>
       <div className={styles.floatingCta} onClick={saveConfiguration}>
         <Image src={'/img/floppy.svg'} width={6} height={6} />

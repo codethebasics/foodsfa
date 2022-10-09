@@ -2,6 +2,8 @@
   display: flex;
   flex-direction: column;
   height: 100%;
+  max-width: 1000px;
+  margin: auto;
 
   main {
     height: 100%;
@@ -66,7 +68,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 15px;
+  
 
   .pageTitle {
     font-size:1.4em;
@@ -87,128 +89,11 @@
   }
 }
 
-.card {
-  background: #3A3C40;
-  padding: 15px;
-  margin: 15px;
-  border-radius: 5px;
-  flex-direction: column;
-
-  header {
-    display: flex;    
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-
-    .avatar {
-      background: #45484D;
-      height: 75px;
-      width: 75px;
-      border-radius: 100%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      
-      img {
-        border-radius: 100%;
-        object-fit: cover;
-      }
-    }
-
-    label {
-      color: #9C9787;
-      font-size: 0.8rem;
-      margin: 15px 0;
-      font-weight: bold;
-    }
-  }
-
-  .info {    
-    display: flex;
-    flex-direction: column;
-
-    > div {
-      display: flex;
-      flex-direction: column;
-    }
-
-    .card {
-      display: flex;
-      background: #3E4045;
-      margin: 10px 0;
-      justify-content: center;
-      align-items: center;
-
-      label {
-        font-weight: bold;
-        font-size: 0.8rem;
-      }
-
-      label:first-child {
-        text-transform: uppercase;
-        color: #747578;
-      }
-
-      label:last-child {
-        margin-top: 10px;
-        font-weight: normal;
-      }
-
-    }
-
-    .cta {
-      border: 1px solid #999999;
-      color: #999999;
-      border-radius: 5px;
-      padding: 5px;
-      text-align: center;
-      font-size: 0.8rem;
-      transition: background-color .2s;
-      
-      &:hover {
-        background: #454548;
-        cursor: pointer;
-      }
-    }
-  }
-}
-
 .divider {
   width: 100%;
   height: 1px;
   background-color: #525457;
   margin: 25px 0;
-}
-
-.form {
-  display: flex;
-  flex-direction: column;
-
-  div {
-    display: flex;
-    flex-direction: column;
-    margin: 10px 0;
-  }
-
-  label {
-    font-size: 0.8rem;
-    color: #747578;
-  }
-
-  input {    
-    font-size: 0.8rem;
-    color: #999999;
-    border: 1px solid #525457;
-    background-color: transparent;
-    border-radius: 5px;
-    padding: 5px;
-    outline: none;
-    transition: border-color .2s;
-
-    &:focus {
-      border-color: #da5220;
-    }
-  }
 }
 
 .floatingCta {
@@ -228,17 +113,4 @@
   &:hover {
     opacity: .8;
   }
-}
-
-@media (min-width: 700px) {
-  .info {
-    flex-direction: row !important;
-
-    >div {
-      flex-direction: row;    
-      width: 100%;
-      padding: 5px;
-    }
-  }
-  
 }
