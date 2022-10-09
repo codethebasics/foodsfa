@@ -21,7 +21,7 @@ export default function Gerenciador() {
   useEffect(() => {
     setUser({
       usuario: 'bruno.carneiro312',
-      url: '/massademais',
+      url: '/massadmais',
       nome: 'Bruno Carneiro',
       email: 'bruno.carneiro312@gmail.com',
       celular: '61985770401',
@@ -80,7 +80,7 @@ export default function Gerenciador() {
 
   return (
     <div className={styles.wrapper}>
-      <Box px={5} pt={5}>
+      <Box p={5}>
         {renderMessage()}
         <header className={styles.header}>
           <div className={styles.pageTitle}>Minha conta</div>
@@ -97,6 +97,7 @@ export default function Gerenciador() {
                 width={75}
                 borderRadius={'100%'}
                 objectFit={'cover'}
+                boxShadow={'0 3px 10px #333'}
               />
               <Text
                 color={'#9C9787'}
