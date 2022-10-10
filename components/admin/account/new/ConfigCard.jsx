@@ -1,4 +1,4 @@
-import { Text, Image, Button, Flex, Box } from '@chakra-ui/react'
+import { Text, Button, Flex, Box } from '@chakra-ui/react'
 import { useState } from 'react'
 import styled from 'styled-components'
 
@@ -22,7 +22,7 @@ const Container = styled.div`
 `
 
 export default function ConfigCard({ label, icon }) {
-  const [isConfigurado, setIsConfigurado] = useState(false)
+  const [isConfigurado] = useState(false)
 
   return (
     <Container icon={icon}>

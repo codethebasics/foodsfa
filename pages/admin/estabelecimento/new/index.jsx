@@ -1,4 +1,4 @@
-import { Text, Image, Button, Flex, Box } from '@chakra-ui/react'
+import { Flex } from '@chakra-ui/react'
 import ConfigCard from '../../../../components/admin/account/new/ConfigCard'
 import styles from '../../../../styles/admin/estabelecimento/novoEstabelecimento.module.scss'
 

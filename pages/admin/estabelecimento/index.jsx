@@ -65,6 +65,7 @@ export default function Gerenciador() {
                   : '/img/white-times.svg'
               }
               height={5}
+              alt={messageType}
             />
           </div>
           <div className={styles.text}>
@@ -98,6 +99,7 @@ export default function Gerenciador() {
                 borderRadius={'100%'}
                 objectFit={'cover'}
                 boxShadow={'0 3px 10px #333'}
+                alt={'avatar'}
               />
               <Text
                 color={'#9C9787'}
@@ -222,7 +224,7 @@ export default function Gerenciador() {
         </Box>
       </main>
       <div className={styles.floatingCta} onClick={saveConfiguration}>
-        <Image src={'/img/floppy.svg'} width={6} height={6} />
+        <Image src={'/img/floppy.svg'} width={6} height={6} alt={'salvar'} />
       </div>
     </div>
   )
