@@ -9,6 +9,9 @@ import {
   Stack,
   Text
 } from '@chakra-ui/react'
+
+import ImageUpload from '../../../components/form/ImageUpload'
+
 import { useEffect, useState } from 'react'
 import Card from '../../../components/admin/account/Card'
 import styles from '../../../styles/admin/estabelecimento/minhaConta.module.scss'
@@ -21,6 +24,8 @@ export default function Gerenciador() {
   const [novaSenha, setNovaSenha] = useState('')
   const [confirmarNovaSenha, setConfirmarNovaSenha] = useState('')
   const [showAlterarSenha, setShowAlterarSenha] = useState(false)
+  const [showImageUploadComponent, setShowImageUploadComponent] =
+    useState(false)
 
   useEffect(() => {
     setUser({
@@ -192,6 +197,9 @@ export default function Gerenciador() {
 
   return (
     <div className={styles.wrapper}>
+      {showImageUploadComponent && (
+        <ImageUpload close={() => setShowImageUploadComponent(false)} />
+      )}
       {renderAlterarSenha()}
       <Box p={5}>
         {renderMessage()}
@@ -212,6 +220,7 @@ export default function Gerenciador() {
                 objectFit={'cover'}
                 boxShadow={'0 3px 10px #333'}
                 alt={'avatar'}
+                onClick={() => setShowImageUploadComponent(true)}
               />
               <Text
                 color={'#9C9787'}

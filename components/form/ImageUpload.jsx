@@ -7,6 +7,7 @@ const ImageControl = styled.div`
   flex-direction: column;
   position: fixed;
   place-items: center;
+  padding: 15px;
   width: 100%;
   height: 100%;
   z-index: 9;
@@ -36,15 +37,25 @@ const ImageControl = styled.div`
   }
 `
 
-export default function Home() {
+export default function ImageUpload({ close }) {
   const [selectedImage, setSelectedImage] = useState(undefined)
 
+  /**
+   * ---------------------------------
+   * Trata evento de mudança de imagem
+   * ---------------------------------
+   */
   const onChangeImage = e => {
     const imageURL = URL.createObjectURL(e.target.files[0])
     setSelectedImage(imageURL)
     console.log(imageURL)
   }
 
+  /**
+   * --------------------------
+   * Renderiza a imagem enviada
+   * --------------------------
+   */
   const renderUploadedImage = () => {
     if (selectedImage) {
       return (
@@ -57,10 +68,19 @@ export default function Home() {
     }
   }
 
+  /**
+   * ------------
+   * Salva imagem
+   * ------------
+   */
+  const saveImage = () => {
+    console.log('uploading...')
+  }
+
   return (
     <ImageControl>
-      <Flex alignSelf={'flex-end'} mt={4} mr={4} cursor={'pointer'}>
-        <Image src={'/img/white-times.svg'} alt={'fechar'} />
+      <Flex alignSelf={'flex-end'} cursor={'pointer'}>
+        <Image src={'/img/white-times.svg'} alt={'fechar'} onClick={close} />
       </Flex>
       <Flex direction={'column'} className={'container'}>
         {!selectedImage && (
@@ -80,7 +100,7 @@ export default function Home() {
               Selecionar outra
             </Button>
             {renderUploadedImage()}
-            <Button colorScheme={'orange'} mt={5}>
+            <Button colorScheme={'orange'} mt={5} onClick={saveImage}>
               Confirmar
             </Button>
           </Flex>
