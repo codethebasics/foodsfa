@@ -220,16 +220,35 @@ export default function Gerenciador() {
         <Box p={5}>
           <Card>
             <Flex direction={'column'} alignItems={'center'}>
-              <Image
-                src={user?.avatar}
-                height={75}
-                width={75}
-                borderRadius={'100%'}
-                objectFit={'cover'}
-                boxShadow={'0 3px 10px #333'}
-                alt={'avatar'}
+              <Flex
+                alignItems={'center'}
+                cursor={'pointer'}
                 onClick={() => setShowImageUploadComponent(true)}
-              />
+              >
+                <Flex
+                  height={75}
+                  width={75}
+                  background={'#fff'}
+                  borderRadius={'100%'}
+                  justifyContent={'center'}
+                  alignItems={'center'}
+                  position={'absolute'}
+                  className={styles.avatarPlaceholder}
+                >
+                  <Image src={'/img/upload.svg'} alt={'enviar'} />
+                </Flex>
+                <Image
+                  src={user?.avatar}
+                  height={75}
+                  width={75}
+                  borderRadius={'100%'}
+                  objectFit={'cover'}
+                  boxShadow={'0 3px 10px #333'}
+                  alt={'avatar'}
+                  cursor={'pointer'}
+                  className={styles.avatar}
+                />
+              </Flex>
               <Text
                 color={'#9C9787'}
                 fontWeight={'bold'}
