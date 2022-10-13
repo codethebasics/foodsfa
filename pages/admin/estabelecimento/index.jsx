@@ -17,6 +17,10 @@ export default function Gerenciador() {
   const [message, setMessage] = useState('')
   const [messageType, setMessageType] = useState('')
   const [user, setUser] = useState(null)
+  const [senhaAtual, setSenhaAtual] = useState('')
+  const [novaSenha, setNovaSenha] = useState('')
+  const [confirmarNovaSenha, setConfirmarNovaSenha] = useState('')
+  const [showAlterarSenha, setShowAlterarSenha] = useState(false)
 
   useEffect(() => {
     setUser({
@@ -79,8 +83,115 @@ export default function Gerenciador() {
     )
   }
 
+  /**
+   * -----------------------
+   * Altera senha do usuário
+   * -----------------------
+   */
+  const alterarSenha = () => {
+    setShowAlterarSenha(false)
+    setMessage('Senha alterada com sucesso')
+    setMessageType('success')
+    setSenhaAtual('')
+    setNovaSenha('')
+    setConfirmarNovaSenha('')
+  }
+
+  const renderAlterarSenha = () => {
+    return (
+      showAlterarSenha && (
+        <Flex
+          position={'fixed'}
+          top={'0'}
+          left={0}
+          backgroundColor={'rgba(22, 22, 22, 0.9)'}
+          width={'100%'}
+          height={'100%'}
+          zIndex={9}
+        >
+          <Flex margin={'auto'}>
+            <Card>
+              <Flex width={'80vw'} maxWidth={'500px'} direction={'column'}>
+                <Flex mb={2} alignSelf={'flex-end'}>
+                  <Image
+                    src={'/img/white-times.svg'}
+                    height={5}
+                    cursor={'pointer'}
+                    onClick={() => setShowAlterarSenha(false)}
+                  />
+                </Flex>
+                <FormControl mb={3}>
+                  <FormLabel color={'#747578'} fontSize={'0.8rem'}>
+                    Senha atual
+                  </FormLabel>
+                  <Input
+                    size={'sm'}
+                    type="password"
+                    borderRadius={'4px'}
+                    borderColor={'#525457 !important'}
+                    focusBorderColor={'#da5220'}
+                    name={'senhaAtual'}
+                    value={senhaAtual || ''}
+                    onChange={event => setSenhaAtual(event.target.value)}
+                  />
+                </FormControl>
+                <FormControl mb={3}>
+                  <FormLabel color={'#747578'} fontSize={'0.8rem'}>
+                    Nova senha
+                  </FormLabel>
+                  <Input
+                    size={'sm'}
+                    type="password"
+                    borderRadius={'4px'}
+                    borderColor={'#525457 !important'}
+                    focusBorderColor={'#da5220'}
+                    name={'novaSenha'}
+                    value={novaSenha || ''}
+                    onChange={event => setNovaSenha(event.target.value)}
+                  />
+                </FormControl>
+                <FormControl mb={3}>
+                  <FormLabel color={'#747578'} fontSize={'0.8rem'}>
+                    Confirmar senha
+                  </FormLabel>
+                  <Input
+                    size={'sm'}
+                    type="password"
+                    borderRadius={'4px'}
+                    borderColor={'#525457 !important'}
+                    focusBorderColor={'#da5220'}
+                    name={'confirmarNovaSenha'}
+                    value={confirmarNovaSenha || ''}
+                    onChange={event =>
+                      setConfirmarNovaSenha(event.target.value)
+                    }
+                  />
+                </FormControl>
+                <Button
+                  colorScheme={'orange'}
+                  size={'sm'}
+                  mt={2}
+                  width={'100%'}
+                  disabled={
+                    !senhaAtual.length ||
+                    !novaSenha.length ||
+                    novaSenha != confirmarNovaSenha
+                  }
+                  onClick={alterarSenha}
+                >
+                  Confirmar
+                </Button>
+              </Flex>
+            </Card>
+          </Flex>
+        </Flex>
+      )
+    )
+  }
+
   return (
     <div className={styles.wrapper}>
+      {renderAlterarSenha()}
       <Box p={5}>
         {renderMessage()}
         <header className={styles.header}>
@@ -142,7 +253,13 @@ export default function Gerenciador() {
                 </Flex>
               </Card>
             </Flex>
-            <Button colorScheme={'orange'} size={'sm'} mt={2} width={'100%'}>
+            <Button
+              colorScheme={'orange'}
+              size={'sm'}
+              mt={2}
+              width={'100%'}
+              onClick={() => setShowAlterarSenha(true)}
+            >
               Alterar senha
             </Button>
             <div className={styles.divider} />
