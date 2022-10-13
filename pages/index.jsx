@@ -1,5 +1,14 @@
-import ImageUpload from '../components/form/ImageUpload'
+import { useState } from 'react'
+import DayOfWeek from '../components/form/DayOfWeek'
 
 export default function Home() {
-  return <ImageUpload />
+  const [isDaySelected, setIsDaySelected] = useState(false)
+
+  return (
+    <DayOfWeek
+      dia={'Segunda-feira'}
+      isChecked={isDaySelected}
+      onChange={() => setIsDaySelected(!isDaySelected)}
+    />
+  )
 }
