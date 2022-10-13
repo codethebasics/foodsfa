@@ -10,11 +10,12 @@ import {
   Text
 } from '@chakra-ui/react'
 
-import ImageUpload from '../../../components/form/ImageUpload'
+import ImageUpload from '../../../../components/form/ImageUpload'
 
 import { useEffect, useState } from 'react'
-import Card from '../../../components/admin/account/Card'
-import styles from '../../../styles/admin/estabelecimento/minhaConta.module.scss'
+import Card from '../../../../components/admin/account/Card'
+import styles from '../../../../styles/admin/estabelecimento/minhaConta.module.scss'
+import { useRouter } from 'next/router'
 
 export default function Gerenciador() {
   const [message, setMessage] = useState('')
@@ -27,15 +28,17 @@ export default function Gerenciador() {
   const [showImageUploadComponent, setShowImageUploadComponent] =
     useState(false)
 
+  const router = useRouter()
+  const { id } = router.query
+
   useEffect(() => {
-    setUser({
-      usuario: 'bruno.carneiro312',
-      url: '/massadmais',
-      nome: 'Bruno Carneiro',
-      email: 'bruno.carneiro312@gmail.com',
-      celular: '61985770401',
-      aniversario: '29/07/1987'
+    fetch(`/api/estabelecimentos/admin/${id}`, {
+      method: 'GET',
+      'Content-Type': 'application/json',
+      accept: 'application/json'
     })
+      .then(response => response.json())
+      .then(json => setUser(json))
   }, [])
 
   /**
@@ -195,6 +198,11 @@ export default function Gerenciador() {
     )
   }
 
+  /**
+   * ------
+   * Render
+   * ------
+   */
   return (
     <div className={styles.wrapper}>
       {showImageUploadComponent && (
@@ -213,7 +221,7 @@ export default function Gerenciador() {
           <Card>
             <Flex direction={'column'} alignItems={'center'}>
               <Image
-                src={'/img/fullmetal.png'}
+                src={user?.avatar}
                 height={75}
                 width={75}
                 borderRadius={'100%'}
