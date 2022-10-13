@@ -11,7 +11,7 @@ import { useState } from 'react'
 const DayOfWeekContainer = styled.div`
   display: flex;
   flex-direction: column;
-  width: 100%;
+  width: 350px;
 `
 
 /**
@@ -62,9 +62,10 @@ const Select = styled.select`
  * do horário de funcionamento do estabelecimento
  * ----------------------------------------------
  */
-export default function DayOfWeek({ dia, isChecked, onChange }) {
-  const [inicio, setInicio] = useState()
-  const [fim, setFim] = useState()
+export default function DayOfWeek({ dia }) {
+  const [isChecked, setIsChecked] = useState(false)
+  const [, setInicio] = useState()
+  const [, setFim] = useState()
 
   return (
     <Flex padding={'15px'}>
@@ -79,7 +80,7 @@ export default function DayOfWeek({ dia, isChecked, onChange }) {
           <Checkbox
             colorScheme={'orange'}
             isChecked={isChecked}
-            onChange={onChange}
+            onChange={() => setIsChecked(!isChecked)}
           >
             <Text color={'#a7a7a7'} fontSize={'0.8rem'}>
               {dia}

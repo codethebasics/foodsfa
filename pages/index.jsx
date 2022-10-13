@@ -1,14 +1,5 @@
-import { useState } from 'react'
-import DayOfWeek from '../components/form/DayOfWeek'
+import Calendar from '../components/form/Calendar'
 
 export default function Home() {
-  const [isDaySelected, setIsDaySelected] = useState(false)
-
-  return (
-    <DayOfWeek
-      dia={'Segunda-feira'}
-      isChecked={isDaySelected}
-      onChange={() => setIsDaySelected(!isDaySelected)}
-    />
-  )
+  return <Calendar />
 }
