@@ -1,5 +1,5 @@
-import ImageUpload from '../components/form/ImageUpload'
+import Calendar from '../components/form/Calendar'
 
 export default function Home() {
-  return <ImageUpload />
+  return <Calendar />
 }
