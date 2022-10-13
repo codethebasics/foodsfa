@@ -118,6 +118,7 @@ export default function Gerenciador() {
                     height={5}
                     cursor={'pointer'}
                     onClick={() => setShowAlterarSenha(false)}
+                    alt={'fechar'}
                   />
                 </Flex>
                 <FormControl mb={3}>
