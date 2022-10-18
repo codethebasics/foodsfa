@@ -11,13 +11,18 @@ const estabelecimentos = require('./estabelecimentos.json')
 
 export default function handler(req, res) {
   if (req.method === 'GET') {
-    res
-      .status(200)
-      .json({
+    try {
+      res.status(200).json({
         status: 200,
         message: 'listando estabelecimentos',
         body: estabelecimentos
       })
+    } catch (e) {
+      res.status(500).json({
+        status: 500,
+        message: 'Erro durante listagem de estabelecimentos'
+      })
+    }
   } else {
     res.status(400).json({ status: 400, message: 'Method not allowed' })
   }

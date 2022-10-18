@@ -10,11 +10,11 @@ import {
   Text
 } from '@chakra-ui/react'
 
-import ImageUpload from '../../../../components/form/ImageUpload'
+import ImageUpload from '../../../../../components/form/ImageUpload'
 
 import { useEffect, useState } from 'react'
-import Card from '../../../../components/admin/account/Card'
-import styles from '../../../../styles/admin/estabelecimento/minhaConta.module.scss'
+import Card from '../../../../../components/admin/account/Card'
+import styles from '../../../../../styles/admin/estabelecimento/minhaConta.module.scss'
 import { useRouter } from 'next/router'
 import Link from 'next/link'
 

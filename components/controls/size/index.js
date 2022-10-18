@@ -3,8 +3,18 @@ import SizeOption from './option'
 import { useState } from 'react'
 import { Flex } from '@chakra-ui/react'
 
+/**
+ *
+ * Componente que define tamanhos disponíveis
+ * para o produto selecionado
+ *
+ * @param {Event} onSelect - Função de callback a ser invocada após selecionar tamanho
+ * @returns
+ */
 export default function Size({ onSelect }) {
   const [, setSelectedOption] = useState('')
+
+  // TODO: chamar de API via useEffect
   const [options, setOptions] = useState([
     {
       id: 1,
@@ -35,6 +45,12 @@ export default function Size({ onSelect }) {
     }
   ])
 
+  /**
+   *
+   * Função de callback a ser invocada ao selecionar opção
+   *
+   * @param {Object} selectedOption - Opção selecionada
+   */
   const changeSelected = selectedOption => {
     const resetArray = options.slice(0)
     resetArray.forEach(option =>
