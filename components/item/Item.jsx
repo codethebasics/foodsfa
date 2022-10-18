@@ -15,7 +15,7 @@ export default function Item({
   toggleOption
 }) {
   const [quantity, setQuantity] = useState(1)
-  const [selectedSize, setSelectedSize] = useState('P')
+  const [, setSelectedSize] = useState('P')
   const [selectedOptions, setSelectedOptions] = useState([
     {
       id: 1,
@@ -37,10 +37,20 @@ export default function Item({
     }
   ])
 
+  /**
+   *
+   * Incrementa quantidade do produto
+   *
+   */
   const increment = () => {
     setQuantity(quantity + 1)
   }
 
+  /**
+   *
+   * Decrementa quantidade do produto
+   *
+   */
   const decrement = () => {
     quantity > 1 ? setQuantity(quantity - 1) : setQuantity(1)
   }
@@ -55,8 +65,17 @@ export default function Item({
     setSelectedOptions(options)
   }
 
-  return (
-    <Flex direction={'column'}>
+  /**
+   *
+   * Renderiza card contendo informações principais do produto
+   *
+   * @param { string } name - Nome do produto
+   * @param { string } description - Descrição do produto
+   * @param { number } price - Preço do produto
+   * @param { number } promoPrice - Preço promocional do produto
+   */
+  const ProductCard = ({ name, description, price, promoPrice }) => {
+    return (
       <Flex
         background={'#fff'}
         color={'#222'}
@@ -101,7 +120,20 @@ export default function Item({
           </Text>
         </Flex>
       </Flex>
-      <Text p={5}>Personalize seu pedido</Text>
+    )
+  }
+
+  return (
+    <Flex direction={'column'}>
+      <ProductCard
+        name={name}
+        description={description}
+        price={price}
+        promoPrice={promoPrice}
+      />
+      <Text p={5} fontSize={'1.2rem'}>
+        Personalize seu pedido
+      </Text>
       <Size onSelect={setSelectedSize} />
       <div className={styles.separator} />
       {toggleOption &&
@@ -115,9 +147,6 @@ export default function Item({
             storeOption={updateOptions}
           />
         ))}
-      <div>price: R${(promoPrice * quantity).toFixed(2)}</div>
-      <div>SelectedSize: {selectedSize}</div>
-      <div>SelectedOptions: {JSON.stringify(selectedOptions)}</div>
     </Flex>
   )
 }

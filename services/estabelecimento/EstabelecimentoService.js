@@ -2,6 +2,8 @@
  *
  * Lista estabelecimentos
  *
+ * @param {Object} filter - Objeto contendo parâmetros a serem considerados na busca
+ *
  */
 export const list = async filter => {
   try {
@@ -18,7 +20,7 @@ export const list = async filter => {
  *
  * Busca estabelecimento pelo ID
  *
- * @param {*} idEstabelecimento
+ * @param {number} idEstabelecimento - Identificador do estabelecimento
  *
  */
 export const findById = async idEstabelecimento => {
@@ -44,7 +46,7 @@ export const findById = async idEstabelecimento => {
  *
  * Busca estabelecimento pelo nome
  *
- * @param {*} nomeEstabelecimento
+ * @param {string} nomeEstabelecimento - Nome do estabelecimento
  *
  */
 export const findByName = async nomeEstabelecimento => {
@@ -64,7 +66,7 @@ export const findByName = async nomeEstabelecimento => {
  *
  * Cadastra estabelecimento
  *
- * @param {*} estabelecimento
+ * @param {Object} estabelecimento - Estabelecimento a ser cadastrado
  *
  */
 export const save = async estabelecimento => {
@@ -95,7 +97,7 @@ export const save = async estabelecimento => {
  *
  * Atualiza estabelecimento
  *
- * @param {*} estabelecimento
+ * @param {Object} estabelecimento - Estabelecimento a ser cadastrado
  *
  */
 export const update = async estabelecimento => {
@@ -126,7 +128,7 @@ export const update = async estabelecimento => {
  *
  * Deleta estabelecimento pelo ID
  *
- * @param {*} idEstabelecimento
+ * @param {number} idEstabelecimento - Id do estabelecimento a ser removido
  *
  */
 export const deleteById = async idEstabelecimento => {

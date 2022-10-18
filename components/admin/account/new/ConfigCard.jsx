@@ -1,6 +1,8 @@
+import styled from 'styled-components'
+
 import { Text, Button, Flex, Box } from '@chakra-ui/react'
 import { useState } from 'react'
-import styled from 'styled-components'
+import Link from 'next/link'
 
 const Container = styled.div`
   &::before {
@@ -21,7 +23,7 @@ const Container = styled.div`
   }
 `
 
-export default function ConfigCard({ label, icon }) {
+export default function ConfigCard({ label, icon, path }) {
   const [isConfigurado] = useState(false)
 
   return (
@@ -64,9 +66,11 @@ export default function ConfigCard({ label, icon }) {
             border={'1px solid #A0AAAB'}
             _hover={{ bg: '#45484d' }}
           >
-            <Text fontSize={'0.8rem'}>
-              {isConfigurado ? 'Alterar' : 'Configurar'}
-            </Text>
+            <Link href={`${path}`}>
+              <Text fontSize={'0.8rem'}>
+                {isConfigurado ? 'Alterar' : 'Configurar'}
+              </Text>
+            </Link>
           </Button>
         </Box>
       </Flex>

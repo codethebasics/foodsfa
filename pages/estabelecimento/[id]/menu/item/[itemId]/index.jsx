@@ -20,7 +20,7 @@ export default function Pedido() {
 
     const fetchProduct = async () => {
       const products = await fetch(
-        `${process.env.NEXT_PUBLIC_APP_URL}/api/product`,
+        `${process.env.NEXT_PUBLIC_APP_URL}/api/produtos`,
         {
           method: 'GET',
           headers: {
@@ -41,7 +41,9 @@ export default function Pedido() {
    * Add item
    * --------
    */
-  const addItem = () => {}
+  const addItem = () => {
+    console.log('adicionando item', product)
+  }
 
   return (
     <div className={styles.wrapper}>

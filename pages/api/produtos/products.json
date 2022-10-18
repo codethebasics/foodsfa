@@ -238,5 +238,41 @@
     "pricePromo": 25,
     "category": [7],
     "estabelecimento": 1
+  },
+  {
+    "id": 21,
+    "name": "Pão de Queijo Recheado com Carne Seca",
+    "uri": "/rei-do-pao-de-queijo/salgados/pao-de-queijo-recheado-com-carne-seca",
+    "description": "Pão de queijo grande recheado com carne seca (300gr)",
+    "image": "/img/pao-de-queijo-recheado-carne-seca.png",
+    "imageAlt": "Pão de Queijo Recheado com Carne Seca",
+    "price": 5,
+    "pricePromo": 5,
+    "category": [5],
+    "estabelecimento": 2
+  },
+  {
+    "id": 22,
+    "name": "Pão de Queijo Recheado com Requeijão",
+    "uri": "/rei-do-pao-de-queijo/salgados/pao-de-queijo-recheado-com-requeijao",
+    "description": "Pão de queijo grande recheado requeijão (300gr)",
+    "image": "/img/pao-de-queijo-recheado-requeijao.png",
+    "imageAlt": "Pão de Queijo Recheado com Requeijão",
+    "price": 5,
+    "pricePromo": 5,
+    "category": [5],
+    "estabelecimento": 2
+  },
+  {
+    "id": 23,
+    "name": "Pão de Queijo Recheado com Calabresa",
+    "uri": "/rei-do-pao-de-queijo/salgados/pao-de-queijo-recheado-com-calabresa",
+    "description": "Pão de queijo grande recheado calabresa (300gr)",
+    "image": "/img/pao-de-queijo-recheado-calabresa.png",
+    "imageAlt": "Pão de Queijo Recheado com Calabresa",
+    "price": 5,
+    "pricePromo": 5,
+    "category": [5],
+    "estabelecimento": 2
   }
 ]
