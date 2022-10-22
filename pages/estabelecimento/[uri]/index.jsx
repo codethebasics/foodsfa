@@ -8,12 +8,23 @@ import { useRouter } from 'next/router'
 import { Flex, Box, Image, Text } from '@chakra-ui/react'
 import { useState, useEffect } from 'react'
 
+import * as EstabelecimentoService from '../../../services/estabelecimento/EstabelecimentoService'
+
 export default function Spot() {
   const [showSidebarMenu, setShowSidebarMenu] = useState(false)
   const router = useRouter()
-  // const { id } = router.query
+  const { uri } = router.query
+  const [estabelecimento, setEstabelecimento] = useState(null)
 
-  useEffect(() => {})
+  useEffect(() => {
+    const fetchEstabelecimento = async () => {
+      const response = await EstabelecimentoService.findByURI(uri)
+      if (response) {
+        setEstabelecimento(response.estabelecimento)
+      }
+    }
+    fetchEstabelecimento()
+  }, [])
 
   return (
     <div className={styles.wrapper}>
@@ -63,15 +74,20 @@ export default function Spot() {
               alt={'restaurante'}
               className={styles.spotBanner}
             />
+            <Text pt={5} pl={5}>
+              {estabelecimento?.nome}
+            </Text>
             <Flex direction={'column'} p={5}>
               <Text color={'#FFCC00'} mt={5}>
-                Rua Otto Rosenberg, 381.
+                {estabelecimento?.bairroCidade}
               </Text>
-              <Text fontSize={'0.8rem'}>Vila Paulista, Curitiba.</Text>
+              <Text fontSize={'0.8rem'}>{estabelecimento?.logradouro}</Text>
               <Text my={5} color={'#FFCC00'}>
                 Horários de Funcionamento:
               </Text>
-              <Calendar />
+              <Calendar
+                horariosFuncionamento={estabelecimento?.horariosFuncionamento}
+              />
             </Flex>
           </Flex>
         </Flex>
