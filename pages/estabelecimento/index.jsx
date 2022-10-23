@@ -21,7 +21,7 @@ export default function Estabelecimentos() {
           {estabelecimentos.map(estabelecimento => (
             <Link
               key={estabelecimento.id}
-              href={`/estabelecimento/${estabelecimento.id}`}
+              href={`/estabelecimento${estabelecimento.uri}`}
             >
               <Box backgroundColor={'#222'} p={5} mb={5} borderRadius={'5px'}>
                 <Text fontSize={'1.4rem'}>{estabelecimento.nome}</Text>

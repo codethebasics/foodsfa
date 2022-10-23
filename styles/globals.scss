@@ -28,6 +28,12 @@ body {
   color: $white;
   transition: all .3s ease-in-out;
 
+  main {
+    grid-area: main;
+    overflow: auto;
+    height: 100%;
+  }
+  
   .sidebar {
     background-color: $yellow;
     color: $black-1;

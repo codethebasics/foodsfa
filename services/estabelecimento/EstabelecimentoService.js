@@ -44,6 +44,29 @@ export const findById = async idEstabelecimento => {
 
 /**
  *
+ * Busca estabelecimento pela URI
+ *
+ * @param {string} uri - URI do estabelecimento
+ *
+ */
+export const findByURI = async uri => {
+  const isValid = uri.length
+
+  try {
+    if (!isValid) {
+      throw 'O id deve ser informado'
+    }
+    let response = await fetch(`/api/estabelecimentos/${uri}`).then(response =>
+      response.json()
+    )
+    return response
+  } catch (e) {
+    console.log(`Erro ao buscar estabelecimento pelo ID (${uri})`, e)
+  }
+}
+
+/**
+ *
  * Busca estabelecimento pelo nome
  *
  * @param {string} nomeEstabelecimento - Nome do estabelecimento
