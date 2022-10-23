@@ -348,7 +348,7 @@
       {
         "id": 21,
         "name": "Temaki Atum",
-        "uri": "/temakaria-genji/temaki-atum",
+        "uri": "/temakaria-genji/menu/temaki-atum",
         "description": "Cortes de atum com arroz",
         "image": "/img/item-placeholder.png",
         "imageAlt": "Temaki Atum",
@@ -359,7 +359,7 @@
       {
         "id": 22,
         "name": "Temaki Salmão",
-        "uri": "/temakaria-genji/temaki-salmao",
+        "uri": "/temakaria-genji/menu/temaki-salmao",
         "description": "Cordes de salmão e arroz",
         "image": "/img/item-placeholder.png",
         "imageAlt": "Temaki Salmão",
@@ -370,7 +370,7 @@
       {
         "id": 23,
         "name": "Temaki Filadélfia",
-        "uri": "/temakaria-genji/temaki-filadelfia",
+        "uri": "/temakaria-genji/menu/temaki-filadelfia",
         "description": "Salmão e cream cheese",
         "image": "/img/item-placeholder.png",
         "imageAlt": "Temaki Filadélfia",
@@ -381,7 +381,7 @@
       {
         "id": 24,
         "name": "Hot Filadélfia",
-        "uri": "/temakaria-genji/hot-filadelfia",
+        "uri": "/temakaria-genji/menu/hot-filadelfia",
         "description": "Salmão, cream cheese e molho tarê",
         "image": "/img/item-placeholder.png",
         "imageAlt": "Hot Filadélfia",
@@ -390,9 +390,9 @@
         "category": [50]
       },
       {
-        "id": 24,
+        "id": 25,
         "name": "Hot Rol",
-        "uri": "/temakaria-genji/hot-rol",
+        "uri": "/temakaria-genji/menu/hot-rol",
         "description": "Salmão, kani, cream cheese, molho tarê e cebolinha",
         "image": "/img/item-placeholder.png",
         "imageAlt": "Temaki Filadélfia",
@@ -401,9 +401,9 @@
         "category": [50]
       },
       {
-        "id": 25,
+        "id": 26,
         "name": "Niguiri Camarão",
-        "uri": "/temakaria-genji/niguiri-camarao",
+        "uri": "/temakaria-genji/menu/niguiri-camarao",
         "description": "Arroz com fatia de camarão",
         "image": "/img/item-placeholder.png",
         "imageAlt": "Niguiri Camarão",
@@ -412,9 +412,9 @@
         "category": [50]
       },
       {
-        "id": 26,
+        "id": 27,
         "name": "Yakisoba Shitake e Shimeji",
-        "uri": "/temakaria-genji/yakisoba-shitake-shimeji",
+        "uri": "/temakaria-genji/menu/yakisoba-shitake-shimeji",
         "description": "Massa, molho a base de shoyu (oriental), legumes da estação e 70 gramas de shitake e shimeji",
         "image": "/img/item-placeholder.png",
         "imageAlt": "Yakisoba Shitake e Shimeji",
@@ -423,9 +423,9 @@
         "category": [50]
       },
       {
-        "id": 27,
+        "id": 28,
         "name": "Yakisoba Tradicional",
-        "uri": "/temakaria-genji/yakisoba-tradicional",
+        "uri": "/temakaria-genji/menu/yakisoba-tradicional",
         "description": "Macarrão, frango e legumes",
         "image": "/img/item-placeholder.png",
         "imageAlt": "Yakisoba Tradicional",
@@ -434,9 +434,9 @@
         "category": [50]
       },
       {
-        "id": 28,
+        "id": 29,
         "name": "Macarrão Frango Chilli",
-        "uri": "/temakaria-genji/macarrao-frango-chilli",
+        "uri": "/temakaria-genji/menu/macarrao-frango-chilli",
         "description": "Macarrão, yakisoba com frango crispy, repolho, cenoura e damame ao molho sweet chili",
         "image": "/img/item-placeholder.png",
         "imageAlt": "Temaki Filadélfia",
@@ -445,9 +445,9 @@
         "category": [50]
       },
       {
-        "id": 29,
+        "id": 30,
         "name": "Barca de 50 peças",
-        "uri": "/temakaria-genji/barca-50-pecas",
+        "uri": "/temakaria-genji/menu/barca-50-pecas",
         "description": "06 sashimi lâminas de salmão fresco, 06 sashimi lâminas de atum fresco, 08 hossomaki salmão, 06 gunka salmão, 06 urumaki camarão com abacate, 06 urumaki filadélfia especial, 06  niguiri salmão, 06 niguiri atum",
         "image": "/img/item-placeholder.png",
         "imageAlt": "Barca de 50 peças",
@@ -456,9 +456,9 @@
         "category": [50]
       },
       {
-        "id": 30,
+        "id": 31,
         "name": "Combo de 20 peças",
-        "uri": "/temakaria-genji/combo-20-pecas",
+        "uri": "/temakaria-genji/menu/combo-20-pecas",
         "description": "05 sashimi lâminas de atum fresco, 05 niguiri atum, 10 urumaki atum com manga ao molho acevichado",
         "image": "/img/item-placeholder.png",
         "imageAlt": "Combo de 20 peças",
@@ -467,9 +467,9 @@
         "category": [50]
       },
       {
-        "id": 31,
+        "id": 32,
         "name": "Combo de 23 peças",
-        "uri": "/temakaria-genji/combo-23-pecas",
+        "uri": "/temakaria-genji/menu/combo-23-pecas",
         "description": "10 urumaki: salmão fresco e cream cheese enrolado em arroz shari, coberto com lâmina de salmão fresco e cebolete, 05 sashimi, 05 niguiri salmão: bolinho de arroz shari coberto com lâmina de salmão fresco, 03 futomaki: maki roll com alga nori por fora, recheado com salmão fresco, skin grelhada e rúcula",
         "image": "/img/item-placeholder.png",
         "imageAlt": "Combo de 23 peças",
@@ -478,9 +478,9 @@
         "category": [50]
       },
       {
-        "id": 31,
+        "id": 33,
         "name": "Combo de 23 peças",
-        "uri": "/temakaria-genji/combo-23-pecas",
+        "uri": "/temakaria-genji/menu/combo-23-pecas",
         "description": "10 urumaki: salmão fresco e cream cheese enrolado em arroz shari, coberto com lâmina de salmão fresco e cebolete, 05 sashimi, 05 niguiri salmão: bolinho de arroz shari coberto com lâmina de salmão fresco, 03 futomaki: maki roll com alga nori por fora, recheado com salmão fresco, skin grelhada e rúcula",
         "image": "/img/item-placeholder.png",
         "imageAlt": "Combo de 23 peças",
@@ -543,9 +543,9 @@
     ],
     "produtos": [
       {
-        "id": 32,
+        "id": 34,
         "name": "X-Bacon",
-        "uri": "/hamburgueria-brutus/x-bacon",
+        "uri": "/hamburgueria-brutus/menu/x-bacon",
         "description": "Bacon, cheddar, tomate e alface",
         "image": "/img/item-placeholder.png",
         "imageAlt": "X-Bacon",
@@ -554,9 +554,9 @@
         "category": [3]
       },
       {
-        "id": 33,
+        "id": 35,
         "name": "Hamburguer Artesanal Las Vegas",
-        "uri": "/hamburgueria-brutus/hamburguer-artesanal-las-vegas",
+        "uri": "/hamburgueria-brutus/menu/hamburguer-artesanal-las-vegas",
         "description": "pão crocante assado, bacon crocante, alface, tomate orgânicos, maionese artesanal E queijo cheddar",
         "image": "/img/item-placeholder.png",
         "imageAlt": "Hamburguer Artesanal Las Vegas",
@@ -565,9 +565,9 @@
         "category": [3]
       },
       {
-        "id": 34,
+        "id": 36,
         "name": "Hamburguer Italiano",
-        "uri": "/hamburgueria-brutus/hamburguer-italiano",
+        "uri": "/hamburgueria-brutus/menu/hamburguer-italiano",
         "description": "maionese, blend de costela, cebola roxa, ketchup, mussarela e alface e picles",
         "image": "/img/item-placeholder.png",
         "imageAlt": "Hamburguer Italiano",
@@ -576,9 +576,9 @@
         "category": [3]
       },
       {
-        "id": 35,
+        "id": 37,
         "name": "Hamburguer X-egg",
-        "uri": "/hamburgueria-brutus/hamburguer-x-egg",
+        "uri": "/hamburgueria-brutus/menu/hamburguer-x-egg",
         "description": "alface, ovo e tomate, blend de patinho temperado",
         "image": "/img/item-placeholder.png",
         "imageAlt": "Hamburguer X-egg",
@@ -587,9 +587,9 @@
         "category": [3]
       },
       {
-        "id": 36,
+        "id": 38,
         "name": "Hamburguer First Blood",
-        "uri": "/hamburgueria-brutus/hamburguer-first-blood",
+        "uri": "/hamburgueria-brutus/menu/hamburguer-first-blood",
         "description": "pão preto com cerveja, alface, cheddar, 2 hamburguers, molho especial da casa e barbecue",
         "image": "/img/item-placeholder.png",
         "imageAlt": "Hamburguer First Blood",
@@ -598,9 +598,9 @@
         "category": [3]
       },
       {
-        "id": 37,
+        "id": 39,
         "name": "Combo Final De Semana",
-        "uri": "/hamburgueria-brutus/combo-final-de-semana",
+        "uri": "/hamburgueria-brutus/menu/combo-final-de-semana",
         "description": "batata frita, 2 hamburgurs x-saladas, coxinha e stack de frango",
         "image": "/img/item-placeholder.png",
         "imageAlt": "Combo Final De Semana",
@@ -609,9 +609,9 @@
         "category": [3]
       },
       {
-        "id": 38,
+        "id": 40,
         "name": "Hamburguer Empire State",
-        "uri": "/hamburgueria-brutus/hamburguer-empire-state",
+        "uri": "/hamburgueria-brutus/menu/hamburguer-empire-state",
         "description": "tomate, alface, blend de picanha, batata frita, bacon, cheddar, molho picante, ovo, e molho verde",
         "image": "/img/item-placeholder.png",
         "imageAlt": "Hamburguer Empire State",
@@ -620,9 +620,9 @@
         "category": [3]
       },
       {
-        "id": 39,
+        "id": 41,
         "name": "Hamburguer Vegano Green",
-        "uri": "/hamburgueria-brutus/hamburguer-vegano-green",
+        "uri": "/hamburgueria-brutus/menu/hamburguer-vegano-green",
         "description": "hamburguer de soja, cheddar vegano cremoso, tomate, alface e pão grelhado",
         "image": "/img/item-placeholder.png",
         "imageAlt": "Hamburguer Vegano Green",
@@ -631,9 +631,9 @@
         "category": [3]
       },
       {
-        "id": 40,
+        "id": 42,
         "name": "Hamburguer Mister Vegano",
-        "uri": "/hamburgueria-brutus/hamburguer-vegano-green",
+        "uri": "/hamburgueria-brutus/menu/hamburguer-vegano-green",
         "description": "cheddar vegano cremoso, hamburguer soja, pão gergelim, tomate, cebola e alface",
         "image": "/img/item-placeholder.png",
         "imageAlt": "Hamburguer Mister Vegano",
@@ -642,9 +642,9 @@
         "category": [3]
       },
       {
-        "id": 41,
+        "id": 43,
         "name": "Hamburguer Monstro",
-        "uri": "/hamburgueria-brutus/hamburguer-monstro",
+        "uri": "/hamburgueria-brutus/menu/hamburguer-monstro",
         "description": "pão grelhado, 2 blends de picanha, molho rose, cheddar, tomate e alface",
         "image": "/img/item-placeholder.png",
         "imageAlt": "Hamburguer Monstro",
@@ -653,9 +653,9 @@
         "category": [3]
       },
       {
-        "id": 42,
+        "id": 44,
         "name": "Artesanal Da Casa",
-        "uri": "/hamburgueria-brutus/artesanal-da-casa",
+        "uri": "/hamburgueria-brutus/menu/artesanal-da-casa",
         "description": "Cheddar, Maionese tempora, bacon, blend de fraldinha e cebola caramelizada",
         "image": "/img/item-placeholder.png",
         "imageAlt": "Artesanal Da Casa",
@@ -718,9 +718,9 @@
     ],
     "produtos": [
       {
-        "id": 43,
+        "id": 45,
         "name": "Pizza Marguerita",
-        "uri": "/pizzaria-mussashi/pizza-marguerita",
+        "uri": "/pizzaria-mussashi/menu/pizza-marguerita",
         "description": "Mussarela e manjericão fresco e tomate",
         "image": "/img/item-placeholder.png",
         "imageAlt": "Pizza Marguerita",
@@ -729,9 +729,9 @@
         "category": [2]
       },
       {
-        "id": 44,
+        "id": 46,
         "name": "Pizza Calabresa",
-        "uri": "/pizzaria-mussashi/pizza-calabresa",
+        "uri": "/pizzaria-mussashi/menu/pizza-calabresa",
         "description": "Mussarela e calabresa fatiada",
         "image": "/img/item-placeholder.png",
         "imageAlt": "Pizza Calabresa",
@@ -740,9 +740,9 @@
         "category": [2]
       },
       {
-        "id": 45,
+        "id": 47,
         "name": "Pizza Lombo e Catupiry",
-        "uri": "/pizzaria-mussashi/pizza-lombo-e-catupiry",
+        "uri": "/pizzaria-mussashi/menu/pizza-lombo-e-catupiry",
         "description": "Mussarela, lombo e queijo tipo catupiry",
         "image": "/img/item-placeholder.png",
         "imageAlt": "Pizza Lombo e Catupiry",
@@ -751,9 +751,9 @@
         "category": [2]
       },
       {
-        "id": 46,
+        "id": 48,
         "name": "Pizza Mexicana",
-        "uri": "/pizzaria-mussashi/pizza-mexicana",
+        "uri": "/pizzaria-mussashi/menu/pizza-mexicana",
         "description": "Mussarela, calabresa moída, pimentão e pimenta calabresa (opcional)",
         "image": "/img/item-placeholder.png",
         "imageAlt": "Pizza Mexicana",
@@ -762,9 +762,9 @@
         "category": [2]
       },
       {
-        "id": 47,
+        "id": 49,
         "name": "Pizza 4 Queijos",
-        "uri": "/pizzaria-mussashi/pizza-4-queijos",
+        "uri": "/pizzaria-mussashi/menu/pizza-4-queijos",
         "description": "Mussarela, provolone, parmesão e queijo tipo catupiry",
         "image": "/img/item-placeholder.png",
         "imageAlt": "Pizza 4 Queijos",
@@ -773,9 +773,9 @@
         "category": [2]
       },
       {
-        "id": 48,
+        "id": 50,
         "name": "Pizza Portuguesa",
-        "uri": "/pizzaria-mussashi/pizza-portuguesa",
+        "uri": "/pizzaria-mussashi/menu/pizza-portuguesa",
         "description": "ovo, azeitona, cebola, presunto e mussarela",
         "image": "/img/item-placeholder.png",
         "imageAlt": "Pizza Portuguesa",
@@ -784,9 +784,9 @@
         "category": [2]
       },
       {
-        "id": 49,
+        "id": 51,
         "name": "Pizza Toscana",
-        "uri": "/pizzaria-mussashi/pizza-toscana",
+        "uri": "/pizzaria-mussashi/menu/pizza-toscana",
         "description": "ovo, azeitona, cebola, presunto e mussarela",
         "image": "/img/item-placeholder.png",
         "imageAlt": "Pizza Toscana",
@@ -795,9 +795,9 @@
         "category": [2]
       },
       {
-        "id": 50,
+        "id": 52,
         "name": "Pizza Caipira",
-        "uri": "/pizzaria-mussashi/pizza-caipira",
+        "uri": "/pizzaria-mussashi/menu/pizza-caipira",
         "description": "Mussarela, frango temperado, queijo tipo catupiry ou cheddar",
         "image": "/img/item-placeholder.png",
         "imageAlt": "Pizza Caipira",
@@ -806,9 +806,9 @@
         "category": [2]
       },
       {
-        "id": 51,
+        "id": 53,
         "name": "Pizza Pepperoni",
-        "uri": "/pizzaria-mussashi/pizza-pepperoni",
+        "uri": "/pizzaria-mussashi/menu/pizza-pepperoni",
         "description": "Mussarela, pepperoni e pimenta rosa (sabor suave - opcional)",
         "image": "/img/item-placeholder.png",
         "imageAlt": "Pizza Pepperoni",
@@ -817,9 +817,9 @@
         "category": [2]
       },
       {
-        "id": 52,
+        "id": 54,
         "name": "Gorgonzola com Tomate Cereja",
-        "uri": "/pizzaria-mussashi/pizza-gorgonzola-com-tomate-cereja",
+        "uri": "/pizzaria-mussashi/menu/pizza-gorgonzola-com-tomate-cereja",
         "description": "Mussarela, gorgonzola e tomate cereja",
         "image": "/img/item-placeholder.png",
         "imageAlt": "Gorgonzola com Tomate Cereja",
@@ -828,9 +828,9 @@
         "category": [2]
       },
       {
-        "id": 53,
+        "id": 55,
         "name": "Escarola com Bacon",
-        "uri": "/pizzaria-mussashi/pizza-escarola-com-bacon",
+        "uri": "/pizzaria-mussashi/menu/pizza-escarola-com-bacon",
         "description": "Mussarela, escarola, provolone e bacon",
         "image": "/img/item-placeholder.png",
         "imageAlt": "Escarola com Bacon",
@@ -839,9 +839,9 @@
         "category": [2]
       },
       {
-        "id": 54,
+        "id": 56,
         "name": "Abobrinha",
-        "uri": "/pizzaria-mussashi/pizza-abobrinha",
+        "uri": "/pizzaria-mussashi/menu/pizza-abobrinha",
         "description": "Mussarela, abobrinha, presunto de Parma, queijo Polenguinho e azeitonas",
         "image": "/img/item-placeholder.png",
         "imageAlt": "Abobrinha",
@@ -904,9 +904,9 @@
     ],
     "produtos": [     
       {
-        "id": 55,
+        "id": 57,
         "name": "Banoff torta de banana",
-        "uri": "/confeitaria-mel-azul/banoff-torta-de-banana",
+        "uri": "/confeitaria-mel-azul/menu/banoff-torta-de-banana",
         "description": "Massa à base de bolacha amanteigada com doce de leite caseiro, banana e nata batida adocicada, com um toque de canela",
         "image": "/img/item-placeholder.png",
         "imageAlt": "Banoff torta de banana",
@@ -915,9 +915,9 @@
         "category": [7]
       },
       {
-        "id": 56,
+        "id": 58,
         "name": "Piscina cake",
-        "uri": "/confeitaria-mel-azul/piscina-cake",
+        "uri": "/confeitaria-mel-azul/menu/piscina-cake",
         "description": "Bolo de baunilha com uma deliciosa calda de brigadeiro belga com vários acompanhamentos, morangos, uvas, mini marshmallow, oreo e casquinha de sorvete",
         "image": "/img/item-placeholder.png",
         "imageAlt": "Piscina cake",
@@ -926,9 +926,9 @@
         "category": [7]
       },
       {
-        "id": 57,
+        "id": 59,
         "name": "Torta marta rocha",
-        "uri": "/confeitaria-mel-azul/torta-marta-rocha",
+        "uri": "/confeitaria-mel-azul/menu/torta-marta-rocha",
         "description": "Uma das mais pedidas! São 4 camadas de pão de ló, de baunilha e de chocolate, com recheios de creme de ovos e suspiros, nata adocicada e crocante de nozes, e compota de damasco",
         "image": "/img/item-placeholder.png",
         "imageAlt": "Torta marta rocha",
@@ -937,9 +937,9 @@
         "category": [7]
       },
       {
-        "id": 58,
+        "id": 60,
         "name": "Cheesecake de Frutas Vermelhas",
-        "uri": "/confeitaria-mel-azul/cheesecake-de-frutas-vermelhas",
+        "uri": "/confeitaria-mel-azul/menu/cheesecake-de-frutas-vermelhas",
         "description": "Base de biscoito amanteigado com creme de creamcheese e ganache branco. Cobertura de geléia de frutas vermelhas caseira e frutas frescas",
         "image": "/img/item-placeholder.png",
         "imageAlt": "Cheesecake de Frutas Vermelhas",
@@ -948,9 +948,9 @@
         "category": [7]
       },
       {
-        "id": 59,
+        "id": 61,
         "name": "Torta alemã",
-        "uri": "/confeitaria-mel-azul/torta-alema",
+        "uri": "/confeitaria-mel-azul/menu/torta-alema",
         "description": "Sobremesa com creme à base de nata e gemas intercalado com biscoitos e finalizado com ganache caseiro, envolvo por biscoitos",
         "image": "/img/item-placeholder.png",
         "imageAlt": "Torta alemã",
@@ -959,9 +959,9 @@
         "category": [7]
       },
       {
-        "id": 60,
+        "id": 62,
         "name": "Pudim de leite",
-        "uri": "/confeitaria-mel-azul/pudim-de-leite",
+        "uri": "/confeitaria-mel-azul/menu/pudim-de-leite",
         "description": "Pudim cremoso feito à base de leite condensado, ovos e leite. Com calda caramelada especial Kaminski",
         "image": "/img/item-placeholder.png",
         "imageAlt": "Pudim de leite",
@@ -970,9 +970,9 @@
         "category": [7]
       },
       {
-        "id": 61,
+        "id": 63,
         "name": "Bolinho choconinho",
-        "uri": "/confeitaria-mel-azul/bolinho-choconinho",
+        "uri": "/confeitaria-mel-azul/menu/bolinho-choconinho",
         "description": "Massinha de chocolate bem molhadinha intercalada com creme de Ninho e brigadeiro cremoso",
         "image": "/img/item-placeholder.png",
         "imageAlt": "Bolinho choconinho",
@@ -981,9 +981,9 @@
         "category": [7]
       },
       {
-        "id": 62,
+        "id": 64,
         "name": "Bolinho de coco",
-        "uri": "/confeitaria-mel-azul/bolinho-de-coco",
+        "uri": "/confeitaria-mel-azul/menu/bolinho-de-coco",
         "description": "abacaxi e doce de leite. Massinha branca bem molhadinha intercalada com recheio de Prestígio, compota de abacaxi caseira e doce de leite cozido na casa",
         "image": "/img/item-placeholder.png",
         "imageAlt": "Bolinho de coco",
@@ -992,9 +992,9 @@
         "category": [7]
       },
       {
-        "id": 63,
+        "id": 65,
         "name": "Bolinho tropical",
-        "uri": "/confeitaria-mel-azul/bolinho-tropical",
+        "uri": "/confeitaria-mel-azul/menu/bolinho-tropical",
         "description": "Massinha branca bem molhadinha intercalada com creme chiffon e frutas (pêssego, abacaxi, morango e uvas thompson)",
         "image": "/img/item-placeholder.png",
         "imageAlt": "Bolinho tropical",
@@ -1003,9 +1003,9 @@
         "category": [7]
       },
       {
-        "id": 64,
+        "id": 66,
         "name": "Bolinho trufado com prestígio",
-        "uri": "/confeitaria-mel-azul/bolinho-trufado-com-prestigio",
+        "uri": "/confeitaria-mel-azul/menu/bolinho-trufado-com-prestigio",
         "description": "Massinha de chocolate bem molhadinha intercalada com Prestígio e trufa de chocolate blend",
         "image": "/img/item-placeholder.png",
         "imageAlt": "Bolinho trufado com prestígio",
@@ -1014,9 +1014,9 @@
         "category": [7]
       },
       {
-        "id": 65,
+        "id": 67,
         "name": "Gelatina diet",
-        "uri": "/confeitaria-mel-azul/gelatina-diet",
+        "uri": "/confeitaria-mel-azul/menu/gelatina-diet",
         "description": "Creminho branco à base de creme de leite leve, leite condensado diet e gelatina. Com cubos de gelatina diet de morango",
         "image": "/img/item-placeholder.png",
         "imageAlt": "Gelatina diet",
@@ -1025,9 +1025,9 @@
         "category": [7]
       },
       {
-        "id": 66,
+        "id": 68,
         "name": "Manjar de coco diet",
-        "uri": "/confeitaria-mel-azul/majar-de-coco-diet",
+        "uri": "/confeitaria-mel-azul/menu/majar-de-coco-diet",
         "description": "Creminho branco à base de leite de coco e coco seco com calda caseira diet de ameixa",
         "image": "/img/item-placeholder.png",
         "imageAlt": "Manjar de coco diet",
@@ -1090,9 +1090,9 @@
     ],
     "produtos": [           
       {
-        "id": 67,
+        "id": 69,
         "name": "The Outback Special 325g",
-        "uri": "/confeitaria-mel-azul/the-outback-special-325g",
+        "uri": "/confeitaria-mel-azul/menu/the-outback-special-325g",
         "description": "Um steak especial: 325g nosso clássico miolo de alcatra com sabor acentuado pelos temperos do Outback",
         "image": "/img/item-placeholder.png",
         "imageAlt": "The Outback Special 325g",
@@ -1101,9 +1101,9 @@
         "category": [7]
       },
       {
-        "id": 68,
+        "id": 70,
         "name": "Rockhampton Ribeye",
-        "uri": "/confeitaria-mel-azul/rockhampton-ribeye",
+        "uri": "/confeitaria-mel-azul/menu/rockhampton-ribeye",
         "description": "Um steak especial: 325g nosso clássico miolo de alcatra com sabor acentuado pelos temperos do Outback",
         "image": "/img/item-placeholder.png",
         "imageAlt": "Rockhampton Ribeye",
@@ -1112,9 +1112,9 @@
         "category": [7]
       },
       {
-        "id": 69,
+        "id": 71,
         "name": "Victoria’s Filet",
-        "uri": "/confeitaria-mel-azul/victorias-filet",
+        "uri": "/confeitaria-mel-azul/menu/victorias-filet",
         "description": "Um corte de filet mignon com cerca de 200g, servido no estilo que preferir: com temperos Outback ou com ervas finas. Servido com molho Merlot. Preparado na chapa no ponto que você preferir",
         "image": "/img/item-placeholder.png",
         "imageAlt": "Victoria’s Filet",
@@ -1123,9 +1123,9 @@
         "category": [7]
       },
       {
-        "id": 70,
+        "id": 72,
         "name": "Chicken On The Barbie",
-        "uri": "/confeitaria-mel-azul/chicken-on-the-barbie",
+        "uri": "/confeitaria-mel-azul/menu/chicken-on-the-barbie",
         "description": "Um suculento peito de frango de cerca de 230g grelhado em chama aberta, servido com o molho Barbecue",
         "image": "/img/item-placeholder.png",
         "imageAlt": "Chicken On The Barbie",
@@ -1134,9 +1134,9 @@
         "category": [7]
       },
       {
-        "id": 71,
+        "id": 73,
         "name": "Grilled Fish & Shrimp Scampi",
-        "uri": "/confeitaria-mel-azul/grilled-fish-and-shrimp-scampi",
+        "uri": "/confeitaria-mel-azul/menu/grilled-fish-and-shrimp-scampi",
         "description": "Para honrar a paixão aussie pelos frutos do mar, cerca de 240g da nossa tilápia preparada na chapa e coberta com camarões ao molho Scampi",
         "image": "/img/item-placeholder.png",
         "imageAlt": "Grilled Fish & Shrimp Scampi",
@@ -1145,9 +1145,9 @@
         "category": [7]
       },
       {
-        "id": 72,
+        "id": 74,
         "name": "Steakhouse Pastas",
-        "uri": "/confeitaria-mel-azul/grilled-fish-and-shrimp-scampi",
+        "uri": "/confeitaria-mel-azul/menu/grilled-fish-and-shrimp-scampi",
         "description": "Fettuccine com champignons, tomates frescos e cortes de filet mignon. Refogado com um toque de vinho Chardonnay e black pepper",
         "image": "/img/item-placeholder.png",
         "imageAlt": "Steakhouse Pastas",
@@ -1156,9 +1156,9 @@
         "category": [7]
       },
       {
-        "id": 73,
+        "id": 75,
         "name": "Tilapia Filet",
-        "uri": "/confeitaria-mel-azul/tilapia-filet",
+        "uri": "/confeitaria-mel-azul/menu/tilapia-filet",
         "description": "Leveza e suculência elevadas ao topo pelos temperos no estilo Outback. Cerca de 240g da nossa tilápia preparada na chapa e servida com o delicioso molho Tartare",
         "image": "/img/item-placeholder.png",
         "imageAlt": "Tilapia Filet",
@@ -1167,9 +1167,9 @@
         "category": [7]
       },
       {
-        "id": 74,
+        "id": 76,
         "name": "Walkabout Soup - Bowl",
-        "uri": "/confeitaria-mel-azul/walkabout-soup-bowl",
+        "uri": "/confeitaria-mel-azul/menu/walkabout-soup-bowl",
         "description": "Que tal começar com uma sopa? Pergunte ao waiter qual é a opção do dia: Homemade Onion Soup, de cebolas ou Potato Soup, de batatas",
         "image": "/img/item-placeholder.png",
         "imageAlt": "Walkabout Soup - Bowl",
@@ -1178,9 +1178,9 @@
         "category": [7]
       },
       {
-        "id": 75,
+        "id": 77,
         "name": "El Ranchito",
-        "uri": "/confeitaria-mel-azul/el-ranchito",
+        "uri": "/confeitaria-mel-azul/menu/el-ranchito",
         "description": "Que tal começar com uma sopa? Pergunte ao waiter qual é a opção do dia: Homemade Onion Soup, de cebolas ou Potato Soup, de batatas",
         "image": "/img/item-placeholder.png",
         "imageAlt": "El Ranchito",
@@ -1189,9 +1189,9 @@
         "category": [7]
       },
       {
-        "id": 76,
+        "id": 78,
         "name": "Choco Cinnamon Banoffee",
-        "uri": "/confeitaria-mel-azul/choco-cinnamon-banoffe",
+        "uri": "/confeitaria-mel-azul/menu/choco-cinnamon-banoffe",
         "description": "Versão exclusiva da Banoffee no estilo Outback: base crocante de biscoito Thunder, doce de leite, brigadeiro com canela e finalizado com rodelas de banana, chantilly e canela. Contém nozes ou derivado de nozes",
         "image": "/img/item-placeholder.png",
         "imageAlt": "Choco Cinnamon Banoffee",
@@ -1200,9 +1200,9 @@
         "category": [7]
       },
       {
-        "id": 77,
+        "id": 79,
         "name": "Super Wings",
-        "uri": "/confeitaria-mel-azul/choco-cinnamon-banoffe",
+        "uri": "/confeitaria-mel-azul/menu/choco-cinnamon-banoffe",
         "description": "Nossas famosas Kookaburra Wings numa porção ainda maior. São 15 sobreasas de frango servidas com o molho Blue Cheese (contém açúcar e lactose) e aipo crocante. Nas opções light, médio ou hot",
         "image": "/img/item-placeholder.png",
         "imageAlt": "Super Wings",
@@ -1211,9 +1211,9 @@
         "category": [7]
       },
       {
-        "id": 78,
+        "id": 80,
         "name": "Outback Jack Nachos",
-        "uri": "/confeitaria-mel-azul/outback-jack-nachos",
+        "uri": "/confeitaria-mel-azul/menu/outback-jack-nachos",
         "description": "NachosCrocantes tortillas de milho servidas com feijões pretos, tomate-cereja, repolho roxo, mix de queijos, fatias de jalapenho e carne vegetariana (jaca desfiada e preparada com o Bold Flavour Outback). Acompanha o nosso famoso molho Cheese Ranch",
         "image": "/img/item-placeholder.png",
         "imageAlt": "Outback Jack Nachos",

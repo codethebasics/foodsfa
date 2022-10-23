@@ -2,7 +2,7 @@ import { Flex, Box, Image, Text } from '@chakra-ui/react'
 import { useRouter } from 'next/router'
 
 export default function Product({
-  productId,
+  productUri,
   imageSrc,
   imageAlt,
   name,
@@ -13,7 +13,7 @@ export default function Product({
   const router = useRouter()
 
   const productDetail = () => {
-    router.push(`${router.asPath}/item/${productId}`)
+    router.push(`/estabelecimento${productUri}`)
   }
 
   return (
@@ -37,9 +37,9 @@ export default function Product({
             {name}
           </Text>
         </Box>
-        <Box pb={2} px={4}>
+        <Box pb={2} px={4} height={50}>
           <Text fontSize={'0.9rem'} color={'#555'}>
-            {description}
+            {description.slice(0, 50) + '...'}
           </Text>
         </Box>
         <Flex

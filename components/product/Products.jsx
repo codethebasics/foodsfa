@@ -1,9 +1,9 @@
-import products from './products.json'
+// import products from './products.json'
 
 import { Flex } from '@chakra-ui/react'
 import Product from './Product'
 
-export default function Products({ categoryId }) {
+export default function Products({ categoryId, products }) {
   return (
     <Flex
       height={'100%'}
@@ -22,6 +22,7 @@ export default function Products({ categoryId }) {
           <Product
             key={product.id}
             productId={product.id}
+            productUri={product.uri}
             imageSrc={product.image}
             imageAlt={product.imageAlt}
             name={product.name}

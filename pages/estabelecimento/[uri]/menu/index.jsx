@@ -1,10 +1,11 @@
 import { Flex, Box, Text, Image } from '@chakra-ui/react'
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { useRouter } from 'next/router'
 
 import Header from '../../../../components/layout/header/Header'
 import Footer from '../../../../components/layout/footer/Footer'
 import Sidebar from '../../../../components/layout/sidebar/Sidebar'
+import * as EstabelecimentoService from '../../../../services/estabelecimento/EstabelecimentoService'
 
 import 'swiper/css'
 import 'swiper/css/free-mode'
@@ -17,7 +18,21 @@ import styles from '../Spot.module.scss'
 export default function Home() {
   const [showSidebarMenu, setShowSidebarMenu] = useState(false)
   const [categoryId, setCategoryId] = useState(0)
+  const [estabelecimento, setEstabelecimento] = useState(null)
+
   const router = useRouter()
+  const { uri } = router.query
+
+  useEffect(() => {
+    const fetchEstabelecimento = async () => {
+      const response = await EstabelecimentoService.findByURI(uri)
+      if (response) {
+        setEstabelecimento(response.estabelecimento)
+        console.log('response', response)
+      }
+    }
+    fetchEstabelecimento()
+  }, [])
 
   return (
     <div className={styles.wrapper}>
@@ -38,7 +53,11 @@ export default function Home() {
             />
           </Flex>
           <Box>
-            <Image src={'/img/logo-label.svg'} alt={'FoodsFa'} />
+            <Image
+              src={'/img/logo-label.svg'}
+              alt={'FoodsFa'}
+              onClick={() => router.push(`/estabelecimento/${uri}`)}
+            />
           </Box>
           <Box>
             <Image
@@ -86,7 +105,7 @@ export default function Home() {
               textShadow={'0 3px 3px #000'}
               fontSize={'2rem'}
             >
-              La Vie est Belle
+              {estabelecimento?.nome}
             </Text>
           </Box>
           <Flex alignSelf={'flex-end'} justifyContent={'flex-end'}>
@@ -161,7 +180,12 @@ export default function Home() {
                 />
               </Flex>
             </Flex>
-            <Products categoryId={categoryId} />
+            {estabelecimento?.produtos && (
+              <Products
+                categoryId={categoryId}
+                products={estabelecimento?.produtos}
+              />
+            )}
           </Flex>
         </div>
       </main>
