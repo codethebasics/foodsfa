@@ -1,6 +1,7 @@
 import styled from 'styled-components'
 
 import { useState } from 'react'
+import { Text } from '@chakra-ui/react'
 
 /**
  *
@@ -60,7 +61,8 @@ export default function Toggle({
   label,
   description,
   status,
-  storeOption
+  storeOption,
+  disabled
 }) {
   const [active, setActive] = useState(status)
 
@@ -80,9 +82,16 @@ export default function Toggle({
         <div className={'label'}>{label}</div>
         <div className={'description'}>{description}</div>
       </div>
-      <ToggleButton onClick={changeActive} className={active ? 'active' : ''}>
-        <div />
-      </ToggleButton>
+      {!disabled && (
+        <ToggleButton onClick={changeActive} className={active ? 'active' : ''}>
+          <div></div>
+        </ToggleButton>
+      )}
+      {disabled && (
+        <Text fontSize={'0.7rem'} color={'#757575'}>
+          Obrigatório
+        </Text>
+      )}
     </ToggleContainer>
   )
 }

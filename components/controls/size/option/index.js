@@ -66,11 +66,11 @@ const SizeOptionContainer = styled.div`
 export default function SizeOption({
   label,
   description,
-  symbol,
   price,
   size,
   selected,
-  onSelect
+  onSelect,
+  multiplyFactor
 }) {
   const select = () => {
     onSelect()
@@ -83,8 +83,8 @@ export default function SizeOption({
         <span>{description}</span>
       </div>
       <div>
-        <span>{symbol}</span>
-        <span>{price?.toFixed(2)}</span>
+        <span>{'R$'}</span>
+        <span>{(price * multiplyFactor).toFixed(2)}</span>
         <span>{size}</span>
       </div>
     </SizeOptionContainer>
