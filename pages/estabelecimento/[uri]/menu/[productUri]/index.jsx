@@ -7,17 +7,23 @@ import * as EstabelecimentoService from '../../../../../services/estabelecimento
 import { Flex, Box, Image, Text } from '@chakra-ui/react'
 import { useEffect, useState } from 'react'
 import { useRouter } from 'next/router'
+// import { PedidoContext } from '../../../../../context/PedidoContext'
 
 export default function Product() {
   const [showSidebarMenu, setShowSidebarMenu] = useState(false)
   const [product, setProduct] = useState(undefined)
+
+  // const [pedido, setPedido] = useContext(PedidoContext)
+
   const router = useRouter()
+
   const { uri } = router.query
   const { productUri } = router.query
 
   useEffect(() => {
     const fetchEstabelecimento = async () => {
       const response = await EstabelecimentoService.findByURI(uri)
+      console.log('reponse', response)
       if (response) {
         setProduct(
           response.estabelecimento.produtos.find(
@@ -34,10 +40,17 @@ export default function Product() {
    * Add item
    * --------
    */
-  const addItem = () => {
-    console.log('adicionando item', product)
+  const addItem = product => {
+    console.log('size', product.size)
+    console.log('ingredientes', product.ingredientes)
+    console.log('product', product)
   }
 
+  /**
+   *
+   * Produto não encontrado
+   *
+   */
   const ProductNotFound = () => {
     return (
       <Flex
@@ -120,6 +133,8 @@ export default function Product() {
             price={product?.price}
             promoPrice={product?.pricePromo}
             toggleOption={true}
+            ingredientes={product?.ingredientes}
+            size={product?.size}
           />
         ) : (
           <ProductNotFound />

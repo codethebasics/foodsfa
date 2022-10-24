@@ -353,8 +353,24 @@
         "image": "/img/item-placeholder.png",
         "imageAlt": "Temaki Atum",
         "price": 28.50,
-        "pricePromo": 28.50,
-        "category": [50]
+        "pricePromo": 27.50,
+        "category": [50],
+        "ingredientes": [
+          {
+            "id": 1,
+            "nome": "arroz",
+            "description": "Arroz japonês",
+            "status": true,
+            "mandatory": true
+          },
+          {
+            "id": 2,
+            "nome": "atum",
+            "description": "Atum ralado",
+            "status": true,
+            "mandatory": false
+          }
+        ]
       },
       {
         "id": 22,
@@ -365,7 +381,23 @@
         "imageAlt": "Temaki Salmão",
         "price": 28.50,
         "pricePromo": 28.50,
-        "category": [50]
+        "category": [50],
+        "ingredientes": [
+          {
+            "id": 1,
+            "nome": "arroz",
+            "description": "Arroz japonês",
+            "status": true,
+            "mandatory": true
+          },
+          {
+            "id": 3,
+            "nome": "salmão",
+            "description": "Salmão fresco",
+            "status": true,
+            "mandatory": false
+          }
+        ]
       },
       {
         "id": 23,
@@ -376,7 +408,30 @@
         "imageAlt": "Temaki Filadélfia",
         "price": 28.50,
         "pricePromo": 28.50,
-        "category": [50]
+        "category": [50],
+        "ingredientes": [
+          {
+            "id": 1,
+            "nome": "arroz",
+            "description": "Arroz japonês",
+            "status": true,
+            "mandatory": true
+          },
+          {
+            "id": 3,
+            "nome": "salmão",
+            "description": "Salmão fresco",
+            "status": true,
+            "mandatory": false
+          },
+          {
+            "id": 4,
+            "nome": "cream cheese",
+            "description": "Cream cheese",
+            "status": true,
+            "mandatory": false
+          }
+        ]
       },
       {
         "id": 24,
@@ -387,7 +442,30 @@
         "imageAlt": "Hot Filadélfia",
         "price": 21.90,
         "pricePromo": 21.90,
-        "category": [50]
+        "category": [50],
+        "ingredientes": [
+          {
+            "id": 1,
+            "nome": "arroz",
+            "description": "Arroz japonês",
+            "status": true,
+            "mandatory": true
+          },
+          {
+            "id": 4,
+            "nome": "cream cheese",
+            "description": "Cream cheese",
+            "status": true,
+            "mandatory": false
+          },
+          {
+            "id": 5,
+            "nome": "molho tarê",
+            "description": "Molho japonês",
+            "status": true,
+            "mandatory": false
+          }
+        ]
       },
       {
         "id": 25,
@@ -398,7 +476,37 @@
         "imageAlt": "Temaki Filadélfia",
         "price": 28.50,
         "pricePromo": 28.50,
-        "category": [50]
+        "category": [50],
+        "ingredientes": [
+          {
+            "id": 1,
+            "nome": "arroz",
+            "description": "Arroz japonês",
+            "status": true,
+            "mandatory": true
+          },
+          {
+            "id": 4,
+            "nome": "cream cheese",
+            "description": "Molho de quejo",
+            "status": true,
+            "mandatory": false
+          },
+          {
+            "id": 5,
+            "nome": "molho tarê",
+            "description": "Molho japonês",
+            "status": true,
+            "mandatory": false
+          },
+          {
+            "id": "6",
+            "nome": "cebolinha",
+            "description": "Cebolinha fresca",
+            "status": true,
+            "mandatory": false
+          }
+        ]
       },
       {
         "id": 26,
@@ -409,7 +517,23 @@
         "imageAlt": "Niguiri Camarão",
         "price": 32.50,
         "pricePromo": 32.50,
-        "category": [50]
+        "category": [50],
+        "ingredientes": [
+          {
+            "id": 1,
+            "nome": "arroz",
+            "description": "Arroz japonês",
+            "status": true,
+            "mandatory": true
+          },
+          {
+            "id": 7,
+            "nome": "camarão",
+            "description": "Camarão fresco",
+            "status": true,
+            "mandatory": true
+          }
+        ]
       },
       {
         "id": 27,
@@ -420,7 +544,30 @@
         "imageAlt": "Yakisoba Shitake e Shimeji",
         "price": 32.50,
         "pricePromo": 32.50,
-        "category": [50]
+        "category": [50],
+        "ingredientes": [
+          {
+            "id": 8,
+            "nome": "macarrão",
+            "description": "Macarrão Yakisoba",
+            "status": true,
+            "mandatory": true
+          },
+          {
+            "id": 9,
+            "nome": "shitake",
+            "description": "Cogumelo japonês",
+            "status": true,
+            "mandatory": false
+          },
+          {
+            "id": 10,
+            "nome": "shimeji",
+            "description": "Cogumelo japonês",
+            "status": true,
+            "mandatory": false
+          }
+        ]
       },
       {
         "id": 28,
@@ -431,7 +578,30 @@
         "imageAlt": "Yakisoba Tradicional",
         "price": 35.90,
         "pricePromo": 35.90,
-        "category": [50]
+        "category": [50],
+        "ingredientes": [
+          {
+            "id": 8,
+            "nome": "macarrão",
+            "description": "Macarrão Yakisoba",
+            "status": true,
+            "mandatory": true
+          },
+          {
+            "id": 11,
+            "nome": "frango",
+            "description": "Frango em cubos",
+            "status": true,
+            "mandatory": false
+          },
+          {
+            "id": 12,
+            "nome": "legumes",
+            "description": "Legumes frescos",
+            "status": true,
+            "mandatory": false
+          }
+        ]
       },
       {
         "id": 29,
@@ -442,7 +612,30 @@
         "imageAlt": "Temaki Filadélfia",
         "price": 29.90,
         "pricePromo": 29.90,
-        "category": [50]
+        "category": [50],
+        "ingredientes": [
+          {
+            "id": 8,
+            "nome": "macarrão",
+            "description": "Macarrão Yakisoba",
+            "status": true,
+            "mandatory": true
+          },
+          {
+            "id": 11,
+            "nome": "frango",
+            "description": "Frango em cubos",
+            "status": true,
+            "mandatory": false
+          },
+          {
+            "id": 12,
+            "nome": "legumes",
+            "description": "Legumes frescos",
+            "status": true,
+            "mandatory": false
+          }
+        ]
       },
       {
         "id": 30,
@@ -453,7 +646,44 @@
         "imageAlt": "Barca de 50 peças",
         "price": 179.50,
         "pricePromo": 179.50,
-        "category": [50]
+        "category": [50],
+        "ingredientes": [
+          {
+            "id": 1,
+            "nome": "arroz",
+            "description": "Arroz japonês",
+            "status": true,
+            "mandatory": true
+          },
+          {
+            "id": 2,
+            "nome": "atum",
+            "description": "Atum fresco",
+            "status": true,
+            "mandatory": false
+          },
+          {
+            "id": 3,
+            "nome": "salmão",
+            "description": "Salmão fresco",
+            "status": true,
+            "mandatory": false
+          },
+          {
+            "id": 4,
+            "nome": "cream cheese",
+            "description": "Cream cheese",
+            "status": true,
+            "mandatory": false
+          },
+          {
+            "id": 13,
+            "nome": "abacate",
+            "description": "Abacate fresco",
+            "status": true,
+            "mandatory": false
+          }
+        ]
       },
       {
         "id": 31,
@@ -464,7 +694,43 @@
         "imageAlt": "Combo de 20 peças",
         "price": 58.90,
         "pricePromo": 58.90,
-        "category": [50]
+        "category": [50],
+        "ingredientes": [
+          {
+            "id": 1,
+            "nome": "arroz",
+            "description": "Arroz japonês",
+            "status": true,
+            "mandatory": true
+          },
+          {
+            "id": 2,
+            "nome": "atum",
+            "description": "Atum ralado",
+            "status": true,
+            "mandatory": false
+          },          
+          {
+            "id": 4,
+            "nome": "cream cheese",
+            "description": "Cream cheese",
+            "status": true
+          },
+          {
+            "id": 13,
+            "nome": "abacate",
+            "description": "Abacate fresco",
+            "status": true,
+            "mandatory": false
+          },
+          {
+            "id": 14,
+            "nome": "manga",
+            "description": "Manga semi-madura",
+            "status": true,
+            "mandatory": false
+          }
+        ]
       },
       {
         "id": 32,
@@ -475,7 +741,44 @@
         "imageAlt": "Combo de 23 peças",
         "price": 76.00,
         "pricePromo": 76.00,
-        "category": [50]
+        "category": [50],
+        "ingredientes": [
+          {
+            "id": 1,
+            "nome": "arroz",
+            "description": "Arroz japonês",
+            "status": true,
+            "mandatory": true
+          },
+          {
+            "id": 2,
+            "nome": "atum",
+            "description": "Atum ralado",
+            "status": true,
+            "mandatory": false
+          },
+          {
+            "id": 3,
+            "nome": "salmão",
+            "description": "Salmão fresco",
+            "status": true,
+            "mandatory": false
+          },
+          {
+            "id": 4,
+            "nome": "cream cheese",
+            "description": "Cream cheese",
+            "status": true,
+            "mandatory": false
+          },
+          {
+            "id": 13,
+            "nome": "abacate",
+            "description": "Abacate fresco",
+            "status": true,
+            "mandatory": false
+          }
+        ]
       },
       {
         "id": 33,
@@ -486,7 +789,44 @@
         "imageAlt": "Combo de 23 peças",
         "price": 76.00,
         "pricePromo": 76.00,
-        "category": [50]
+        "category": [50],
+        "ingredientes": [
+          {
+            "id": 1,
+            "nome": "arroz",
+            "description": "Arroz japonês",
+            "status": true,
+            "mandatory": true
+          },
+          {
+            "id": 2,
+            "nome": "atum",
+            "description": "Atum ralado",
+            "status": true,
+            "mandatory": false
+          },
+          {
+            "id": 3,
+            "nome": "salmão",
+            "description": "Salmão fresco",
+            "status": true,
+            "mandatory": false
+          },
+          {
+            "id": 4,
+            "nome": "cream cheese",
+            "description": "Cream cheese",
+            "status": true,
+            "mandatory": false
+          },
+          {
+            "id": 13,
+            "nome": "abacate",
+            "description": "Abacate fresco",
+            "status": true,
+            "mandatory": false
+          }
+        ]
       }      
     ]
   },
@@ -551,7 +891,56 @@
         "imageAlt": "X-Bacon",
         "price": 20.50,
         "pricePromo": 20.50,
-        "category": [3]
+        "category": [3],
+        "size": [
+          {
+            "id": 1,
+            "label": "Tamanho",
+            "description": "Pequeno",
+            "symbol": "P",
+            "multiplyFactor": 0.75,
+            "selected": false
+          },
+          {
+            "id": 2,
+            "label": "Tamanho",
+            "description": "Médio",
+            "symbol": "M",
+            "multiplyFactor": 1,
+            "selected": true
+          },
+          {
+            "id": 3,
+            "label": "Tamanho",
+            "description": "Grande",
+            "symbol": "G",
+            "multiplyFactor": 1.25,
+            "selected": false
+          }
+        ],
+        "ingredientes": [
+          {
+            "id": 20,
+            "nome": "Hamburguer",
+            "description": "Hamburguer de carne bovina",
+            "status": true,
+            "mandatory": true
+          },
+          {
+            "id": 21,
+            "nome": "Queijo Mussarela",
+            "description": "Queijo Mussarela",
+            "status": true,
+            "mandatory": false
+          },
+          {
+            "id": 22,
+            "nome": "Bacon",
+            "description": "Bacon defumado em tiras",
+            "status": true,
+            "mandatory": false
+          }
+        ]
       },
       {
         "id": 35,
@@ -561,8 +950,71 @@
         "image": "/img/item-placeholder.png",
         "imageAlt": "Hamburguer Artesanal Las Vegas",
         "price": 35.50,
-        "pricePromo": 35.50,
-        "category": [3]
+        "pricePromo": 32.50,
+        "category": [3],
+        "size": [
+          {
+            "id": 1,
+            "label": "Tamanho",
+            "description": "Pequeno",
+            "symbol": "P",
+            "multiplyFactor": 0.75,
+            "selected": false
+          },
+          {
+            "id": 2,
+            "label": "Tamanho",
+            "description": "Médio",
+            "symbol": "M",
+            "multiplyFactor": 1,
+            "selected": true
+          },
+          {
+            "id": 3,
+            "label": "Tamanho",
+            "description": "Grande",
+            "symbol": "G",
+            "multiplyFactor": 1.25,
+            "selected": false
+          }
+        ],
+        "ingredientes": [
+          {
+            "id": 20,
+            "nome": "Hamburguer",
+            "description": "Hamburguer de carne bovina",
+            "status": true,
+            "mandatory": true
+          },
+          {
+            "id": 22,
+            "nome": "Bacon",
+            "description": "Bacon defumado em tiras",
+            "status": true,
+            "mandatory": false
+          },
+          {
+            "id": 23,
+            "nome": "Alface",
+            "description": "Alface crocante",
+            "status": true,
+            "mandatory": false
+          },
+          {
+            "id": 24,
+            "nome": "Tomate",
+            "description": "Tomate fresco",
+            "status": true,
+            "mandatory": false
+          },
+          {
+            "id": 25,
+            "nome": "Maionese",
+            "description": "Maionese Hellman's",
+            "status": true,
+            "mandatory": false
+          }
+        ]
       },
       {
         "id": 36,
@@ -573,7 +1025,70 @@
         "imageAlt": "Hamburguer Italiano",
         "price": 31.00,
         "pricePromo": 31.00,
-        "category": [3]
+        "category": [3],
+        "size": [
+          {
+            "id": 1,
+            "label": "Tamanho",
+            "description": "Pequeno",
+            "symbol": "P",
+            "multiplyFactor": 0.75,
+            "selected": false
+          },
+          {
+            "id": 2,
+            "label": "Tamanho",
+            "description": "Médio",
+            "symbol": "M",
+            "multiplyFactor": 1,
+            "selected": true
+          },
+          {
+            "id": 3,
+            "label": "Tamanho",
+            "description": "Grande",
+            "symbol": "G",
+            "multiplyFactor": 1.25,
+            "selected": false
+          }
+        ],
+        "ingredientes": [
+          {
+            "id": 20,
+            "nome": "Hamburguer",
+            "description": "Hamburguer de carne bovina",
+            "status": true,
+            "mandatory": true
+          },
+          {
+            "id": 22,
+            "nome": "Bacon",
+            "description": "Bacon defumado em tiras",
+            "status": true,
+            "mandatory": false
+          },
+          {
+            "id": 23,
+            "nome": "Alface",
+            "description": "Alface crocante",
+            "status": true,
+            "mandatory": false
+          },
+          {
+            "id": 24,
+            "nome": "Tomate",
+            "description": "Tomate fresco",
+            "status": true,
+            "mandatory": false
+          },
+          {
+            "id": 25,
+            "nome": "Maionese",
+            "description": "Maionese Hellman's",
+            "status": true,
+            "mandatory": false
+          }
+        ]
       },
       {
         "id": 37,
@@ -584,7 +1099,70 @@
         "imageAlt": "Hamburguer X-egg",
         "price": 25.20,
         "pricePromo": 25.20,
-        "category": [3]
+        "category": [3],
+        "size": [
+          {
+            "id": 1,
+            "label": "Tamanho",
+            "description": "Pequeno",
+            "symbol": "P",
+            "multiplyFactor": 0.75,
+            "selected": false
+          },
+          {
+            "id": 2,
+            "label": "Tamanho",
+            "description": "Médio",
+            "symbol": "M",
+            "multiplyFactor": 1,
+            "selected": true
+          },
+          {
+            "id": 3,
+            "label": "Tamanho",
+            "description": "Grande",
+            "symbol": "G",
+            "multiplyFactor": 1.25,
+            "selected": false
+          }
+        ],
+        "ingredientes": [
+          {
+            "id": 20,
+            "nome": "Hamburguer",
+            "description": "Hamburguer de carne bovina",
+            "status": true,
+            "mandatory": true
+          },
+          {
+            "id": 22,
+            "nome": "Bacon",
+            "description": "Bacon defumado em tiras",
+            "status": true,
+            "mandatory": false
+          },
+          {
+            "id": 23,
+            "nome": "Alface",
+            "description": "Alface crocante",
+            "status": true,
+            "mandatory": false
+          },
+          {
+            "id": 24,
+            "nome": "Tomate",
+            "description": "Tomate fresco",
+            "status": true,
+            "mandatory": false
+          },
+          {
+            "id": 25,
+            "nome": "Maionese",
+            "description": "Maionese Hellman's",
+            "status": true,
+            "mandatory": false
+          }
+        ]
       },
       {
         "id": 38,
@@ -595,7 +1173,70 @@
         "imageAlt": "Hamburguer First Blood",
         "price": 40.50,
         "pricePromo": 40.50,
-        "category": [3]
+        "category": [3],
+        "size": [
+          {
+            "id": 1,
+            "label": "Tamanho",
+            "description": "Pequeno",
+            "symbol": "P",
+            "multiplyFactor": 0.75,
+            "selected": false
+          },
+          {
+            "id": 2,
+            "label": "Tamanho",
+            "description": "Médio",
+            "symbol": "M",
+            "multiplyFactor": 1,
+            "selected": true
+          },
+          {
+            "id": 3,
+            "label": "Tamanho",
+            "description": "Grande",
+            "symbol": "G",
+            "multiplyFactor": 1.25,
+            "selected": false
+          }
+        ],
+        "ingredientes": [
+          {
+            "id": 20,
+            "nome": "Hamburguer",
+            "description": "Hamburguer de carne bovina",
+            "status": true,
+            "mandatory": true
+          },
+          {
+            "id": 22,
+            "nome": "Bacon",
+            "description": "Bacon defumado em tiras",
+            "status": true,
+            "mandatory": false
+          },
+          {
+            "id": 23,
+            "nome": "Alface",
+            "description": "Alface crocante",
+            "status": true,
+            "mandatory": false
+          },
+          {
+            "id": 24,
+            "nome": "Tomate",
+            "description": "Tomate fresco",
+            "status": true,
+            "mandatory": false
+          },
+          {
+            "id": 25,
+            "nome": "Maionese",
+            "description": "Maionese Hellman's",
+            "status": true,
+            "mandatory": false
+          }
+        ]
       },
       {
         "id": 39,
@@ -606,7 +1247,70 @@
         "imageAlt": "Combo Final De Semana",
         "price": 50.40,
         "pricePromo": 50.40,
-        "category": [3]
+        "category": [3],
+        "size": [
+          {
+            "id": 1,
+            "label": "Tamanho",
+            "description": "Pequeno",
+            "symbol": "P",
+            "multiplyFactor": 0.75,
+            "selected": false
+          },
+          {
+            "id": 2,
+            "label": "Tamanho",
+            "description": "Médio",
+            "symbol": "M",
+            "multiplyFactor": 1,
+            "selected": true
+          },
+          {
+            "id": 3,
+            "label": "Tamanho",
+            "description": "Grande",
+            "symbol": "G",
+            "multiplyFactor": 1.25,
+            "selected": false
+          }
+        ],
+        "ingredientes": [
+          {
+            "id": 20,
+            "nome": "Hamburguer",
+            "description": "Hamburguer de carne bovina",
+            "status": true,
+            "mandatory": true
+          },
+          {
+            "id": 22,
+            "nome": "Bacon",
+            "description": "Bacon defumado em tiras",
+            "status": true,
+            "mandatory": false
+          },
+          {
+            "id": 23,
+            "nome": "Alface",
+            "description": "Alface crocante",
+            "status": true,
+            "mandatory": false
+          },
+          {
+            "id": 24,
+            "nome": "Tomate",
+            "description": "Tomate fresco",
+            "status": true,
+            "mandatory": false
+          },
+          {
+            "id": 25,
+            "nome": "Maionese",
+            "description": "Maionese Hellman's",
+            "status": true,
+            "mandatory": false
+          }
+        ]
       },
       {
         "id": 40,
@@ -617,7 +1321,70 @@
         "imageAlt": "Hamburguer Empire State",
         "price": 55.00,
         "pricePromo": 55.00,
-        "category": [3]
+        "category": [3],
+        "size": [
+          {
+            "id": 1,
+            "label": "Tamanho",
+            "description": "Pequeno",
+            "symbol": "P",
+            "multiplyFactor": 0.75,
+            "selected": false
+          },
+          {
+            "id": 2,
+            "label": "Tamanho",
+            "description": "Médio",
+            "symbol": "M",
+            "multiplyFactor": 1,
+            "selected": true
+          },
+          {
+            "id": 3,
+            "label": "Tamanho",
+            "description": "Grande",
+            "symbol": "G",
+            "multiplyFactor": 1.25,
+            "selected": false
+          }
+        ],
+        "ingredientes": [
+          {
+            "id": 20,
+            "nome": "Hamburguer",
+            "description": "Hamburguer de carne bovina",
+            "status": true,
+            "mandatory": true
+          },
+          {
+            "id": 22,
+            "nome": "Bacon",
+            "description": "Bacon defumado em tiras",
+            "status": true,
+            "mandatory": false
+          },
+          {
+            "id": 23,
+            "nome": "Alface",
+            "description": "Alface crocante",
+            "status": true,
+            "mandatory": false
+          },
+          {
+            "id": 24,
+            "nome": "Tomate",
+            "description": "Tomate fresco",
+            "status": true,
+            "mandatory": false
+          },
+          {
+            "id": 25,
+            "nome": "Maionese",
+            "description": "Maionese Hellman's",
+            "status": true,
+            "mandatory": false
+          }
+        ]
       },
       {
         "id": 41,
@@ -628,7 +1395,70 @@
         "imageAlt": "Hamburguer Vegano Green",
         "price": 30.00,
         "pricePromo": 30.00,
-        "category": [3]
+        "category": [3],
+        "size": [
+          {
+            "id": 1,
+            "label": "Tamanho",
+            "description": "Pequeno",
+            "symbol": "P",
+            "multiplyFactor": 0.75,
+            "selected": false
+          },
+          {
+            "id": 2,
+            "label": "Tamanho",
+            "description": "Médio",
+            "symbol": "M",
+            "multiplyFactor": 1,
+            "selected": true
+          },
+          {
+            "id": 3,
+            "label": "Tamanho",
+            "description": "Grande",
+            "symbol": "G",
+            "multiplyFactor": 1.25,
+            "selected": false
+          }
+        ],
+        "ingredientes": [
+          {
+            "id": 20,
+            "nome": "Hamburguer",
+            "description": "Hamburguer de carne bovina",
+            "status": true,
+            "mandatory": true
+          },
+          {
+            "id": 22,
+            "nome": "Bacon",
+            "description": "Bacon defumado em tiras",
+            "status": true,
+            "mandatory": false
+          },
+          {
+            "id": 23,
+            "nome": "Alface",
+            "description": "Alface crocante",
+            "status": true,
+            "mandatory": false
+          },
+          {
+            "id": 24,
+            "nome": "Tomate",
+            "description": "Tomate fresco",
+            "status": true,
+            "mandatory": false
+          },
+          {
+            "id": 25,
+            "nome": "Maionese",
+            "description": "Maionese Hellman's",
+            "status": true,
+            "mandatory": false
+          }
+        ]
       },
       {
         "id": 42,
@@ -639,7 +1469,70 @@
         "imageAlt": "Hamburguer Mister Vegano",
         "price": 33.20,
         "pricePromo": 33.20,
-        "category": [3]
+        "category": [3],
+        "size": [
+          {
+            "id": 1,
+            "label": "Tamanho",
+            "description": "Pequeno",
+            "symbol": "P",
+            "multiplyFactor": 0.75,
+            "selected": false
+          },
+          {
+            "id": 2,
+            "label": "Tamanho",
+            "description": "Médio",
+            "symbol": "M",
+            "multiplyFactor": 1,
+            "selected": true
+          },
+          {
+            "id": 3,
+            "label": "Tamanho",
+            "description": "Grande",
+            "symbol": "G",
+            "multiplyFactor": 1.25,
+            "selected": false
+          }
+        ],
+        "ingredientes": [
+          {
+            "id": 20,
+            "nome": "Hamburguer",
+            "description": "Hamburguer de carne bovina",
+            "status": true,
+            "mandatory": true
+          },
+          {
+            "id": 22,
+            "nome": "Bacon",
+            "description": "Bacon defumado em tiras",
+            "status": true,
+            "mandatory": false
+          },
+          {
+            "id": 23,
+            "nome": "Alface",
+            "description": "Alface crocante",
+            "status": true,
+            "mandatory": false
+          },
+          {
+            "id": 24,
+            "nome": "Tomate",
+            "description": "Tomate fresco",
+            "status": true,
+            "mandatory": false
+          },
+          {
+            "id": 25,
+            "nome": "Maionese",
+            "description": "Maionese Hellman's",
+            "status": true,
+            "mandatory": false
+          }
+        ]
       },
       {
         "id": 43,
@@ -650,7 +1543,70 @@
         "imageAlt": "Hamburguer Monstro",
         "price": 52.00,
         "pricePromo": 52.00,
-        "category": [3]
+        "category": [3],
+        "size": [
+          {
+            "id": 1,
+            "label": "Tamanho",
+            "description": "Pequeno",
+            "symbol": "P",
+            "multiplyFactor": 0.75,
+            "selected": false
+          },
+          {
+            "id": 2,
+            "label": "Tamanho",
+            "description": "Médio",
+            "symbol": "M",
+            "multiplyFactor": 1,
+            "selected": true
+          },
+          {
+            "id": 3,
+            "label": "Tamanho",
+            "description": "Grande",
+            "symbol": "G",
+            "multiplyFactor": 1.25,
+            "selected": false
+          }
+        ],
+        "ingredientes": [
+          {
+            "id": 20,
+            "nome": "Hamburguer",
+            "description": "Hamburguer de carne bovina",
+            "status": true,
+            "mandatory": true
+          },
+          {
+            "id": 22,
+            "nome": "Bacon",
+            "description": "Bacon defumado em tiras",
+            "status": true,
+            "mandatory": false
+          },
+          {
+            "id": 23,
+            "nome": "Alface",
+            "description": "Alface crocante",
+            "status": true,
+            "mandatory": false
+          },
+          {
+            "id": 24,
+            "nome": "Tomate",
+            "description": "Tomate fresco",
+            "status": true,
+            "mandatory": false
+          },
+          {
+            "id": 25,
+            "nome": "Maionese",
+            "description": "Maionese Hellman's",
+            "status": true,
+            "mandatory": false
+          }
+        ]
       },
       {
         "id": 44,
@@ -661,7 +1617,70 @@
         "imageAlt": "Artesanal Da Casa",
         "price": 52.00,
         "pricePromo": 52.00,
-        "category": [3]
+        "category": [3],
+        "size": [
+          {
+            "id": 1,
+            "label": "Tamanho",
+            "description": "Pequeno",
+            "symbol": "P",
+            "multiplyFactor": 0.75,
+            "selected": false
+          },
+          {
+            "id": 2,
+            "label": "Tamanho",
+            "description": "Médio",
+            "symbol": "M",
+            "multiplyFactor": 1,
+            "selected": true
+          },
+          {
+            "id": 3,
+            "label": "Tamanho",
+            "description": "Grande",
+            "symbol": "G",
+            "multiplyFactor": 1.25,
+            "selected": false
+          }
+        ],
+        "ingredientes": [
+          {
+            "id": 20,
+            "nome": "Hamburguer",
+            "description": "Hamburguer de carne bovina",
+            "status": true,
+            "mandatory": true
+          },
+          {
+            "id": 22,
+            "nome": "Bacon",
+            "description": "Bacon defumado em tiras",
+            "status": true,
+            "mandatory": false
+          },
+          {
+            "id": 23,
+            "nome": "Alface",
+            "description": "Alface crocante",
+            "status": true,
+            "mandatory": false
+          },
+          {
+            "id": 24,
+            "nome": "Tomate",
+            "description": "Tomate fresco",
+            "status": true,
+            "mandatory": false
+          },
+          {
+            "id": 25,
+            "nome": "Maionese",
+            "description": "Maionese Hellman's",
+            "status": true,
+            "mandatory": false
+          }
+        ]
       }
     ]    
   },
@@ -726,7 +1745,41 @@
         "imageAlt": "Pizza Marguerita",
         "price": 35.50,
         "pricePromo": 35.50,
-        "category": [2]
+        "category": [2],
+        "size": [
+          {
+            "id": 1,
+            "label": "Tamanho",
+            "description": "Pequeno",
+            "symbol": "P",
+            "multiplyFactor": 0.75,
+            "selected": false
+          },
+          {
+            "id": 2,
+            "label": "Tamanho",
+            "description": "Médio",
+            "symbol": "M",
+            "multiplyFactor": 1,
+            "selected": true
+          },
+          {
+            "id": 3,
+            "label": "Tamanho",
+            "description": "Grande",
+            "symbol": "G",
+            "multiplyFactor": 1.25,
+            "selected": false
+          },
+          {
+            "id": 4,
+            "label": "Tamanho",
+            "description": "Extra-Grande",
+            "symbol": "XG",
+            "multiplyFactor": 1.5,
+            "selected": false
+          }
+        ]
       },
       {
         "id": 46,
@@ -737,7 +1790,41 @@
         "imageAlt": "Pizza Calabresa",
         "price": 35.50,
         "pricePromo": 35.50,
-        "category": [2]
+        "category": [2],
+        "size": [
+          {
+            "id": 1,
+            "label": "Tamanho",
+            "description": "Pequeno",
+            "symbol": "P",
+            "multiplyFactor": 0.75,
+            "selected": false
+          },
+          {
+            "id": 2,
+            "label": "Tamanho",
+            "description": "Médio",
+            "symbol": "M",
+            "multiplyFactor": 1,
+            "selected": true
+          },
+          {
+            "id": 3,
+            "label": "Tamanho",
+            "description": "Grande",
+            "symbol": "G",
+            "multiplyFactor": 1.25,
+            "selected": false
+          },
+          {
+            "id": 4,
+            "label": "Tamanho",
+            "description": "Extra-Grande",
+            "symbol": "XG",
+            "multiplyFactor": 1.5,
+            "selected": false
+          }
+        ]
       },
       {
         "id": 47,
@@ -748,7 +1835,41 @@
         "imageAlt": "Pizza Lombo e Catupiry",
         "price": 35.50,
         "pricePromo": 35.50,
-        "category": [2]
+        "category": [2],
+        "size": [
+          {
+            "id": 1,
+            "label": "Tamanho",
+            "description": "Pequeno",
+            "symbol": "P",
+            "multiplyFactor": 0.75,
+            "selected": false
+          },
+          {
+            "id": 2,
+            "label": "Tamanho",
+            "description": "Médio",
+            "symbol": "M",
+            "multiplyFactor": 1,
+            "selected": true
+          },
+          {
+            "id": 3,
+            "label": "Tamanho",
+            "description": "Grande",
+            "symbol": "G",
+            "multiplyFactor": 1.25,
+            "selected": false
+          },
+          {
+            "id": 4,
+            "label": "Tamanho",
+            "description": "Extra-Grande",
+            "symbol": "XG",
+            "multiplyFactor": 1.5,
+            "selected": false
+          }
+        ]
       },
       {
         "id": 48,
@@ -759,7 +1880,41 @@
         "imageAlt": "Pizza Mexicana",
         "price": 35.50,
         "pricePromo": 35.50,
-        "category": [2]
+        "category": [2],
+        "size": [
+          {
+            "id": 1,
+            "label": "Tamanho",
+            "description": "Pequeno",
+            "symbol": "P",
+            "multiplyFactor": 0.75,
+            "selected": false
+          },
+          {
+            "id": 2,
+            "label": "Tamanho",
+            "description": "Médio",
+            "symbol": "M",
+            "multiplyFactor": 1,
+            "selected": true
+          },
+          {
+            "id": 3,
+            "label": "Tamanho",
+            "description": "Grande",
+            "symbol": "G",
+            "multiplyFactor": 1.25,
+            "selected": false
+          },
+          {
+            "id": 4,
+            "label": "Tamanho",
+            "description": "Extra-Grande",
+            "symbol": "XG",
+            "multiplyFactor": 1.5,
+            "selected": false
+          }
+        ]
       },
       {
         "id": 49,
@@ -770,7 +1925,41 @@
         "imageAlt": "Pizza 4 Queijos",
         "price": 45.50,
         "pricePromo": 45.50,
-        "category": [2]
+        "category": [2],
+        "size": [
+          {
+            "id": 1,
+            "label": "Tamanho",
+            "description": "Pequeno",
+            "symbol": "P",
+            "multiplyFactor": 0.75,
+            "selected": false
+          },
+          {
+            "id": 2,
+            "label": "Tamanho",
+            "description": "Médio",
+            "symbol": "M",
+            "multiplyFactor": 1,
+            "selected": true
+          },
+          {
+            "id": 3,
+            "label": "Tamanho",
+            "description": "Grande",
+            "symbol": "G",
+            "multiplyFactor": 1.25,
+            "selected": false
+          },
+          {
+            "id": 4,
+            "label": "Tamanho",
+            "description": "Extra-Grande",
+            "symbol": "XG",
+            "multiplyFactor": 1.5,
+            "selected": false
+          }
+        ]
       },
       {
         "id": 50,
@@ -781,7 +1970,41 @@
         "imageAlt": "Pizza Portuguesa",
         "price": 35.50,
         "pricePromo": 35.50,
-        "category": [2]
+        "category": [2],
+        "size": [
+          {
+            "id": 1,
+            "label": "Tamanho",
+            "description": "Pequeno",
+            "symbol": "P",
+            "multiplyFactor": 0.75,
+            "selected": false
+          },
+          {
+            "id": 2,
+            "label": "Tamanho",
+            "description": "Médio",
+            "symbol": "M",
+            "multiplyFactor": 1,
+            "selected": true
+          },
+          {
+            "id": 3,
+            "label": "Tamanho",
+            "description": "Grande",
+            "symbol": "G",
+            "multiplyFactor": 1.25,
+            "selected": false
+          },
+          {
+            "id": 4,
+            "label": "Tamanho",
+            "description": "Extra-Grande",
+            "symbol": "XG",
+            "multiplyFactor": 1.5,
+            "selected": false
+          }
+        ]
       },
       {
         "id": 51,
@@ -792,7 +2015,41 @@
         "imageAlt": "Pizza Toscana",
         "price": 35.50,
         "pricePromo": 35.50,
-        "category": [2]
+        "category": [2],
+        "size": [
+          {
+            "id": 1,
+            "label": "Tamanho",
+            "description": "Pequeno",
+            "symbol": "P",
+            "multiplyFactor": 0.75,
+            "selected": false
+          },
+          {
+            "id": 2,
+            "label": "Tamanho",
+            "description": "Médio",
+            "symbol": "M",
+            "multiplyFactor": 1,
+            "selected": true
+          },
+          {
+            "id": 3,
+            "label": "Tamanho",
+            "description": "Grande",
+            "symbol": "G",
+            "multiplyFactor": 1.25,
+            "selected": false
+          },
+          {
+            "id": 4,
+            "label": "Tamanho",
+            "description": "Extra-Grande",
+            "symbol": "XG",
+            "multiplyFactor": 1.5,
+            "selected": false
+          }
+        ]
       },
       {
         "id": 52,
@@ -803,7 +2060,41 @@
         "imageAlt": "Pizza Caipira",
         "price": 45.50,
         "pricePromo": 45.50,
-        "category": [2]
+        "category": [2],
+        "size": [
+          {
+            "id": 1,
+            "label": "Tamanho",
+            "description": "Pequeno",
+            "symbol": "P",
+            "multiplyFactor": 0.75,
+            "selected": false
+          },
+          {
+            "id": 2,
+            "label": "Tamanho",
+            "description": "Médio",
+            "symbol": "M",
+            "multiplyFactor": 1,
+            "selected": true
+          },
+          {
+            "id": 3,
+            "label": "Tamanho",
+            "description": "Grande",
+            "symbol": "G",
+            "multiplyFactor": 1.25,
+            "selected": false
+          },
+          {
+            "id": 4,
+            "label": "Tamanho",
+            "description": "Extra-Grande",
+            "symbol": "XG",
+            "multiplyFactor": 1.5,
+            "selected": false
+          }
+        ]
       },
       {
         "id": 53,
@@ -814,7 +2105,41 @@
         "imageAlt": "Pizza Pepperoni",
         "price": 35.50,
         "pricePromo": 35.50,
-        "category": [2]
+        "category": [2],
+        "size": [
+          {
+            "id": 1,
+            "label": "Tamanho",
+            "description": "Pequeno",
+            "symbol": "P",
+            "multiplyFactor": 0.75,
+            "selected": false
+          },
+          {
+            "id": 2,
+            "label": "Tamanho",
+            "description": "Médio",
+            "symbol": "M",
+            "multiplyFactor": 1,
+            "selected": true
+          },
+          {
+            "id": 3,
+            "label": "Tamanho",
+            "description": "Grande",
+            "symbol": "G",
+            "multiplyFactor": 1.25,
+            "selected": false
+          },
+          {
+            "id": 4,
+            "label": "Tamanho",
+            "description": "Extra-Grande",
+            "symbol": "XG",
+            "multiplyFactor": 1.5,
+            "selected": false
+          }
+        ]
       },
       {
         "id": 54,
@@ -825,7 +2150,41 @@
         "imageAlt": "Gorgonzola com Tomate Cereja",
         "price": 35.50,
         "pricePromo": 35.50,
-        "category": [2]
+        "category": [2],
+        "size": [
+          {
+            "id": 1,
+            "label": "Tamanho",
+            "description": "Pequeno",
+            "symbol": "P",
+            "multiplyFactor": 0.75,
+            "selected": false
+          },
+          {
+            "id": 2,
+            "label": "Tamanho",
+            "description": "Médio",
+            "symbol": "M",
+            "multiplyFactor": 1,
+            "selected": true
+          },
+          {
+            "id": 3,
+            "label": "Tamanho",
+            "description": "Grande",
+            "symbol": "G",
+            "multiplyFactor": 1.25,
+            "selected": false
+          },
+          {
+            "id": 4,
+            "label": "Tamanho",
+            "description": "Extra-Grande",
+            "symbol": "XG",
+            "multiplyFactor": 1.5,
+            "selected": false
+          }
+        ]
       },
       {
         "id": 55,
@@ -836,7 +2195,41 @@
         "imageAlt": "Escarola com Bacon",
         "price": 45.50,
         "pricePromo": 45.50,
-        "category": [2]
+        "category": [2],
+        "size": [
+          {
+            "id": 1,
+            "label": "Tamanho",
+            "description": "Pequeno",
+            "symbol": "P",
+            "multiplyFactor": 0.75,
+            "selected": false
+          },
+          {
+            "id": 2,
+            "label": "Tamanho",
+            "description": "Médio",
+            "symbol": "M",
+            "multiplyFactor": 1,
+            "selected": true
+          },
+          {
+            "id": 3,
+            "label": "Tamanho",
+            "description": "Grande",
+            "symbol": "G",
+            "multiplyFactor": 1.25,
+            "selected": false
+          },
+          {
+            "id": 4,
+            "label": "Tamanho",
+            "description": "Extra-Grande",
+            "symbol": "XG",
+            "multiplyFactor": 1.5,
+            "selected": false
+          }
+        ]
       },
       {
         "id": 56,
@@ -847,9 +2240,43 @@
         "imageAlt": "Abobrinha",
         "price": 45.50,
         "pricePromo": 45.50,
-        "category": [2]
+        "category": [2],
+        "size": [
+          {
+            "id": 1,
+            "label": "Tamanho",
+            "description": "Pequeno",
+            "symbol": "P",
+            "multiplyFactor": 0.75,
+            "selected": false
+          },
+          {
+            "id": 2,
+            "label": "Tamanho",
+            "description": "Médio",
+            "symbol": "M",
+            "multiplyFactor": 1,
+            "selected": true
+          },
+          {
+            "id": 3,
+            "label": "Tamanho",
+            "description": "Grande",
+            "symbol": "G",
+            "multiplyFactor": 1.25,
+            "selected": false
+          },
+          {
+            "id": 4,
+            "label": "Tamanho",
+            "description": "Extra-Grande",
+            "symbol": "XG",
+            "multiplyFactor": 1.5,
+            "selected": false
+          }
+        ]
       }
-    ] 
+    ]
   },
   {
     "id": 34,
@@ -1092,7 +2519,7 @@
       {
         "id": 69,
         "name": "The Outback Special 325g",
-        "uri": "/confeitaria-mel-azul/menu/the-outback-special-325g",
+        "uri": "/outback-hanzo/menu/the-outback-special-325g",
         "description": "Um steak especial: 325g nosso clássico miolo de alcatra com sabor acentuado pelos temperos do Outback",
         "image": "/img/item-placeholder.png",
         "imageAlt": "The Outback Special 325g",
@@ -1103,7 +2530,7 @@
       {
         "id": 70,
         "name": "Rockhampton Ribeye",
-        "uri": "/confeitaria-mel-azul/menu/rockhampton-ribeye",
+        "uri": "/outback-hanzo/menu/rockhampton-ribeye",
         "description": "Um steak especial: 325g nosso clássico miolo de alcatra com sabor acentuado pelos temperos do Outback",
         "image": "/img/item-placeholder.png",
         "imageAlt": "Rockhampton Ribeye",
@@ -1114,7 +2541,7 @@
       {
         "id": 71,
         "name": "Victoria’s Filet",
-        "uri": "/confeitaria-mel-azul/menu/victorias-filet",
+        "uri": "/outback-hanzo/menu/victorias-filet",
         "description": "Um corte de filet mignon com cerca de 200g, servido no estilo que preferir: com temperos Outback ou com ervas finas. Servido com molho Merlot. Preparado na chapa no ponto que você preferir",
         "image": "/img/item-placeholder.png",
         "imageAlt": "Victoria’s Filet",
@@ -1125,7 +2552,7 @@
       {
         "id": 72,
         "name": "Chicken On The Barbie",
-        "uri": "/confeitaria-mel-azul/menu/chicken-on-the-barbie",
+        "uri": "/outback-hanzo/menu/chicken-on-the-barbie",
         "description": "Um suculento peito de frango de cerca de 230g grelhado em chama aberta, servido com o molho Barbecue",
         "image": "/img/item-placeholder.png",
         "imageAlt": "Chicken On The Barbie",
@@ -1136,7 +2563,7 @@
       {
         "id": 73,
         "name": "Grilled Fish & Shrimp Scampi",
-        "uri": "/confeitaria-mel-azul/menu/grilled-fish-and-shrimp-scampi",
+        "uri": "/outback-hanzo/menu/grilled-fish-and-shrimp-scampi",
         "description": "Para honrar a paixão aussie pelos frutos do mar, cerca de 240g da nossa tilápia preparada na chapa e coberta com camarões ao molho Scampi",
         "image": "/img/item-placeholder.png",
         "imageAlt": "Grilled Fish & Shrimp Scampi",
@@ -1147,7 +2574,7 @@
       {
         "id": 74,
         "name": "Steakhouse Pastas",
-        "uri": "/confeitaria-mel-azul/menu/grilled-fish-and-shrimp-scampi",
+        "uri": "/outback-hanzo/menu/grilled-fish-and-shrimp-scampi",
         "description": "Fettuccine com champignons, tomates frescos e cortes de filet mignon. Refogado com um toque de vinho Chardonnay e black pepper",
         "image": "/img/item-placeholder.png",
         "imageAlt": "Steakhouse Pastas",
@@ -1158,7 +2585,7 @@
       {
         "id": 75,
         "name": "Tilapia Filet",
-        "uri": "/confeitaria-mel-azul/menu/tilapia-filet",
+        "uri": "/outback-hanzo/menu/tilapia-filet",
         "description": "Leveza e suculência elevadas ao topo pelos temperos no estilo Outback. Cerca de 240g da nossa tilápia preparada na chapa e servida com o delicioso molho Tartare",
         "image": "/img/item-placeholder.png",
         "imageAlt": "Tilapia Filet",
@@ -1169,7 +2596,7 @@
       {
         "id": 76,
         "name": "Walkabout Soup - Bowl",
-        "uri": "/confeitaria-mel-azul/menu/walkabout-soup-bowl",
+        "uri": "/outback-hanzo/menu/walkabout-soup-bowl",
         "description": "Que tal começar com uma sopa? Pergunte ao waiter qual é a opção do dia: Homemade Onion Soup, de cebolas ou Potato Soup, de batatas",
         "image": "/img/item-placeholder.png",
         "imageAlt": "Walkabout Soup - Bowl",
@@ -1180,7 +2607,7 @@
       {
         "id": 77,
         "name": "El Ranchito",
-        "uri": "/confeitaria-mel-azul/menu/el-ranchito",
+        "uri": "/outback-hanzo/menu/el-ranchito",
         "description": "Que tal começar com uma sopa? Pergunte ao waiter qual é a opção do dia: Homemade Onion Soup, de cebolas ou Potato Soup, de batatas",
         "image": "/img/item-placeholder.png",
         "imageAlt": "El Ranchito",
@@ -1191,7 +2618,7 @@
       {
         "id": 78,
         "name": "Choco Cinnamon Banoffee",
-        "uri": "/confeitaria-mel-azul/menu/choco-cinnamon-banoffe",
+        "uri": "/outback-hanzo/menu/choco-cinnamon-banoffe",
         "description": "Versão exclusiva da Banoffee no estilo Outback: base crocante de biscoito Thunder, doce de leite, brigadeiro com canela e finalizado com rodelas de banana, chantilly e canela. Contém nozes ou derivado de nozes",
         "image": "/img/item-placeholder.png",
         "imageAlt": "Choco Cinnamon Banoffee",
@@ -1202,7 +2629,7 @@
       {
         "id": 79,
         "name": "Super Wings",
-        "uri": "/confeitaria-mel-azul/menu/choco-cinnamon-banoffe",
+        "uri": "/outback-hanzo/menu/choco-cinnamon-banoffe",
         "description": "Nossas famosas Kookaburra Wings numa porção ainda maior. São 15 sobreasas de frango servidas com o molho Blue Cheese (contém açúcar e lactose) e aipo crocante. Nas opções light, médio ou hot",
         "image": "/img/item-placeholder.png",
         "imageAlt": "Super Wings",
@@ -1213,8 +2640,8 @@
       {
         "id": 80,
         "name": "Outback Jack Nachos",
-        "uri": "/confeitaria-mel-azul/menu/outback-jack-nachos",
-        "description": "NachosCrocantes tortillas de milho servidas com feijões pretos, tomate-cereja, repolho roxo, mix de queijos, fatias de jalapenho e carne vegetariana (jaca desfiada e preparada com o Bold Flavour Outback). Acompanha o nosso famoso molho Cheese Ranch",
+        "uri": "/outback-hanzo/menu/outback-jack-nachos",
+        "description": "Nachos Crocantes tortillas de milho servidas com feijões pretos, tomate-cereja, repolho roxo, mix de queijos, fatias de jalapenho e carne vegetariana (jaca desfiada e preparada com o Bold Flavour Outback). Acompanha o nosso famoso molho Cheese Ranch",
         "image": "/img/item-placeholder.png",
         "imageAlt": "Outback Jack Nachos",
         "price": 50.40,

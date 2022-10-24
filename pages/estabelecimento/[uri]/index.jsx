@@ -7,12 +7,14 @@ import styles from './Spot.module.scss'
 import { useRouter } from 'next/router'
 import { Flex, Box, Image, Text } from '@chakra-ui/react'
 import { useState, useEffect } from 'react'
+// import { PedidoContext } from '../../../context/PedidoContext'
 
 import * as EstabelecimentoService from '../../../services/estabelecimento/EstabelecimentoService'
 
 export default function Spot() {
   const [showSidebarMenu, setShowSidebarMenu] = useState(false)
   const [estabelecimento, setEstabelecimento] = useState(null)
+  // const [pedido, setPedido] = useContext(PedidoContext)
 
   const router = useRouter()
   const { uri } = router.query
@@ -135,14 +137,24 @@ export default function Spot() {
         justifyContent={'space-between'}
         borderRadius={'50px'}
       >
-        <Flex justifyContent={'space-between'} width={'100%'} p={1}>
+        <Flex
+          justifyContent={'space-between'}
+          width={'100%'}
+          p={1}
+          onClick={() =>
+            router.push(
+              `${process.env.NEXT_PUBLIC_APP_URL}/estabelecimento${estabelecimento.uri}/menu`
+            )
+          }
+        >
           <Text
-            color={'#000'}
-            fontSize={'1.5rem'}
+            color={'#222'}
+            fontSize={'1rem'}
             fontWeight={'bold'}
+            textTransform={'uppercase'}
             margin={'auto'}
           >
-            Iniciar Pedido...
+            Iniciar Pedido
           </Text>
           <Image
             cursor={'pointer'}
@@ -151,11 +163,6 @@ export default function Spot() {
             width={10}
             pr={2}
             justifySelf={'flex-end'}
-            onClick={() =>
-              router.push(
-                `${process.env.NEXT_PUBLIC_APP_URL}/estabelecimento${estabelecimento.uri}/menu`
-              )
-            }
           />
         </Flex>
       </Footer>

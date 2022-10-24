@@ -50,7 +50,7 @@ export default function Product({
           width={'100%'}
         >
           <Text textDecoration={'line-through'} fontSize={'0.8rem'}>
-            R${price.toFixed(2)}
+            {pricePromo < price && `R$${price.toFixed(2)}`}
           </Text>
           <Text fontSize={'1.2rem'} fontWeight={'bold'}>
             R${pricePromo.toFixed(2)}

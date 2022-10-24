@@ -1,5 +1,5 @@
 import { Flex, Box, Text, Image } from '@chakra-ui/react'
-import { useEffect, useState } from 'react'
+import { useEffect, useState, useContext } from 'react'
 import { useRouter } from 'next/router'
 
 import Header from '../../../../components/layout/header/Header'
@@ -13,9 +13,12 @@ import 'swiper/css/pagination'
 import CategoryCarousel from '../../../../components/category/CategoryCarousel'
 import Products from '../../../../components/product/Products'
 
+import { PedidoContext } from '../../../../context/PedidoContext'
+
 import styles from '../Spot.module.scss'
 
 export default function Home() {
+  const [pedido] = useContext(PedidoContext)
   const [showSidebarMenu, setShowSidebarMenu] = useState(false)
   const [categoryId, setCategoryId] = useState(0)
   const [estabelecimento, setEstabelecimento] = useState(null)
@@ -24,11 +27,11 @@ export default function Home() {
   const { uri } = router.query
 
   useEffect(() => {
+    console.log('aqui tem o contexto', pedido)
     const fetchEstabelecimento = async () => {
       const response = await EstabelecimentoService.findByURI(uri)
       if (response) {
         setEstabelecimento(response.estabelecimento)
-        console.log('response', response)
       }
     }
     fetchEstabelecimento()
@@ -191,17 +194,17 @@ export default function Home() {
       </main>
       <Footer
         backgroundColor={'#FFCC00'}
-        color={'#000'}
+        color={'#222'}
         borderRadius={'30px'}
         justifyContent={'space-between'}
       >
         <Flex alignItems={'center'}>
           <Text fontWeight={'bold'}>R$</Text>
-          <Text fontWeight={'bold'} fontSize={'2rem'}>
+          <Text fontWeight={'bold'} fontSize={'1.7rem'}>
             180,00
           </Text>
         </Flex>
-        <Image src={'/img/bag.svg'} alt={'Pedidos'} />
+        <Image src={'/img/bag.svg'} alt={'Pedidos'} height={10} />
       </Footer>
     </div>
   )

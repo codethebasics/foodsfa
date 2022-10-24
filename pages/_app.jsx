@@ -5,6 +5,7 @@ import TransitionScreen from '../components/layout/screen/TransitionScreen'
 
 import { useState } from 'react'
 import { ChakraProvider, Box } from '@chakra-ui/react'
+import { PedidoContextProvider } from '../context/PedidoContext'
 
 function MyApp({ Component, pageProps }) {
   const [isLoading, setIsLoading] = useState(true)
@@ -21,13 +22,15 @@ function MyApp({ Component, pageProps }) {
 
   return (
     <ChakraProvider>
-      {isLoading ? (
-        renderTransitionScreen()
-      ) : (
-        <Box className={'wrapper'}>
-          <Component {...pageProps} />
-        </Box>
-      )}
+      <PedidoContextProvider>
+        {isLoading ? (
+          renderTransitionScreen()
+        ) : (
+          <Box className={'wrapper'}>
+            <Component {...pageProps} />
+          </Box>
+        )}
+      </PedidoContextProvider>
     </ChakraProvider>
   )
 }

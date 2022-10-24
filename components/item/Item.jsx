@@ -1,6 +1,6 @@
 import styles from './Item.module.scss'
 
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { Flex, Box, Image, Text } from '@chakra-ui/react'
 
 import { Size, Toggle } from '../controls'
@@ -12,30 +12,17 @@ export default function Item({
   imageAlt,
   price,
   promoPrice,
-  toggleOption
+  toggleOption,
+  ingredientes,
+  size
 }) {
   const [quantity, setQuantity] = useState(1)
   const [, setSelectedSize] = useState('P')
-  const [selectedOptions, setSelectedOptions] = useState([
-    {
-      id: 1,
-      label: 'Picles',
-      description: 'Picles com parmesão',
-      status: true
-    },
-    {
-      id: 2,
-      label: 'Alface',
-      description: '2 folhas de alface',
-      status: true
-    },
-    {
-      id: 3,
-      label: 'Tomate',
-      description: '2 fatias de tomate',
-      status: true
-    }
-  ])
+  const [selectedOptions, setSelectedOptions] = useState(ingredientes)
+
+  useEffect(() => {
+    console.log(ingredientes)
+  }, [])
 
   /**
    *
@@ -112,9 +99,11 @@ export default function Item({
           <Text>{description}</Text>
         </Flex>
         <Flex p={5} justifyContent={'flex-end'} alignItems={'center'}>
-          <Text mx={5} textDecoration={'line-through'} fontSize={'0.9rem'}>
-            R${(price * quantity).toFixed(2)}
-          </Text>
+          {promoPrice < price && (
+            <Text mx={5} textDecoration={'line-through'} fontSize={'0.9rem'}>
+              R${(price * quantity).toFixed(2)}
+            </Text>
+          )}
           <Text fontSize={'1.3rem'} fontWeight={'bold'}>
             R${(promoPrice * quantity).toFixed(2)}
           </Text>
@@ -134,7 +123,7 @@ export default function Item({
       <Text p={5} fontSize={'1.2rem'}>
         Personalize seu pedido
       </Text>
-      <Size onSelect={setSelectedSize} />
+      <Size onSelect={setSelectedSize} size={size} itemPrice={price} />
       <div className={styles.separator} />
       {toggleOption &&
         selectedOptions.map(option => (
@@ -142,9 +131,10 @@ export default function Item({
             key={option.id}
             id={option.id}
             status={option.status}
-            label={option.label}
+            label={option.nome}
             description={option.description}
             storeOption={updateOptions}
+            disabled={option.mandatory}
           />
         ))}
     </Flex>
